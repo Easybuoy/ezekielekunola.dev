@@ -27,7 +27,6 @@ const ProjectsList = () => {
 
   const projects = data.allProjectsJson.edges
 
-  console.log(projects)
   return (
     <div>
       {projects.map(({ node: project }) => {
@@ -35,6 +34,7 @@ const ProjectsList = () => {
         const imageData = project.image.childImageSharp.fluid
         return (
           <Project
+            key={slug}
             title={title}
             description={description}
             slug={slug}
