@@ -1,0 +1,16 @@
+[
+  {
+    "title": "School In The Cloud",
+    "slug": "school-in-the-cloud",
+    "url": "https://distracted-stonebraker-f30c76.netlify.com/",
+    "imageUrl": "https://github.com/Easybuoy/school-in-the-cloud/raw/master/img/school%20in%20the%20cloud.png",
+    "image": "../images/gatsby-astronaut.png"
+  },
+  {
+    "title": "School In The Cloud",
+    "slug": "school-in-the-cloud-2",
+    "url": "https://distracted-stonebraker-f30c76.netlify.com/",
+    "imageUrl": "https://github.com/Easybuoy/school-in-the-cloud/raw/master/img/school%20in%20the%20cloud.png",
+    "image": "../images/gatsby-astronaut.png"
+  }
+]
