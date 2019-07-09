@@ -1,5 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
+
+import { ProjectsList as StyledProjectsList } from "../../styles"
 import Project from "./Project"
 
 const ProjectsList = () => {
@@ -28,7 +30,7 @@ const ProjectsList = () => {
   const projects = data.allProjectsJson.edges
 
   return (
-    <div>
+    <StyledProjectsList>
       {projects.map(({ node: project }) => {
         const { title, description, slug } = project
         const imageData = project.image.childImageSharp.fluid
@@ -42,7 +44,7 @@ const ProjectsList = () => {
           />
         )
       })}
-    </div>
+    </StyledProjectsList>
   )
 }
 

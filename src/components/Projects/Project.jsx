@@ -2,22 +2,26 @@ import React from "react"
 import { Link } from "gatsby"
 import Image from "gatsby-image"
 
+import {Project as StyledProject } from '../../styles'
+
 const Project = ({ slug, title, imageData, description }) => {
-    console.log(slug)
   return (
-    <div>
+    <StyledProject>
       <Link to={`/${slug}`}>
         <Image fluid={imageData} alt={title} />
       </Link>
+
+      <div className="project-body">
       <h2>
         <Link to={`/${slug}`}>{title}</Link>
       </h2>
-      <p>{description}</p>
 
       <p>
-        <Link to={`/${slug}`}>View Content &rarr;</Link>
+        <Link to={`/${slug}`}>View Project Detail &rarr;</Link>
       </p>
-    </div>
+      </div>
+   
+    </StyledProject>
   )
 }
 

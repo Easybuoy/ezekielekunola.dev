@@ -22,7 +22,7 @@ export const query = graphql`
 const ProjectTemplate = ({ data }) => {
   const project = data.projectsJson
   const { url, title } = project
-  console.log(project, "----")
+
   const imageData = project.image.childImageSharp.fluid
   return (
     <div>
