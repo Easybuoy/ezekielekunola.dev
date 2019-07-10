@@ -92,4 +92,31 @@ const Project = styled.div`
   }
 `
 
-export { ProjectsList, Project, Header }
+const SkillsList = styled.div`
+  width: 100%;
+  /* min-height: 100vh; */
+  background-color: brown;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5rem 0;
+  justify-content: center;
+`
+
+const Skill = styled.div`
+  width: 10%;
+  margin: 1rem auto;
+  padding: 0 0.5rem;
+  border: 2px solid blue;
+  margin: 2rem;
+  .skill {
+    width: 100%;
+    text-align: center;
+
+    img {
+      height: 100px;
+      width: 100%;
+    }
+  }
+`
+
+export { ProjectsList, Project, Header, SkillsList, Skill }
