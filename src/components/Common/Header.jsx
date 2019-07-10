@@ -1,4 +1,6 @@
 import React from "react"
+import Typist from "react-typist"
+import 'react-typist/dist/Typist.css'
 
 import { Header as StyledHeader } from "../../styles"
 
@@ -38,11 +40,28 @@ export default function Header() {
           </a>
         </div>
         <div className="header-text">
-          <h1>I am a Software Engineer</h1>
+          {/* <h1>I am a Software Engineer</h1> */}
+          <Typist
+            cursor={{
+              show: true,
+              blink: true,
+              element: "|",
+              hideWhenDone: false,
+              hideWhenDoneDelay: 1000,
+            }}
+            startDelay={1000}
+          >
+            <span>First Sentence</span>
+            <Typist.Backspace count={8} delay={200} />
+            <span>Phrase</span>
+            <Typist.Backspace count={6} delay={200} />
+
+            <span> Now </span>
+          </Typist>
 
           <div className="header-actions">
-          <button>My Work</button>
-          <button>Skills</button>
+            <button>My Work</button>
+            <button>Skills</button>
           </div>
         </div>
       </div>

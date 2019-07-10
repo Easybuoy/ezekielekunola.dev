@@ -37,6 +37,8 @@ const Header = styled.header`
   .header-image {
     width: 35%;
     border: 2px solid black;
+    height: 100%;
+
   }
 `
 
@@ -61,7 +63,7 @@ const Project = styled.div`
 
     img {
       height: 100px;
-      width: 100% !important;
+      width: 100%;
     }
   }
 
@@ -71,5 +73,6 @@ const Project = styled.div`
     /* padding-bottom: 1rem; */
   }
 `
+
 
 export { ProjectsList, Project, Header }
