@@ -9,13 +9,54 @@ const Header = styled.header`
   padding: 2rem 0;
 
   .header-content {
-    width: 45%;
+    width: 60%;
     border: 2px solid black;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .contact-details {
+      a {
+        text-decoration: none;
+        color: white;
+        padding: 0 1rem;
+      }
+    }
+
+    .header-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .Typist {
+        font-size: 3.5rem;
+        .Cursor {
+          padding: 0 0.1rem;
+          color: white;
+          .Cursor--blinking {
+            /* font-size: 4rem; */
+          }
+        }
+      }
+      .header-actions {
+        display: flex;
+        justify-content: center;
+        button {
+          margin: 0 1rem;
+        }
+      }
+    }
   }
 
   .header-image {
-    width: 45%;
+    width: 35%;
     border: 2px solid black;
+    height: 100%;
+
+    img {
+      width: 100%;
+    }
   }
 `
 
@@ -40,7 +81,7 @@ const Project = styled.div`
 
     img {
       height: 100px;
-      width: 100% !important;
+      width: 100%;
     }
   }
 
