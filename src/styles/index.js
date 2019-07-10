@@ -94,12 +94,11 @@ const Project = styled.div`
 
 const SkillsList = styled.div`
   width: 100%;
-  clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 100%);
   /* min-height: 100vh; */
   background-color: brown;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 10rem;
+  padding: 5rem 0;
 `
 
 const Skill = styled.div`
