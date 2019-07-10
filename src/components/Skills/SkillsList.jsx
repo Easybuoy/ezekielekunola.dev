@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
-import { ProjectsList as StyledProjectsList } from "../../styles"
+import { SkillsList as StyledSkillsList } from "../../styles"
 import Skill from "./Skill"
 
 const SkillsList = () => {
@@ -23,13 +23,11 @@ const SkillsList = () => {
   const skills = data.allSkillsJson.edges
 
   return (
-    <StyledProjectsList>
-      {skills.map(({ node: skill }) => {
-        const { id, description, slug } = skill
-        const imageData = project.image.childImageSharp.fluid
-        return <Skill key={id} />
+    <StyledSkillsList>
+      {skills.map(({ node: skill }) => { 
+        return <Skill key={skill.id} skill={skill} />
       })}
-    </StyledProjectsList>
+    </StyledSkillsList>
   )
 }
 

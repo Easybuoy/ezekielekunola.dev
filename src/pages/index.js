@@ -4,13 +4,14 @@ import { Link } from "gatsby"
 import "../styles/reset.css"
 import "../styles/global.css"
 import Layout from "../components/layout"
-import Image from "../components/image"
+// import Image from "../components/image"
 // import SEO from "../components/seo"
 import ProjectsList from "../components/Projects/ProjectsList"
-import { Sample } from "../styles"
+
 import Header from "../components/Common/Header"
 import Footer from "../components/Common/Footer"
 import Contact from "../components/Common/Contact"
+import SkillsList from "../components/Skills/SkillsList"
 
 const IndexPage = () => (
   <Layout>
@@ -18,7 +19,7 @@ const IndexPage = () => (
 
     <Header />
     <ProjectsList />
-
+    <SkillsList />
     <Contact />
     <Footer />
   </Layout>

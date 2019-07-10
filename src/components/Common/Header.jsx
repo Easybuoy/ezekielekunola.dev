@@ -13,23 +13,23 @@ export default function Header() {
         Yayy
         <div className="contact-details">
           <a href="https://dev.to/easybuoy">
-            <i class="fab fa-dev fa-5x"></i>
+            <i className="fab fa-dev fa-5x"></i>
           </a>
 
           <a href="https://github.com/easybuoy">
-            <i class="fab fa-github fa-5x"></i>
+            <i className="fab fa-github fa-5x"></i>
           </a>
 
           <a href="https://www.linkedin.com/in/easybuoy/">
-            <i class="fab fa-linkedin fa-5x"></i>
+            <i className="fab fa-linkedin fa-5x"></i>
           </a>
 
           <a href="https://twitter.com/easybuoy">
-            <i class="fab fa-twitter fa-5x"></i>
+            <i className="fab fa-twitter fa-5x"></i>
           </a>
 
           <a href="https://medium.com/@easybuoy">
-            <i class="fab fa-medium fa-5x"></i>
+            <i className="fab fa-medium fa-5x"></i>
           </a>
         </div>
         <div className="header-text">
