@@ -9,12 +9,25 @@ const Header = styled.header`
   padding: 2rem 0;
 
   .header-content {
-    width: 45%;
+    width: 60%;
     border: 2px solid black;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .contact-details {
+    }
+
+    .header-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 
   .header-image {
-    width: 45%;
+    width: 35%;
     border: 2px solid black;
   }
 `
