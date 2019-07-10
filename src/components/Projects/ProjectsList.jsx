@@ -10,6 +10,7 @@ const ProjectsList = () => {
       allProjectsJson {
         edges {
           node {
+            id
             slug
             title
             url
@@ -32,11 +33,11 @@ const ProjectsList = () => {
   return (
     <StyledProjectsList>
       {projects.map(({ node: project }) => {
-        const { title, description, slug } = project
+        const { id, title, description, slug } = project
         const imageData = project.image.childImageSharp.fluid
         return (
           <Project
-            key={slug}
+            key={id}
             title={title}
             description={description}
             slug={slug}
