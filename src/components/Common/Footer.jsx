@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react"
 
-export default function Footer() {
-    return (
-        <div>
-            Footer
-        </div>
-    )
+const Footer = () => {
+  return <div>Designed by easybuoy 👨🏾‍💻 &copy; {new Date().getFullYear()}</div>
 }
+
+export default Footer
