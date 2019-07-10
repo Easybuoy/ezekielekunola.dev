@@ -37,7 +37,7 @@ const ProjectsList = () => {
         const imageData = project.image.childImageSharp.fluid
         return (
           <Project
-            key={id}
+            key={slug}
             title={title}
             description={description}
             slug={slug}

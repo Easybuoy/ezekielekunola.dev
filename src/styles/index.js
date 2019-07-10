@@ -99,6 +99,7 @@ const SkillsList = styled.div`
   display: flex;
   flex-wrap: wrap;
   padding: 5rem 0;
+  justify-content: center;
 `
 
 const Skill = styled.div`
@@ -106,7 +107,7 @@ const Skill = styled.div`
   margin: 1rem auto;
   padding: 0 0.5rem;
   border: 2px solid blue;
-
+  margin: 2rem;
   .skill {
     width: 100%;
     text-align: center;
