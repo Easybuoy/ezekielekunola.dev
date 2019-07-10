@@ -119,4 +119,11 @@ const Skill = styled.div`
   }
 `
 
-export { ProjectsList, Project, Header, SkillsList, Skill }
+const Footer = styled.footer`
+  background-color: firebrick;
+  padding: 2rem 0;
+  text-align: center;
+  color: white;
+`;
+
+export { ProjectsList, Project, Header, SkillsList, Skill, Footer }
