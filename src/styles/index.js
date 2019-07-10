@@ -17,6 +17,11 @@ const Header = styled.header`
     text-align: center;
 
     .contact-details {
+      a {
+        text-decoration: none;
+        color: white;
+        padding: 0 1rem;
+      }
     }
 
     .header-text {

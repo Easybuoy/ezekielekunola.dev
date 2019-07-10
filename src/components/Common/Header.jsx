@@ -13,30 +13,23 @@ export default function Header() {
         Yayy
         <div className="contact-details">
           <a href="https://dev.to/easybuoy">
-            <img
-              src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg"
-              alt="Ekunola Ezekiel's DEV Profile"
-              height="30"
-              width="30"
-            />
+            <i class="fab fa-dev fa-5x"></i>
           </a>
 
-          <a href="https://dev.to/easybuoy">
-            <img
-              src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg"
-              alt="Ekunola Ezekiel's DEV Profile"
-              height="30"
-              width="30"
-            />
+          <a href="https://github.com/easybuoy">
+            <i class="fab fa-github fa-5x"></i>
           </a>
 
-          <a href="https://dev.to/easybuoy">
-            <img
-              src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg"
-              alt="Ekunola Ezekiel's DEV Profile"
-              height="30"
-              width="30"
-            />
+          <a href="https://www.linkedin.com/in/easybuoy/">
+            <i class="fab fa-linkedin fa-5x"></i>
+          </a>
+
+          <a href="https://twitter.com/easybuoy">
+            <i class="fab fa-twitter fa-5x"></i>
+          </a>
+
+          <a href="https://medium.com/@easybuoy">
+            <i class="fab fa-medium fa-5x"></i>
           </a>
         </div>
         <div className="header-text">
@@ -62,8 +55,8 @@ export default function Header() {
           </Typist> */}
 
           <div className="header-actions">
+            <button>Download Resume</button>
             <button>My Work</button>
-            <button>Skills</button>
           </div>
         </div>
       </div>
