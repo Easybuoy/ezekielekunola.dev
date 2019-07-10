@@ -23,6 +23,14 @@ const Header = styled.header`
       display: flex;
       flex-direction: column;
       justify-content: center;
+
+      .header-actions {
+        display: flex;
+        justify-content: center;
+        button {
+          margin: 0 1rem;
+        }
+      }
     }
   }
 
