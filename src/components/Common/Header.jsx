@@ -48,12 +48,6 @@ export default function Header() {
             <span>Developer</span>
           </Typist>
 
-          {/* <Typist>
-            <span> First Sentence</span>
-            <Typist.Backspace count={8} delay={200} />
-            <span> Phrase </span>
-          </Typist> */}
-
           <div className="header-actions">
             <button>Download Resume</button>
             <button>My Work</button>
