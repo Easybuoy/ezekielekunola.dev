@@ -24,6 +24,15 @@ const Header = styled.header`
       flex-direction: column;
       justify-content: center;
 
+      .Typist {
+        font-size: 3.5rem;
+        .Cursor {
+          border: 10x solid red;
+          .Cursor--blinking {
+            /* font-size: 4rem; */
+          }
+        }
+      }
       .header-actions {
         display: flex;
         justify-content: center;
@@ -39,6 +48,9 @@ const Header = styled.header`
     border: 2px solid black;
     height: 100%;
 
+    img {
+      width: 100%;
+    }
   }
 `
 
@@ -73,6 +85,5 @@ const Project = styled.div`
     /* padding-bottom: 1rem; */
   }
 `
-
 
 export { ProjectsList, Project, Header }
