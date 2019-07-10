@@ -27,7 +27,8 @@ const Header = styled.header`
       .Typist {
         font-size: 3.5rem;
         .Cursor {
-          border: 10x solid red;
+          padding: 0 0.1rem;
+          color: white;
           .Cursor--blinking {
             /* font-size: 4rem; */
           }

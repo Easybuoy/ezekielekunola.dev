@@ -45,7 +45,7 @@ export default function Header() {
             cursor={{
               show: true,
               blink: true,
-              element: "|",
+              element: "  |  ",
               hideWhenDone: false,
             }}
             startDelay={1000}
