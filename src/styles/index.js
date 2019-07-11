@@ -149,6 +149,11 @@ const Blog = styled.div`
   }
 `
 
+const Contact = styled.section`
+  text-align: center;
+  background-color: indigo;
+`;
+
 const Footer = styled.footer`
   background-color: firebrick;
   padding: 2rem 0;
@@ -164,5 +169,6 @@ export {
   Skill,
   BlogsList,
   Blog,
+  Contact,
   Footer,
 }
