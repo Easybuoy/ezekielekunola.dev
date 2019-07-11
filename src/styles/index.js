@@ -41,7 +41,7 @@ const Header = styled.header`
     .contact-details {
       margin: 0 auto;
       a {
-        text-decoration: none;
+        /* text-decoration: none; */
         color: white;
         padding: 0 1rem;
 
@@ -160,25 +160,52 @@ const Project = styled.div`
   margin: 1rem auto;
   color: black;
   /* padding: 0 0.5rem; */
-  /* -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.75); */
-  border: 1px solid red;
-  /* border-radius: 1rem; */
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.75);
+  border-radius: 1rem;
   a {
-    text-decoration: none;
-    color: black;
+    /* text-decoration: none; */
+  }
+  .project-image {
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
     img {
       height: 100px;
       width: 100%;
+      border-top-right-radius: 1rem;
+      border-top-left-radius: 1rem;
     }
   }
 
   .project-body {
-    /* background-color: green; */
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-color: #8C8C8C;
     text-align: center;
-    margin-top: 1rem; 
-    padding-bottom: 1rem; 
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+
+    .project-technologies {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 100%;
+
+      span {
+        background-color: pink;
+        padding: 1rem;
+        margin: 1rem 0;
+        font-size: 1.2rem;
+        border-radius: 2rem;
+      }
+    }
+
+    h3 {
+      color: white;
+      padding: 1rem 0;
+      color: white;
+    }
   }
 `
 
