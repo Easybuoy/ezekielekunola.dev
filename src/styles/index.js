@@ -16,26 +16,37 @@ const Navigation = styled.nav`
 `
 
 const Header = styled.header`
-  /* background-color: blue; */
   display: flex;
   width: 100%;
   height: 100vh;
   justify-content: space-around;
   padding: 2rem 0;
 
+  @media (max-width: 800px) {
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+  }
+
   .header-content {
-    width: 60%;
-    border: 2px solid black;
+    width: 50%;
     justify-content: center;
     display: flex;
     flex-direction: column;
     text-align: center;
+
+    @media (max-width: 800px) {
+      width: 100%;
+    }
 
     .contact-details {
       a {
         text-decoration: none;
         color: white;
         padding: 0 1rem;
+
+        @media (max-width: 800px) {
+          padding: 0 2rem;
+        }
       }
     }
 
@@ -44,6 +55,12 @@ const Header = styled.header`
       flex-direction: column;
       justify-content: center;
       color: white;
+      margin-top: 3rem;
+
+      h1 {
+        margin: 1rem 0;
+      }
+
       .Typist {
         font-size: 3rem;
         .Cursor {
@@ -57,6 +74,7 @@ const Header = styled.header`
       .header-actions {
         display: flex;
         justify-content: center;
+        margin-top: 2rem;
         button {
           margin: 0 1rem;
         }
@@ -65,11 +83,24 @@ const Header = styled.header`
   }
 
   .header-image {
-    width: 35%;
-    border: 2px solid black;
-    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
 
     img {
+      width: 70%;
+      background-color: white;
+      padding: 0.5rem;
+      margin: 0 auto;
+
+      @media (max-width: 800px) {
+        border-radius: 50%;
+        width: 300px;
+        height: 300px;
+      }
+    }
+
+    @media (max-width: 800px) {
       width: 100%;
     }
   }
