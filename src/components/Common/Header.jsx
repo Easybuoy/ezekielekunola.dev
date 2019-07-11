@@ -4,7 +4,7 @@ import "react-typist/dist/Typist.css"
 
 import { Header as StyledHeader } from "../../styles"
 
-import Image from "../../images/gatsby-astronaut.png"
+import Image from "../../images/profile.png"
 
 export default function Header() {
   return (
@@ -59,8 +59,7 @@ export default function Header() {
         </div>
       </div>
       <div className="header-image">
-        Image <span role="img">🔥</span>
-        <img src={Image} />
+        <img src={Image} style={{borderRadius: '50%'}}/>
       </div>
     </StyledHeader>
   )

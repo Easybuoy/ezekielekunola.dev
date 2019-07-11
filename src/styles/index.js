@@ -1,5 +1,20 @@
 import styled from "styled-components"
 
+const Navigation = styled.nav`
+  color: white;
+  /* background-color: #000b0f; */
+  opacity: 1;
+  border-bottom: 0.1px solid #8c8c8c;
+  margin: 0;
+  padding: 1rem 0;
+  img {
+    width: 100px;
+    height: auto;
+    margin-left: 3rem;
+    cursor: pointer;
+  }
+`
+
 const Header = styled.header`
   /* background-color: blue; */
   display: flex;
@@ -28,12 +43,12 @@ const Header = styled.header`
       display: flex;
       flex-direction: column;
       justify-content: center;
-
+      color: white;
       .Typist {
         font-size: 3rem;
         .Cursor {
           padding: 0 0.1rem;
-          color: white;
+
           .Cursor--blinking {
             /* font-size: 4rem; */
           }
@@ -174,6 +189,7 @@ const Particle = styled.div`
 `
 
 export {
+  Navigation,
   ProjectsList,
   Project,
   Header,
