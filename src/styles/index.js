@@ -1,5 +1,18 @@
 import styled from "styled-components"
 
+const Navigation = styled.nav`
+  color: white;
+  /* background-color: #000b0f; */
+  opacity: 1;
+
+  img {
+    width: 100px;
+    height: 100px;
+    margin-left: 3rem;
+    cursor: pointer;
+  }
+`
+
 const Header = styled.header`
   /* background-color: blue; */
   display: flex;
@@ -174,6 +187,7 @@ const Particle = styled.div`
 `
 
 export {
+  Navigation,
   ProjectsList,
   Project,
   Header,

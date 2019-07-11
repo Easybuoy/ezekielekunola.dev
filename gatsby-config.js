@@ -3,6 +3,7 @@ module.exports = {
     title: `Ezekiel Ekunola`,
     description: `Personal Website`,
     author: `Ezekiel Ekunola`,
+    image: './src/images/logo2.svg'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
