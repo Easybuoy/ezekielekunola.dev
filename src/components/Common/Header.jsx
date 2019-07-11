@@ -3,8 +3,9 @@ import Typist from "react-typist"
 import "react-typist/dist/Typist.css"
 
 import { Header as StyledHeader } from "../../styles"
-import { Button } from '../../styles/common'
+import { Button } from "../../styles/common"
 import Image from "../../images/profile.png"
+import Resume from "../../assets/resume.pdf"
 
 export default function Header() {
   return (
@@ -13,7 +14,7 @@ export default function Header() {
         Yayy
         <div className="contact-details">
           <a href="mailto:ekunolaeasybuoy@gmail.com">
-            <i class="fas fa-envelope fa-5x"></i>
+            <i className="fas fa-envelope fa-5x"></i>
           </a>
 
           <a href="https://github.com/easybuoy">
@@ -59,8 +60,10 @@ export default function Header() {
           </Typist>
 
           <div className="header-actions">
-            <Button>View Resume</Button>
-            <Button>My Work</Button>
+            <a href={Resume} target="_blank">
+              <Button>View Resume</Button>
+            </a>
+            {/* <Button>My Work</Button> */}
           </div>
         </div>
       </div>
