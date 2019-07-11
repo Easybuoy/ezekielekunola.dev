@@ -24,7 +24,7 @@ const Header = styled.header`
   padding: 2rem 0;
 
   .header-content {
-    width: 60%;
+    width: 50%;
     border: 2px solid black;
     justify-content: center;
     display: flex;
@@ -44,6 +44,12 @@ const Header = styled.header`
       flex-direction: column;
       justify-content: center;
       color: white;
+      margin-top: 3rem;
+
+      h1 {
+        margin: 1rem 0;
+      }
+
       .Typist {
         font-size: 3rem;
         .Cursor {
@@ -57,6 +63,7 @@ const Header = styled.header`
       .header-actions {
         display: flex;
         justify-content: center;
+        margin-top: 2rem;
         button {
           margin: 0 1rem;
         }
@@ -65,12 +72,16 @@ const Header = styled.header`
   }
 
   .header-image {
-    width: 35%;
-    border: 2px solid black;
-    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
 
     img {
-      width: 100%;
+      width: 70%;
+      background-color: white;
+      padding: 0.5rem;
+      margin: 0 auto;
+      /* height: 100%; */
     }
   }
 `
