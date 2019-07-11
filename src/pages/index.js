@@ -23,9 +23,9 @@ const IndexPage = () => (
       <Navigation />
       <Header />
       <ProjectsList />
-      <BlogsList />
+      {/* <BlogsList />
       <SkillsList />
-      <Contact />
+      <Contact /> */}
       <Footer />
     </Particle>
   </Layout>

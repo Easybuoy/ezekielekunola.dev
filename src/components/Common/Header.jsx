@@ -11,7 +11,6 @@ export default function Header() {
   return (
     <StyledHeader>
       <div className="header-content">
-        Yayy
         <div className="contact-details">
           <a href="mailto:ekunolaeasybuoy@gmail.com">
             <i className="fas fa-envelope fa-5x"></i>

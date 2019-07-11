@@ -39,10 +39,25 @@ const Header = styled.header`
     }
 
     .contact-details {
+      margin: 0 auto;
       a {
         text-decoration: none;
         color: white;
         padding: 0 1rem;
+
+        i {
+          @media (max-width: 800px) {
+            margin: 1rem 0;
+          }
+
+          @media (max-width: 500px) {
+            font-size: 4rem;
+          }
+
+          @media (max-width: 350px) {
+            font-size: 3rem;
+          }
+        }
 
         @media (max-width: 800px) {
           padding: 0 2rem;
@@ -59,10 +74,18 @@ const Header = styled.header`
 
       h1 {
         margin: 1rem 0;
+
+        @media (max-width: 350px) {
+          padding: 0 1rem;
+          font-size: 4rem;
+        }
       }
 
       .Typist {
         font-size: 3rem;
+        @media (max-width: 350px) {
+          font-size: 2rem;
+        }
         .Cursor {
           padding: 0 0.1rem;
 
@@ -87,6 +110,15 @@ const Header = styled.header`
     display: flex;
     align-items: center;
 
+    @media (max-width: 800px) {
+      width: 100%;
+    }
+
+    /* @media (max-width: 300px) {
+        margin: 2rem 0;
+        padding: 2rem 0;
+      } */
+
     img {
       width: 70%;
       background-color: white;
@@ -98,10 +130,16 @@ const Header = styled.header`
         width: 300px;
         height: 300px;
       }
-    }
 
-    @media (max-width: 800px) {
-      width: 100%;
+      @media (max-width: 400px) {
+        width: 200px;
+        height: 200px;
+      }
+
+      @media (max-width: 350px) {
+        width: 150px;
+        height: 150px;
+      }
     }
   }
 `
