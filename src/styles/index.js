@@ -92,7 +92,7 @@ const Project = styled.div`
   }
 `
 
-const SkillsList = styled.div`
+const SkillsList = styled.section`
   width: 100%;
   /* min-height: 100vh; */
   background-color: brown;
@@ -119,11 +119,50 @@ const Skill = styled.div`
   }
 `
 
+const BlogsList = styled.section`
+  width: 100%;
+  /* min-height: 100vh; */
+  background-color: gray;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5rem 0;
+  justify-content: center;
+
+  .blog-header {
+    text-align: center;
+    width: 100%;
+  }
+`
+
+const Blog = styled.div`
+  width: 20%;
+  margin: 1rem auto;
+  padding: 0 0.5rem;
+  border: 2px solid blue;
+  margin: 2rem;
+  background-color: yellow;
+
+  .blog-content {
+    border: 1px solid black;
+    margin: 2rem 0;
+    padding: 1rem;
+  }
+`
+
 const Footer = styled.footer`
   background-color: firebrick;
   padding: 2rem 0;
   text-align: center;
   color: white;
-`;
+`
 
-export { ProjectsList, Project, Header, SkillsList, Skill, Footer }
+export {
+  ProjectsList,
+  Project,
+  Header,
+  SkillsList,
+  Skill,
+  BlogsList,
+  Blog,
+  Footer,
+}

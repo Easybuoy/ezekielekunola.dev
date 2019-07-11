@@ -12,6 +12,7 @@ import Header from "../components/Common/Header"
 import Footer from "../components/Common/Footer"
 import Contact from "../components/Common/Contact"
 import SkillsList from "../components/Skills/SkillsList"
+import BlogsList from "../components/Blogs/BlogsList";
 
 const IndexPage = () => (
   <Layout>
@@ -19,6 +20,7 @@ const IndexPage = () => (
 
     <Header />
     <ProjectsList />
+    <BlogsList />
     <SkillsList />
     <Contact />
     <Footer />
