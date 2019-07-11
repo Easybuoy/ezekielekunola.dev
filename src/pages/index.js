@@ -5,7 +5,7 @@ import "../styles/reset.css"
 import "../styles/global.css"
 import Layout from "../components/layout"
 // import Image from "../components/image"
-// import SEO from "../components/seo"
+import SEO from "../components/seo"
 import ProjectsList from "../components/Projects/ProjectsList"
 
 import Header from "../components/Common/Header"
@@ -16,7 +16,7 @@ import BlogsList from "../components/Blogs/BlogsList"
 
 const IndexPage = () => (
   <Layout>
-    {/* <SEO title="Home" /> */}
+    <SEO title="Home" />
 
     <Header />
     <ProjectsList />
