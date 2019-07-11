@@ -148,7 +148,8 @@ const ProjectsList = styled.div`
   width: 100%;
   clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 100%);
   min-height: 100vh;
-  background-color: red;
+  /* background-color: #00A7E1; */
+  background-color: white;
   display: flex;
   flex-wrap: wrap;
   padding-top: 10rem;
@@ -157,12 +158,16 @@ const ProjectsList = styled.div`
 const Project = styled.div`
   width: 23%;
   margin: 1rem auto;
-  padding: 0 0.5rem;
-  border: 2px solid blue;
-
+  color: black;
+  /* padding: 0 0.5rem; */
+  /* -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.75); */
+  border: 1px solid red;
+  /* border-radius: 1rem; */
   a {
     text-decoration: none;
-
+    color: black;
     img {
       height: 100px;
       width: 100%;
@@ -170,9 +175,10 @@ const Project = styled.div`
   }
 
   .project-body {
-    background-color: green;
+    /* background-color: green; */
     text-align: center;
-    /* padding-bottom: 1rem; */
+    margin-top: 1rem; 
+    padding-bottom: 1rem; 
   }
 `
 
