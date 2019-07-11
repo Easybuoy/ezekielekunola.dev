@@ -13,17 +13,20 @@ import Footer from "../components/Common/Footer"
 import Contact from "../components/Contact/Contact"
 import SkillsList from "../components/Skills/SkillsList"
 import BlogsList from "../components/Blogs/BlogsList"
+import Particle from "../components/Particle/Particle"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <Particle>
+      <SEO title="Home" />
 
-    <Header />
-    <ProjectsList />
-    <BlogsList />
-    <SkillsList />
-    <Contact />
-    <Footer />
+      <Header />
+      <ProjectsList />
+      <BlogsList />
+      <SkillsList />
+      <Contact />
+      <Footer />
+    </Particle>
   </Layout>
 )
 
