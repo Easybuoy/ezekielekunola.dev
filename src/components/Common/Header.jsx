@@ -33,7 +33,7 @@ export default function Header() {
           </a>
         </div>
         <div className="header-text">
-          {/* <h1>I am a Software Engineer</h1> */}
+          <h1>Hi, I'm Ezekiel</h1>
           <Typist
             cursor={{
               show: true,
@@ -43,9 +43,13 @@ export default function Header() {
             }}
             startDelay={1000}
           >
-            <span>I am a Software Engineer</span>
-            <Typist.Backspace count={8} delay={200} />
-            <span>Developer</span>
+            <span>I am a Software Developer</span>
+            <Typist.Backspace count={9} delay={200} />
+            <span>Engineer</span>
+            <Typist.Backspace count={17} delay={200} />
+            <span>Frontend-Engineer</span>
+            <Typist.Backspace count={17} delay={200} />
+            <span>Backend-Engineer</span>
           </Typist>
 
           <div className="header-actions">

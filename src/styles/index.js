@@ -30,7 +30,7 @@ const Header = styled.header`
       justify-content: center;
 
       .Typist {
-        font-size: 3.5rem;
+        font-size: 3rem;
         .Cursor {
           padding: 0 0.1rem;
           color: white;
@@ -152,7 +152,7 @@ const Blog = styled.div`
 const Contact = styled.section`
   text-align: center;
   background-color: indigo;
-`;
+`
 
 const Footer = styled.footer`
   background-color: firebrick;
