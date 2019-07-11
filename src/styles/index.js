@@ -16,26 +16,37 @@ const Navigation = styled.nav`
 `
 
 const Header = styled.header`
-  /* background-color: blue; */
   display: flex;
   width: 100%;
   height: 100vh;
   justify-content: space-around;
   padding: 2rem 0;
 
+  @media (max-width: 800px) {
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+  }
+
   .header-content {
     width: 50%;
-    border: 2px solid black;
     justify-content: center;
     display: flex;
     flex-direction: column;
     text-align: center;
+
+    @media (max-width: 800px) {
+      width: 100%;
+    }
 
     .contact-details {
       a {
         text-decoration: none;
         color: white;
         padding: 0 1rem;
+
+        @media (max-width: 800px) {
+          padding: 0 2rem;
+        }
       }
     }
 
@@ -81,7 +92,16 @@ const Header = styled.header`
       background-color: white;
       padding: 0.5rem;
       margin: 0 auto;
-      /* height: 100%; */
+
+      @media (max-width: 800px) {
+        border-radius: 50%;
+        width: 300px;
+        height: 300px;
+      }
+    }
+
+    @media (max-width: 800px) {
+      width: 100%;
     }
   }
 `
