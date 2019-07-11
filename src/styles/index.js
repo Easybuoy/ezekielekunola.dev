@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const Header = styled.header`
-  background-color: blue;
+  /* background-color: blue; */
   display: flex;
   width: 100%;
   height: 100vh;
@@ -30,7 +30,7 @@ const Header = styled.header`
       justify-content: center;
 
       .Typist {
-        font-size: 3.5rem;
+        font-size: 3rem;
         .Cursor {
           padding: 0 0.1rem;
           color: white;
@@ -152,13 +152,25 @@ const Blog = styled.div`
 const Contact = styled.section`
   text-align: center;
   background-color: indigo;
-`;
+`
 
 const Footer = styled.footer`
   background-color: firebrick;
   padding: 2rem 0;
   text-align: center;
   color: white;
+`
+
+const Particle = styled.div`
+  .particles {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-color: black;
+  }
 `
 
 export {
@@ -171,4 +183,5 @@ export {
   Blog,
   Contact,
   Footer,
+  Particle,
 }
