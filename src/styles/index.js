@@ -43,12 +43,12 @@ const Header = styled.header`
       display: flex;
       flex-direction: column;
       justify-content: center;
-
+      color: white;
       .Typist {
         font-size: 3rem;
         .Cursor {
           padding: 0 0.1rem;
-          color: white;
+
           .Cursor--blinking {
             /* font-size: 4rem; */
           }
