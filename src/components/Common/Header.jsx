@@ -3,7 +3,7 @@ import Typist from "react-typist"
 import "react-typist/dist/Typist.css"
 
 import { Header as StyledHeader } from "../../styles"
-
+import { Button } from '../../styles/common'
 import Image from "../../images/profile.png"
 
 export default function Header() {
@@ -59,8 +59,8 @@ export default function Header() {
           </Typist>
 
           <div className="header-actions">
-            <button>Download Resume</button>
-            <button>My Work</button>
+            <Button>View Resume</Button>
+            <Button>My Work</Button>
           </div>
         </div>
       </div>
