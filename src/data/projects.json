@@ -1,11 +1,12 @@
 [
   {
     "id": "1",
-    "title": "School In The Cloud",
+    "title": "Use My Tech Stuff",
     "slug": "school-in-the-cloud",
     "url": "https://distracted-stonebraker-f30c76.netlify.com/",
     "imageUrl": "https://github.com/Easybuoy/school-in-the-cloud/raw/master/img/school%20in%20the%20cloud.png",
-    "image": "../images/gatsby-astronaut.png",
+    "image": "../images/projects/use-my-tech-stuff.png",
+    "gif": "../images/projects/use-my-tech-stuff.gif",
     "description": "School in the Cloud is a platform that trains senior volunteers to teach students in a group or individual setting. This helps kids in communities with high student to teacher ratios. It also provides retired volunteers a sense of purpose and meaning in their day to day life when they find themselves with more free time. The platform also connects volunteers with the students. The aim is to help close the achievement gap by connecting students with available, qualified volunteer mentors. The first piece of this app will be creating the three main user types, and allowing an admin to create a training checklist for new volunteers."
   },
   {
@@ -14,7 +15,8 @@
     "slug": "school-in-the-cloud-2",
     "url": "https://distracted-stonebraker-f30c76.netlify.com/",
     "imageUrl": "https://github.com/Easybuoy/school-in-the-cloud/raw/master/img/school%20in%20the%20cloud.png",
-    "image": "../images/gatsby-astronaut.png",
+    "image": "../images/projects/use-my-tech-stuff.png",
+    "gif": "../images/projects/use-my-tech-stuff.gif",
     "description": "School in the Cloud is a platform that trains senior volunteers to teach students in a group or individual setting. This helps kids in communities with high student to teacher ratios. It also provides retired volunteers a sense of purpose and meaning in their day to day life when they find themselves with more free time. The platform also connects volunteers with the students. The aim is to help close the achievement gap by connecting students with available, qualified volunteer mentors. The first piece of this app will be creating the three main user types, and allowing an admin to create a training checklist for new volunteers."
   },
   {
@@ -23,7 +25,8 @@
     "slug": "school-in-the-cloud-3",
     "url": "https://distracted-stonebraker-f30c76.netlify.com/",
     "imageUrl": "https://github.com/Easybuoy/school-in-the-cloud/raw/master/img/school%20in%20the%20cloud.png",
-    "image": "../images/gatsby-astronaut.png",
+    "image": "../images/projects/use-my-tech-stuff.png",
+    "gif": "../images/projects/use-my-tech-stuff.gif",
     "description": "School in the Cloud is a platform that trains senior volunteers to teach students in a group or individual setting. This helps kids in communities with high student to teacher ratios. It also provides retired volunteers a sense of purpose and meaning in their day to day life when they find themselves with more free time. The platform also connects volunteers with the students. The aim is to help close the achievement gap by connecting students with available, qualified volunteer mentors. The first piece of this app will be creating the three main user types, and allowing an admin to create a training checklist for new volunteers."
   },
   {
@@ -32,7 +35,7 @@
     "slug": "school-in-the-cloud-4",
     "url": "https://distracted-stonebraker-f30c76.netlify.com/",
     "imageUrl": "https://github.com/Easybuoy/school-in-the-cloud/raw/master/img/school%20in%20the%20cloud.png",
-    "image": "../images/gatsby-astronaut.png",
+    "image": "../images/projects/use-my-tech-stuff.png",
     "description": "School in the Cloud is a platform that trains senior volunteers to teach students in a group or individual setting. This helps kids in communities with high student to teacher ratios. It also provides retired volunteers a sense of purpose and meaning in their day to day life when they find themselves with more free time. The platform also connects volunteers with the students. The aim is to help close the achievement gap by connecting students with available, qualified volunteer mentors. The first piece of this app will be creating the three main user types, and allowing an admin to create a training checklist for new volunteers."
   },
   {
@@ -41,7 +44,8 @@
     "slug": "school-in-the-cloud-5",
     "url": "https://distracted-stonebraker-f30c76.netlify.com/",
     "imageUrl": "https://github.com/Easybuoy/school-in-the-cloud/raw/master/img/school%20in%20the%20cloud.png",
-    "image": "../images/gatsby-astronaut.png",
+    "image": "../images/projects/use-my-tech-stuff.png",
+    "gif": "../images/projects/use-my-tech-stuff.gif",
     "description": "School in the Cloud is a platform that trains senior volunteers to teach students in a group or individual setting. This helps kids in communities with high student to teacher ratios. It also provides retired volunteers a sense of purpose and meaning in their day to day life when they find themselves with more free time. The platform also connects volunteers with the students. The aim is to help close the achievement gap by connecting students with available, qualified volunteer mentors. The first piece of this app will be creating the three main user types, and allowing an admin to create a training checklist for new volunteers."
   }
 ]
