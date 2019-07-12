@@ -4,6 +4,8 @@ import { graphql, useStaticQuery } from "gatsby"
 import { ProjectsList as StyledProjectsList } from "../../styles"
 import Project from "./Project"
 
+import Projects from "../../images/projects.svg"
+
 const ProjectsList = () => {
   const data = useStaticQuery(graphql`
     {
@@ -31,19 +33,14 @@ const ProjectsList = () => {
   const projects = data.allProjectsJson.edges
 
   return (
-    <StyledProjectsList>
+    <StyledProjectsList
+      style={{
+        backgroundImage: `linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(${Projects})`,
+      }}
+    >
+      <h3>Projects</h3>
       {projects.map(({ node: project }) => {
-        const { id, title, description, slug } = project
-        const imageData = project.image.childImageSharp.fluid
-        return (
-          <Project
-            key={slug}
-            title={title}
-            description={description}
-            slug={slug}
-            imageData={imageData}
-          />
-        )
+        return <Project key={project.id} project={project} />
       })}
     </StyledProjectsList>
   )

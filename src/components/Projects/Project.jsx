@@ -3,9 +3,12 @@ import { Link } from "gatsby"
 import Image from "gatsby-image"
 
 import { Project as StyledProject } from "../../styles"
-import { Button} from '../../styles/common'
+import { Button } from "../../styles/common"
 
-const Project = ({ slug, title, imageData, description }) => {
+const Project = ({ project }) => {
+  const { id, title, description, slug, technologies } = project
+  const imageData = project.image.childImageSharp.fluid
+  console.log(project)
   return (
     <StyledProject>
       <div className="project-image">

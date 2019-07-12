@@ -146,14 +146,29 @@ const Header = styled.header`
 `
 
 const ProjectsList = styled.div`
-  width: 100%;
-  clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 100%);
-  min-height: 100vh;
+  /* width: 100%;
+  min-height: 100vh; */
   /* background-color: #00A7E1; */
   background-color: white;
   display: flex;
   flex-wrap: wrap;
   padding-top: 10rem;
+  width: 100%;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+
+
+  clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 100%);
+  /* clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 100%); */
+  /* background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8)), url('../images/projects.svg'); */
+
+  h3 {
+    margin-bottom: 5rem;
+    width: 100%;
+    text-align: center;
+  }
 `
 
 const Project = styled.div`
@@ -161,10 +176,9 @@ const Project = styled.div`
   margin: 1rem auto;
   color: white;
   /* padding: 0 0.5rem; */
- 
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
-  /* border-radius: 1rem; */
 
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  /* border-radius: 1rem; */
 
   @media (max-width: 950px) {
     width: 30%;
@@ -196,7 +210,7 @@ const Project = styled.div`
   .project-body {
     /* border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem; */
-    background-color: #FBFBF2;
+    background-color: #fbfbf2;
     text-align: center;
     margin-top: 1rem;
     padding-bottom: 1rem;
@@ -208,7 +222,7 @@ const Project = styled.div`
       width: 100%;
 
       span {
-        background-color: #D10000;
+        background-color: #d10000;
         padding: 1rem;
         margin: 1rem 0;
         font-size: 1.2rem;
@@ -217,7 +231,7 @@ const Project = styled.div`
     }
 
     h3 {
-      color: #D10000;
+      color: #d10000;
       padding: 1rem 0;
     }
   }
@@ -286,7 +300,7 @@ const Contact = styled.section`
 `
 
 const Footer = styled.footer`
-  background-color: #D10000;
+  background-color: #d10000;
   padding: 2rem 0;
   text-align: center;
   color: white;
