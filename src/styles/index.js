@@ -162,7 +162,11 @@ const ProjectsList = styled.div`
 
   clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 100%);
   /* clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 100%); */
-  /* background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8)), url('../images/projects.svg'); */
+
+  @media (max-width: 550px) {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    padding-top: 1rem;
+  }
 
   h3 {
     margin-bottom: 5rem;
