@@ -158,30 +158,31 @@ const ProjectsList = styled.div`
 const Project = styled.div`
   width: 23%;
   margin: 1rem auto;
-  color: black;
+  color: white;
   /* padding: 0 0.5rem; */
-  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.75);
+  /* -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.75);
-  border-radius: 1rem;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.75); */
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+  /* border-radius: 1rem; */
   a {
     /* text-decoration: none; */
   }
   .project-image {
-    border-top-right-radius: 2rem;
-    border-top-left-radius: 2rem;
+    /* border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem; */
     img {
       height: 100px;
       width: 100%;
-      border-top-right-radius: 1rem;
-      border-top-left-radius: 1rem;
+      /* border-top-right-radius: 1rem;
+      border-top-left-radius: 1rem; */
     }
   }
 
   .project-body {
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    background-color: #8C8C8C;
+    /* border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem; */
+    background-color: #FBFBF2;
     text-align: center;
     margin-top: 1rem;
     padding-bottom: 1rem;
@@ -193,7 +194,7 @@ const Project = styled.div`
       width: 100%;
 
       span {
-        background-color: pink;
+        background-color: #D10000;
         padding: 1rem;
         margin: 1rem 0;
         font-size: 1.2rem;
@@ -202,9 +203,8 @@ const Project = styled.div`
     }
 
     h3 {
-      color: white;
+      color: #D10000;
       padding: 1rem 0;
-      color: white;
     }
   }
 `
@@ -272,7 +272,7 @@ const Contact = styled.section`
 `
 
 const Footer = styled.footer`
-  background-color: firebrick;
+  background-color: #D10000;
   padding: 2rem 0;
   text-align: center;
   color: white;
