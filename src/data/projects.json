@@ -1,47 +1,79 @@
 [
   {
     "id": "1",
-    "title": "School In The Cloud",
-    "slug": "school-in-the-cloud",
-    "url": "https://distracted-stonebraker-f30c76.netlify.com/",
-    "imageUrl": "https://github.com/Easybuoy/school-in-the-cloud/raw/master/img/school%20in%20the%20cloud.png",
-    "image": "../images/gatsby-astronaut.png",
-    "description": "School in the Cloud is a platform that trains senior volunteers to teach students in a group or individual setting. This helps kids in communities with high student to teacher ratios. It also provides retired volunteers a sense of purpose and meaning in their day to day life when they find themselves with more free time. The platform also connects volunteers with the students. The aim is to help close the achievement gap by connecting students with available, qualified volunteer mentors. The first piece of this app will be creating the three main user types, and allowing an admin to create a training checklist for new volunteers."
+    "title": "Store Manager",
+    "slug": "store-manager",
+    "url": "https://storemanagerreact.herokuapp.com",
+    "githubUrl": "https://github.com/Easybuoy/storemanager",
+    "image": "../images/projects/store-manager.png",
+    "gif": "",
+    "technologies": ["React", "Redux", "Material-Design-Bootstrap", "API"],
+    "description": "A web application that helps store owners manage sales and product inventory records. Store owners/managers can create store attendant accounts who would be in charge of selling of items in the store."
   },
   {
     "id": "2",
-    "title": "School In The Cloud",
-    "slug": "school-in-the-cloud-2",
-    "url": "https://distracted-stonebraker-f30c76.netlify.com/",
-    "imageUrl": "https://github.com/Easybuoy/school-in-the-cloud/raw/master/img/school%20in%20the%20cloud.png",
-    "image": "../images/gatsby-astronaut.png",
-    "description": "School in the Cloud is a platform that trains senior volunteers to teach students in a group or individual setting. This helps kids in communities with high student to teacher ratios. It also provides retired volunteers a sense of purpose and meaning in their day to day life when they find themselves with more free time. The platform also connects volunteers with the students. The aim is to help close the achievement gap by connecting students with available, qualified volunteer mentors. The first piece of this app will be creating the three main user types, and allowing an admin to create a training checklist for new volunteers."
+    "title": "Use My Tech Stuff",
+    "slug": "use-my-tech-stuff",
+    "url": "http://ls-umts.netlify.com",
+    "githubUrl": "https://github.com/Easybuoy/use-my-tech-stuff",
+    "image": "../images/projects/use-my-tech-stuff.png",
+    "gif": "../images/projects/use-my-tech-stuff.gif",
+    "technologies": [
+      "React",
+      "Redux",
+      "Material-Design-Bootstrap",
+      "Styled-Components",
+      "API"
+    ],
+    "description": "Use My Tech Stuff aims to provide a safe, guaranteed, and efficient way to effortlessly share professional tech equipment."
   },
   {
     "id": "3",
     "title": "School In The Cloud",
-    "slug": "school-in-the-cloud-3",
+    "slug": "school-in-the-cloud",
     "url": "https://distracted-stonebraker-f30c76.netlify.com/",
-    "imageUrl": "https://github.com/Easybuoy/school-in-the-cloud/raw/master/img/school%20in%20the%20cloud.png",
-    "image": "../images/gatsby-astronaut.png",
-    "description": "School in the Cloud is a platform that trains senior volunteers to teach students in a group or individual setting. This helps kids in communities with high student to teacher ratios. It also provides retired volunteers a sense of purpose and meaning in their day to day life when they find themselves with more free time. The platform also connects volunteers with the students. The aim is to help close the achievement gap by connecting students with available, qualified volunteer mentors. The first piece of this app will be creating the three main user types, and allowing an admin to create a training checklist for new volunteers."
+    "githubUrl": "https://github.com/Easybuoy/school-in-the-cloud",
+    "image": "../images/projects/school-in-the-cloud.png",
+    "gif": "",
+    "technologies": ["Html", "Css", "Javascript", "Styled-Components", "AOS"],
+    "description": "School in the Cloud is a platform that trains senior volunteers to teach students in a group or individual setting. This helps kids in communities with high student to teacher ratios. It also provides retired volunteers a sense of purpose and meaning in their day to day life when they find themselves with more free time. The platform also connects volunteers with the students."
   },
   {
     "id": "4",
-    "title": "School In The Cloud",
-    "slug": "school-in-the-cloud-4",
-    "url": "https://distracted-stonebraker-f30c76.netlify.com/",
-    "imageUrl": "https://github.com/Easybuoy/school-in-the-cloud/raw/master/img/school%20in%20the%20cloud.png",
-    "image": "../images/gatsby-astronaut.png",
-    "description": "School in the Cloud is a platform that trains senior volunteers to teach students in a group or individual setting. This helps kids in communities with high student to teacher ratios. It also provides retired volunteers a sense of purpose and meaning in their day to day life when they find themselves with more free time. The platform also connects volunteers with the students. The aim is to help close the achievement gap by connecting students with available, qualified volunteer mentors. The first piece of this app will be creating the three main user types, and allowing an admin to create a training checklist for new volunteers."
+    "title": "Marvel Comics",
+    "slug": "marvel-comics",
+    "url": "https://marvel-comic-characters.netlify.com/",
+    "githubUrl": "https://github.com/Easybuoy/marvel-comics",
+    "image": "../images/projects/marvel-comics.png",
+    "gif": "",
+    "technologies": [
+      "React",
+      "Styled-Components",
+      "Material-Design-Bootstrap",
+      "API"
+    ],
+    "description": "Progressive Web Application that displays information about Marvel Comics and Characters."
   },
   {
     "id": "5",
-    "title": "School In The Cloud",
-    "slug": "school-in-the-cloud-5",
-    "url": "https://distracted-stonebraker-f30c76.netlify.com/",
-    "imageUrl": "https://github.com/Easybuoy/school-in-the-cloud/raw/master/img/school%20in%20the%20cloud.png",
-    "image": "../images/gatsby-astronaut.png",
-    "description": "School in the Cloud is a platform that trains senior volunteers to teach students in a group or individual setting. This helps kids in communities with high student to teacher ratios. It also provides retired volunteers a sense of purpose and meaning in their day to day life when they find themselves with more free time. The platform also connects volunteers with the students. The aim is to help close the achievement gap by connecting students with available, qualified volunteer mentors. The first piece of this app will be creating the three main user types, and allowing an admin to create a training checklist for new volunteers."
+    "title": "Movie Listing",
+    "slug": "movie-listing",
+    "url": "https://reactmovieapptmdb.herokuapp.com/",
+    "githubUrl": "https://github.com/Easybuoy/reactmovieapp",
+    "image": "../images/projects/movie-listings.png",
+    "gif": "",
+    "technologies": ["React", "Material-Design-Bootstrap", "API"],
+    "description": "Web Application that lists comprehensive details about Movies and TV-Series."
+  },
+  {
+    "id": "6",
+    "title": "Headline News",
+    "slug": "headline-news",
+    "url": "https://headline-pwa.herokuapp.com/",
+    "githubUrl": "https://github.com/Easybuoy/headlines_pwa_app",
+    "image": "../images/projects/headline-news.png",
+    "gif": "",
+    "technologies": ["Html", "Css", "Jquery", "Node", "Express"],
+    "description": "This is a progressive web app that allows you view latest and currrent news accross the world."
   }
 ]

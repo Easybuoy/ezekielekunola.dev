@@ -39,10 +39,25 @@ const Header = styled.header`
     }
 
     .contact-details {
+      margin: 0 auto;
       a {
-        text-decoration: none;
+        /* text-decoration: none; */
         color: white;
         padding: 0 1rem;
+
+        i {
+          @media (max-width: 800px) {
+            margin: 1rem 0;
+          }
+
+          @media (max-width: 500px) {
+            font-size: 4rem;
+          }
+
+          @media (max-width: 350px) {
+            font-size: 3rem;
+          }
+        }
 
         @media (max-width: 800px) {
           padding: 0 2rem;
@@ -59,10 +74,18 @@ const Header = styled.header`
 
       h1 {
         margin: 1rem 0;
+
+        @media (max-width: 350px) {
+          padding: 0 1rem;
+          font-size: 4rem;
+        }
       }
 
       .Typist {
         font-size: 3rem;
+        @media (max-width: 350px) {
+          font-size: 2rem;
+        }
         .Cursor {
           padding: 0 0.1rem;
 
@@ -87,6 +110,15 @@ const Header = styled.header`
     display: flex;
     align-items: center;
 
+    @media (max-width: 800px) {
+      width: 100%;
+    }
+
+    /* @media (max-width: 300px) {
+        margin: 2rem 0;
+        padding: 2rem 0;
+      } */
+
     img {
       width: 70%;
       background-color: white;
@@ -97,44 +129,111 @@ const Header = styled.header`
         border-radius: 50%;
         width: 300px;
         height: 300px;
+        /* margin-top: 2rem */
       }
-    }
 
-    @media (max-width: 800px) {
-      width: 100%;
+      @media (max-width: 400px) {
+        width: 200px;
+        height: 200px;
+      }
+
+      @media (max-width: 350px) {
+        width: 150px;
+        height: 150px;
+      }
     }
   }
 `
 
 const ProjectsList = styled.div`
-  width: 100%;
-  clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 100%);
-  min-height: 100vh;
-  background-color: red;
+  /* width: 100%;
+  min-height: 100vh; */
+  /* background-color: #00A7E1; */
+  background-color: white;
   display: flex;
   flex-wrap: wrap;
   padding-top: 10rem;
+  width: 100%;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+
+
+  clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 100%);
+  /* clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 100%); */
+  /* background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8)), url('../images/projects.svg'); */
+
+  h3 {
+    margin-bottom: 5rem;
+    width: 100%;
+    text-align: center;
+  }
 `
 
 const Project = styled.div`
   width: 23%;
   margin: 1rem auto;
-  padding: 0 0.5rem;
-  border: 2px solid blue;
+  color: white;
+  /* padding: 0 0.5rem; */
+
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  /* border-radius: 1rem; */
+
+  @media (max-width: 950px) {
+    width: 30%;
+  }
+
+  @media (max-width: 750px) {
+    width: 45%;
+  }
+
+  @media (max-width: 550px) {
+    width: 100%;
+    margin: 1rem;
+  }
 
   a {
-    text-decoration: none;
-
+    /* text-decoration: none; */
+  }
+  .project-image {
+    /* border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem; */
     img {
       height: 100px;
       width: 100%;
+      /* border-top-right-radius: 1rem;
+      border-top-left-radius: 1rem; */
     }
   }
 
   .project-body {
-    background-color: green;
+    /* border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem; */
+    background-color: #fbfbf2;
     text-align: center;
-    /* padding-bottom: 1rem; */
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+
+    .project-technologies {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      width: 100%;
+
+      span {
+        background-color: #d10000;
+        padding: 1rem;
+        margin: 1rem 0;
+        font-size: 1.2rem;
+        border-radius: 0.2rem;
+      }
+    }
+
+    h3 {
+      color: #d10000;
+      padding: 1rem 0;
+    }
   }
 `
 
@@ -201,7 +300,7 @@ const Contact = styled.section`
 `
 
 const Footer = styled.footer`
-  background-color: firebrick;
+  background-color: #d10000;
   padding: 2rem 0;
   text-align: center;
   color: white;

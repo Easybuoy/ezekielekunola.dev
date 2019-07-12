@@ -11,7 +11,6 @@ export default function Header() {
   return (
     <StyledHeader>
       <div className="header-content">
-        Yayy
         <div className="contact-details">
           <a href="mailto:ekunolaeasybuoy@gmail.com">
             <i className="fas fa-envelope fa-5x"></i>
@@ -60,7 +59,7 @@ export default function Header() {
           </Typist>
 
           <div className="header-actions">
-            <a href={Resume} target="_blank">
+            <a href={Resume} target="_blank" rel="noopener noreferrer">
               <Button>View Resume</Button>
             </a>
             {/* <Button>My Work</Button> */}

@@ -11,14 +11,6 @@ body {
   font-family: "Alegreya Sans", sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: "Russo One", sans-serif;
-}
-
 h1 {
   font-size: 5rem;
 }
@@ -34,4 +26,9 @@ h3 {
 p {
   font-size: 1.6rem;
   line-height: 1.4;
+}
+
+
+a {
+  text-decoration: none;
 }
