@@ -16,6 +16,10 @@ const ProjectsList = () => {
             slug
             title
             url
+            githubUrl
+            gif
+            technologies
+            description
             image {
               publicURL
               childImageSharp {
@@ -29,7 +33,6 @@ const ProjectsList = () => {
       }
     }
   `)
-
   const projects = data.allProjectsJson.edges
 
   return (

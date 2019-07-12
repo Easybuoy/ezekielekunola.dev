@@ -73,7 +73,7 @@
     "githubUrl": "https://github.com/Easybuoy/headlines_pwa_app",
     "image": "../images/projects/headline-news.png",
     "gif": "",
-    "technologies": ["Html", "Css", "Jquery", "Node", "express"],
+    "technologies": ["Html", "Css", "Jquery", "Node", "Express"],
     "description": "This is a progressive web app that allows you view latest and currrent news accross the world."
   }
 ]
