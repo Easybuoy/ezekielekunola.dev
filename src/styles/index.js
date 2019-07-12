@@ -239,23 +239,31 @@ const Project = styled.div`
 
 const SkillsList = styled.section`
   width: 100%;
-  /* min-height: 100vh; */
-  background-color: brown;
   display: flex;
   flex-wrap: wrap;
   padding: 5rem 0;
   justify-content: center;
+  color: white;
+  h2 {
+    text-align: center;
+    width: 100%;
+  }
 `
 
 const Skill = styled.div`
   width: 10%;
   margin: 1rem auto;
   padding: 0 0.5rem;
-  border: 2px solid blue;
   margin: 2rem;
+
+  @media (max-width: 570px) {
+    width: 15%;
+  }
   .skill {
     width: 100%;
     text-align: center;
+    color: white;
+    /* border-radius: 50%; */
 
     img {
       height: 100px;
