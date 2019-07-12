@@ -44,7 +44,7 @@ module.exports = {
         short_name: `EE`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#090C9B`,
+        theme_color: `#754ef9`,
         display: `standalone`,
         icon: `src/images/logo.png`, // This path is relative to the root of the site.
       },
