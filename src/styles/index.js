@@ -222,7 +222,7 @@ const Project = styled.div`
       width: 100%;
 
       span {
-        background-color: #d10000;
+        background-color: #754ef9;
         padding: 1rem;
         margin: 1rem 0;
         font-size: 1.2rem;
@@ -231,8 +231,9 @@ const Project = styled.div`
     }
 
     h3 {
-      color: #d10000;
+      color: #754ef9;
       padding: 1rem 0;
+      margin: 0;
     }
   }
 `

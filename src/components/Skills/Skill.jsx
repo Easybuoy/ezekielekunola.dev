@@ -8,7 +8,7 @@ export default function Skill({ skill }) {
   return (
     <StyledSkill>
       <div className="skill">
-        <img src={iconUrl} alt="icon" />
+        <img src={iconUrl} alt={title} />
         <p>{title}</p>
       </div>
     </StyledSkill>
