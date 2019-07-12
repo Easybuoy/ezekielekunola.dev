@@ -129,6 +129,7 @@ const Header = styled.header`
         border-radius: 50%;
         width: 300px;
         height: 300px;
+        /* margin-top: 2rem */
       }
 
       @media (max-width: 400px) {
@@ -163,6 +164,7 @@ const Project = styled.div`
  
   box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
   /* border-radius: 1rem; */
+
 
   @media (max-width: 950px) {
     width: 30%;
