@@ -6,9 +6,9 @@ import { Project as StyledProject } from "../../styles"
 import { Button } from "../../styles/common"
 
 const Project = ({ project }) => {
-  const { id, title, description, slug, technologies } = project
+  const { title, slug, technologies } = project
   const imageData = project.image.childImageSharp.fluid
-  console.log(technologies)
+
   return (
     <StyledProject>
       <div className="project-image">
@@ -22,7 +22,7 @@ const Project = ({ project }) => {
 
         <div className="project-technologies">
           {technologies.map(technology => (
-            <span>{technology}</span>
+            <span key={technology}>{technology}</span>
           ))}
         </div>
 

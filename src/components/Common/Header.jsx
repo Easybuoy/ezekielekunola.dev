@@ -59,7 +59,7 @@ export default function Header() {
           </Typist>
 
           <div className="header-actions">
-            <a href={Resume} target="_blank">
+            <a href={Resume} target="_blank" rel="noopener noreferrer">
               <Button>View Resume</Button>
             </a>
             {/* <Button>My Work</Button> */}
