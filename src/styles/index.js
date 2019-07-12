@@ -303,7 +303,7 @@ const Blog = styled.div`
     width: 45%;
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: 550px) {
     width: 100%;
   }
 
