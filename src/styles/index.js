@@ -218,7 +218,7 @@ const Project = styled.div`
     .project-technologies {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content: space-evenly;
       width: 100%;
 
       span {
@@ -226,7 +226,7 @@ const Project = styled.div`
         padding: 1rem;
         margin: 1rem 0;
         font-size: 1.2rem;
-        border-radius: 2rem;
+        border-radius: 0.2rem;
       }
     }
 

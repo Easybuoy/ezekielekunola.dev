@@ -8,7 +8,7 @@ import { Button } from "../../styles/common"
 const Project = ({ project }) => {
   const { id, title, description, slug, technologies } = project
   const imageData = project.image.childImageSharp.fluid
-  console.log(project)
+  console.log(technologies)
   return (
     <StyledProject>
       <div className="project-image">
@@ -21,9 +21,9 @@ const Project = ({ project }) => {
         <h3>{title}</h3>
 
         <div className="project-technologies">
-          <span>React</span>
-          <span>Redux</span>
-          <span>Styled-components</span>
+          {technologies.map(technology => (
+            <span>{technology}</span>
+          ))}
         </div>
 
         <Link to={`/${slug}`}>
