@@ -212,7 +212,7 @@ const Project = styled.div`
     border-bottom-right-radius: 1rem; */
     background-color: #fbfbf2;
     text-align: center;
-    margin-top: 1rem;
+
     padding-bottom: 1rem;
 
     .project-technologies {
