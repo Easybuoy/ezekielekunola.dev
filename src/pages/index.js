@@ -21,8 +21,8 @@ const IndexPage = () => (
       <Navigation />
       <Header />
       {/* <ProjectsList /> */}
-      <BlogsList />
-      {/* <SkillsList /> */}
+      {/* <BlogsList /> */}
+      <SkillsList />
       {/* <Contact /> */}
       <Footer />
     </Particle>

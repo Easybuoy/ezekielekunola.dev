@@ -37,7 +37,7 @@ export default function Header() {
           </a>
         </div>
         <div className="header-text">
-          <h1>Hi, I'm Ezekiel</h1>
+          <h1>Hello <span>👋🏾</span>, I'm Ezekiel</h1>
           <Typist
             cursor={{
               show: true,
