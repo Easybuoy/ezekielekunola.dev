@@ -74,6 +74,7 @@ const Header = styled.header`
 
       h1 {
         margin: 1rem 0;
+        font-family: "Concert One", cursive;
 
         @media (max-width: 350px) {
           padding: 0 1rem;
@@ -270,9 +271,9 @@ const BlogsList = styled.section`
   flex-wrap: wrap;
   padding: 5rem 0;
   justify-content: center;
-  background-color: #170A1C;
+  background-color: #170a1c;
   color: white;
-  
+
   .blog-header {
     text-align: center;
     width: 100%;
@@ -283,14 +284,18 @@ const Blog = styled.div`
   width: 20%;
   margin: 1rem auto;
   padding: 2rem;
-  margin: 2rem;
- 
+  margin: 0 auto;
+
   transition: all 0.5s ease-in-out;
   border: none;
 
   &:hover {
     background-color: #754ef9;
     transform: scale(1.01);
+
+    @media (max-width: 570px) {
+      transform: scale(1);
+    }
 
     .blog-content {
       background-color: #754ef9;
@@ -301,6 +306,22 @@ const Blog = styled.div`
         color: white;
       }
     }
+  }
+
+  @media (max-width: 950px) {
+    width: 30%;
+  }
+
+  @media (max-width: 770px) {
+    width: 40%;
+  }
+
+  @media (max-width: 570px) {
+    width: 45%;
+  }
+
+  @media (max-width: 500px) {
+    width: 100%;
   }
 
   .blog-content {
