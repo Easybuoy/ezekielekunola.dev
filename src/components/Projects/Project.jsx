@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import Image from "gatsby-image"
 
 import { Project as StyledProject } from "../../styles"
+import { Button} from '../../styles/common'
 
 const Project = ({ slug, title, imageData, description }) => {
   return (
@@ -23,7 +24,7 @@ const Project = ({ slug, title, imageData, description }) => {
         </div>
 
         <Link to={`/${slug}`}>
-          <p>View Project Detail &rarr;</p>
+          <Button>View Project Detail &rarr;</Button>
         </Link>
       </div>
     </StyledProject>

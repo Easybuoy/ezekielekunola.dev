@@ -160,11 +160,23 @@ const Project = styled.div`
   margin: 1rem auto;
   color: white;
   /* padding: 0 0.5rem; */
-  /* -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.75); */
+ 
   box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
   /* border-radius: 1rem; */
+
+  @media (max-width: 950px) {
+    width: 30%;
+  }
+
+  @media (max-width: 750px) {
+    width: 45%;
+  }
+
+  @media (max-width: 550px) {
+    width: 100%;
+    margin: 1rem;
+  }
+
   a {
     /* text-decoration: none; */
   }
