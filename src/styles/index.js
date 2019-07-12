@@ -159,7 +159,6 @@ const ProjectsList = styled.div`
   background-size: cover;
   background-position: center;
 
-
   clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 100%);
   /* clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 100%); */
   /* background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8)), url('../images/projects.svg'); */
@@ -212,7 +211,7 @@ const Project = styled.div`
     border-bottom-right-radius: 1rem; */
     background-color: #fbfbf2;
     text-align: center;
-    margin-top: 1rem;
+
     padding-bottom: 1rem;
 
     .project-technologies {
@@ -267,12 +266,13 @@ const Skill = styled.div`
 const BlogsList = styled.section`
   width: 100%;
   /* min-height: 100vh; */
-  background-color: gray;
   display: flex;
   flex-wrap: wrap;
   padding: 5rem 0;
   justify-content: center;
-
+  background-color: #170A1C;
+  color: white;
+  
   .blog-header {
     text-align: center;
     width: 100%;
@@ -282,15 +282,42 @@ const BlogsList = styled.section`
 const Blog = styled.div`
   width: 20%;
   margin: 1rem auto;
-  padding: 0 0.5rem;
-  border: 2px solid blue;
+  padding: 2rem;
   margin: 2rem;
-  background-color: yellow;
+ 
+  transition: all 0.5s ease-in-out;
+  border: none;
+
+  &:hover {
+    background-color: #754ef9;
+    transform: scale(1.01);
+
+    .blog-content {
+      background-color: #754ef9;
+      border: 2px solid white;
+      color: white;
+
+      p {
+        color: white;
+      }
+    }
+  }
 
   .blog-content {
     border: 1px solid black;
     margin: 2rem 0;
-    padding: 1rem;
+    padding: 2rem;
+    background-color: white;
+    color: black;
+
+    h3 {
+      padding-bottom: 1rem;
+    }
+
+    p {
+      padding: 0.5rem 0;
+      color: #8c8c8c;
+    }
   }
 `
 
@@ -300,7 +327,7 @@ const Contact = styled.section`
 `
 
 const Footer = styled.footer`
-  background-color: #d10000;
+  background-color: #754ef9;
   padding: 2rem 0;
   text-align: center;
   color: white;

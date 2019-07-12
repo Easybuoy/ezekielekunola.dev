@@ -14,6 +14,7 @@ const BlogsList = () => {
             title
             publisher
             blogLink
+            created
           }
         }
       }
@@ -25,7 +26,7 @@ const BlogsList = () => {
   return (
     <StyledBlogsList>
       <div className="blog-header">
-        <h2>Blog</h2>
+        <h2>Blog Posts</h2>
       </div>
       {blogs.map(({ node: blog }) => {
         return <Blog key={blog.id} blog={blog} />
