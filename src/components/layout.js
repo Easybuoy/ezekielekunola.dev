@@ -27,6 +27,10 @@ const Layout = ({ children }) => {
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
           rel="stylesheet"
         />
+        <link
+          href="https://fonts.googleapis.com/css?family=Concert+One&display=swap"
+          rel="stylesheet"
+        />
       </Helmet>
 
       <main>{children}</main>

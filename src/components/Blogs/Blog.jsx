@@ -2,7 +2,6 @@ import React from "react"
 
 import { Blog as SyledBlog } from "../../styles"
 const Blog = ({ blog }) => {
-  console.log(blog)
   const { title, publisher, blogLink, created } = blog
 
   return (

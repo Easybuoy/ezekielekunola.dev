@@ -2,11 +2,11 @@ import styled from "styled-components"
 
 const Navigation = styled.nav`
   color: white;
-  /* background-color: #000b0f; */
   opacity: 1;
   border-bottom: 0.1px solid #8c8c8c;
   margin: 0;
   padding: 1rem 0;
+
   img {
     width: 100px;
     height: auto;
@@ -41,7 +41,6 @@ const Header = styled.header`
     .contact-details {
       margin: 0 auto;
       a {
-        /* text-decoration: none; */
         color: white;
         padding: 0 1rem;
 
@@ -74,6 +73,7 @@ const Header = styled.header`
 
       h1 {
         margin: 1rem 0;
+        font-family: "Concert One", cursive;
 
         @media (max-width: 350px) {
           padding: 0 1rem;
@@ -88,10 +88,6 @@ const Header = styled.header`
         }
         .Cursor {
           padding: 0 0.1rem;
-
-          .Cursor--blinking {
-            /* font-size: 4rem; */
-          }
         }
       }
       .header-actions {
@@ -114,11 +110,6 @@ const Header = styled.header`
       width: 100%;
     }
 
-    /* @media (max-width: 300px) {
-        margin: 2rem 0;
-        padding: 2rem 0;
-      } */
-
     img {
       width: 70%;
       background-color: white;
@@ -129,7 +120,6 @@ const Header = styled.header`
         border-radius: 50%;
         width: 300px;
         height: 300px;
-        /* margin-top: 2rem */
       }
 
       @media (max-width: 400px) {
@@ -146,22 +136,22 @@ const Header = styled.header`
 `
 
 const ProjectsList = styled.div`
-  /* width: 100%;
-  min-height: 100vh; */
-  /* background-color: #00A7E1; */
   background-color: white;
   display: flex;
   flex-wrap: wrap;
   padding-top: 10rem;
+  padding-bottom: 2rem;
   width: 100%;
   background-repeat: no-repeat;
   min-height: 100vh;
   background-size: cover;
   background-position: center;
-
   clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 100%);
-  /* clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 100%); */
-  /* background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8)), url('../images/projects.svg'); */
+
+  @media (max-width: 550px) {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    padding-top: 1rem;
+  }
 
   h3 {
     margin-bottom: 5rem;
@@ -174,10 +164,7 @@ const Project = styled.div`
   width: 23%;
   margin: 1rem auto;
   color: white;
-  /* padding: 0 0.5rem; */
-
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  /* border-radius: 1rem; */
 
   @media (max-width: 950px) {
     width: 30%;
@@ -192,23 +179,14 @@ const Project = styled.div`
     margin: 1rem;
   }
 
-  a {
-    /* text-decoration: none; */
-  }
   .project-image {
-    /* border-top-right-radius: 2rem;
-    border-top-left-radius: 2rem; */
     img {
       height: 100px;
       width: 100%;
-      /* border-top-right-radius: 1rem;
-      border-top-left-radius: 1rem; */
     }
   }
 
   .project-body {
-    /* border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem; */
     background-color: #fbfbf2;
     text-align: center;
 
@@ -221,7 +199,7 @@ const Project = styled.div`
       width: 100%;
 
       span {
-        background-color: #d10000;
+        background-color: #754ef9;
         padding: 1rem;
         margin: 1rem 0;
         font-size: 1.2rem;
@@ -230,31 +208,44 @@ const Project = styled.div`
     }
 
     h3 {
-      color: #d10000;
+      color: #754ef9;
       padding: 1rem 0;
+      margin: 0;
     }
   }
 `
 
 const SkillsList = styled.section`
   width: 100%;
-  /* min-height: 100vh; */
-  background-color: brown;
   display: flex;
   flex-wrap: wrap;
   padding: 5rem 0;
   justify-content: center;
+  color: white;
+  h2 {
+    text-align: center;
+    width: 100%;
+  }
 `
 
 const Skill = styled.div`
   width: 10%;
   margin: 1rem auto;
   padding: 0 0.5rem;
-  border: 2px solid blue;
   margin: 2rem;
+
+  @media (max-width: 700px) {
+    width: 15%;
+  }
+
+  @media (max-width: 570px) {
+    width: 20%;
+  }
+
   .skill {
     width: 100%;
     text-align: center;
+    color: white;
 
     img {
       height: 100px;
@@ -265,14 +256,13 @@ const Skill = styled.div`
 
 const BlogsList = styled.section`
   width: 100%;
-  /* min-height: 100vh; */
   display: flex;
   flex-wrap: wrap;
   padding: 5rem 0;
   justify-content: center;
-  background-color: #170A1C;
+  background-color: #170a1c;
   color: white;
-  
+
   .blog-header {
     text-align: center;
     width: 100%;
@@ -283,14 +273,24 @@ const Blog = styled.div`
   width: 20%;
   margin: 1rem auto;
   padding: 2rem;
-  margin: 2rem;
- 
+  margin: 0 auto;
+
   transition: all 0.5s ease-in-out;
   border: none;
 
   &:hover {
     background-color: #754ef9;
     transform: scale(1.01);
+
+    @media (max-width: 570px) {
+      transform: scale(1);
+      background-color: inherit;
+
+      .blog-content {
+        background-color: inherit;
+        color: inherit;
+      }
+    }
 
     .blog-content {
       background-color: #754ef9;
@@ -301,6 +301,22 @@ const Blog = styled.div`
         color: white;
       }
     }
+  }
+
+  @media (max-width: 950px) {
+    width: 30%;
+  }
+
+  @media (max-width: 770px) {
+    width: 40%;
+  }
+
+  @media (max-width: 570px) {
+    width: 45%;
+  }
+
+  @media (max-width: 550px) {
+    width: 100%;
   }
 
   .blog-content {
