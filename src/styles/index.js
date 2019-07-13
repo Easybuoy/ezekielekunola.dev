@@ -140,6 +140,7 @@ const ProjectsList = styled.div`
   display: flex;
   flex-wrap: wrap;
   padding-top: 10rem;
+  padding-bottom: 2rem;
   width: 100%;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -233,9 +234,14 @@ const Skill = styled.div`
   padding: 0 0.5rem;
   margin: 2rem;
 
-  @media (max-width: 570px) {
+  @media (max-width: 700px) {
     width: 15%;
   }
+
+  @media (max-width: 570px) {
+    width: 20%;
+  }
+
   .skill {
     width: 100%;
     text-align: center;
@@ -278,6 +284,12 @@ const Blog = styled.div`
 
     @media (max-width: 570px) {
       transform: scale(1);
+      background-color: inherit;
+
+      .blog-content {
+        background-color: inherit;
+        color: inherit;
+      }
     }
 
     .blog-content {
