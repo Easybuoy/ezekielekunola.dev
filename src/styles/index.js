@@ -233,7 +233,9 @@ const Skill = styled.div`
   margin: 1rem auto;
   padding: 0 0.5rem;
   margin: 2rem;
-
+  display: flex;
+  align-items: center;
+  
   @media (max-width: 700px) {
     width: 15%;
   }
@@ -248,7 +250,7 @@ const Skill = styled.div`
     color: white;
 
     img {
-      height: 100px;
+      /* height: 150px; */
       width: 100%;
     }
   }
@@ -266,6 +268,7 @@ const BlogsList = styled.section`
   .blog-header {
     text-align: center;
     width: 100%;
+    padding-bottom: 2rem;
   }
 `
 
@@ -275,7 +278,7 @@ const Blog = styled.div`
   padding: 2rem;
   margin: 0 auto;
 
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
   border: none;
 
   &:hover {
@@ -338,8 +341,18 @@ const Blog = styled.div`
 `
 
 const Contact = styled.section`
-  text-align: center;
   background-color: indigo;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem 0;
+
+  h3 {
+    width: 100%;
+    text-align: center;
+    color: white;
+  }
 `
 
 const Footer = styled.footer`
