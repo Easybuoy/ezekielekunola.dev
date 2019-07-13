@@ -7,7 +7,8 @@ export default function Contact() {
   return (
     <StyledContact>
       <h3>Contact Me</h3>
-      <Form>
+      {/* action="https://formspree.io/ekunolaeasybuoy@gmail.com" method="POST" */}
+      <Form >
         <label for="name">Your Name</label>
         <Input type="text" id="name" placeholder="Your Name" required />
 
@@ -18,7 +19,7 @@ export default function Contact() {
         <Input type="text" id="to" readOnly value="Ezekiel Ekunola" disabled /> */}
 
         <label for="message">Message</label>
-        <TextArea id="message" placeholder="Your message" />
+        <TextArea id="message" placeholder="Your message" required/>
         <Button>Send</Button>
       </Form>
     </StyledContact>

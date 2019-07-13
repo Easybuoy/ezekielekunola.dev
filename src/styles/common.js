@@ -31,13 +31,15 @@ const TextArea = styled.textarea`
   min-height: 100px;
   font-size: 1.5rem;
   padding: 1rem;
+  border: none;
+  outline: none;
+  margin: 1rem 0;
 `
 
 const Form = styled.form`
   padding: 2rem;
   color: white;
   font-size: 2rem;
-  border: 1px solid red;
 
   button {
     margin: 1rem auto;
