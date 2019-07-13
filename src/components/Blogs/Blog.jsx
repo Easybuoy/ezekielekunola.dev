@@ -6,7 +6,7 @@ const Blog = ({ blog }) => {
 
   return (
     <SyledBlog>
-      <a target="_blank" href={blogLink}>
+      <a target="_blank" without rel="noopener noreferrer" href={blogLink}>
         <div className="blog-content">
           <h3>{title}</h3>
           <p>{created}</p>

@@ -9,16 +9,13 @@ export default function Contact() {
       <h3>Contact Me</h3>
       {/* action="https://formspree.io/ekunolaeasybuoy@gmail.com" method="POST" */}
       <Form >
-        <label for="name">Your Name</label>
+        <label htmlFor="name">Your Name</label>
         <Input type="text" id="name" placeholder="Your Name" required />
 
-        <label for="email">Your Email</label>
+        <label htmlFor="email">Your Email</label>
         <Input type="email" id="email" placeholder="Your Email" required />
-        {/* 
-        <label for="to">To</label>
-        <Input type="text" id="to" readOnly value="Ezekiel Ekunola" disabled /> */}
 
-        <label for="message">Message</label>
+        <label htmlFor="message">Message</label>
         <TextArea id="message" placeholder="Your message" required/>
         <Button>Send</Button>
       </Form>

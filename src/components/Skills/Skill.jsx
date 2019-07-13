@@ -3,8 +3,7 @@ import React from "react"
 import { Skill as StyledSkill } from "../../styles"
 
 export default function Skill({ skill }) {
-  const { title, icon, iconUrl } = skill
-  console.log(skill)
+  const { title, iconUrl } = skill
   return (
     <StyledSkill>
       <div className="skill">
