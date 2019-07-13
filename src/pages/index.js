@@ -8,7 +8,7 @@ import ProjectsList from "../components/Projects/ProjectsList"
 
 import Header from "../components/Common/Header"
 import Footer from "../components/Common/Footer"
-// import Contact from "../components/Contact/Contact"
+import Contact from "../components/Contact/Contact"
 import SkillsList from "../components/Skills/SkillsList"
 import BlogsList from "../components/Blogs/BlogsList"
 import Particle from "../components/Particle/Particle"
@@ -23,7 +23,7 @@ const IndexPage = () => (
       <ProjectsList />
       <BlogsList />
       <SkillsList />
-      {/* <Contact /> */}
+      <Contact />
       <Footer />
     </Particle>
   </Layout>

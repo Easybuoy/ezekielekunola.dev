@@ -338,8 +338,18 @@ const Blog = styled.div`
 `
 
 const Contact = styled.section`
-  text-align: center;
   background-color: indigo;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem 0;
+
+  h3 {
+    width: 100%;
+    text-align: center;
+    color: white;
+  }
 `
 
 const Footer = styled.footer`
