@@ -1,20 +1,34 @@
 import React from "react"
-import { Link } from "gatsby"
 
+import "../styles/reset.css"
+import "../styles/global.css"
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import ProjectsList from "../components/Projects/ProjectsList"
+
+import Header from "../components/Common/Header"
+import Footer from "../components/Common/Footer"
+import Contact from "../components/Contact/Contact"
+import SkillsList from "../components/Skills/SkillsList"
+import BlogsList from "../components/Blogs/BlogsList"
+import Particle from "../components/Particle/Particle"
+import Navigation from "../components/Common/Navigation"
+// import About from "../components/Common/About"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <Particle>
+      <SEO title="Home" />
+      <Navigation />
+      <Header />
+
+      {/* <About /> */}
+      <ProjectsList />
+      <BlogsList />
+      <SkillsList />
+      <Contact />
+      <Footer />
+    </Particle>
   </Layout>
 )
 
