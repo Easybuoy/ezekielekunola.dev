@@ -374,6 +374,10 @@ const Particle = styled.div`
   }
 `
 
+const About = styled.section`
+
+`
+
 export {
   Navigation,
   ProjectsList,
@@ -386,4 +390,5 @@ export {
   Contact,
   Footer,
   Particle,
+  About
 }

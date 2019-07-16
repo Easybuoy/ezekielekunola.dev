@@ -3,9 +3,9 @@ import Typist from "react-typist"
 import "react-typist/dist/Typist.css"
 
 import { Header as StyledHeader } from "../../styles"
-import { Button } from "../../styles/common"
+// import { Button } from "../../styles/common"
 import Image from "../../images/profile.png"
-import Resume from "../../assets/resume.pdf"
+// import Resume from "../../assets/resume.pdf"
 
 export default function Header() {
   return (

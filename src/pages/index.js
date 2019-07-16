@@ -13,7 +13,7 @@ import SkillsList from "../components/Skills/SkillsList"
 import BlogsList from "../components/Blogs/BlogsList"
 import Particle from "../components/Particle/Particle"
 import Navigation from "../components/Common/Navigation"
-import About from "../components/Common/About"
+// import About from "../components/Common/About"
 
 const IndexPage = () => (
   <Layout>
