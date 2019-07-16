@@ -1,6 +1,13 @@
 [
   {
     "id": "1",
+    "title": "Deploying Node App to Heroku",
+    "publisher": "Ezekiel",
+    "blogLink": "https://dev.to/easybuoy/deploying-node-app-to-heroku-286n",
+    "created": "16 July 2019"
+  },
+  {
+    "id": "2",
     "title": "Deploying React App from Github to Netlify",
     "publisher": "Ezekiel",
     "blogLink": "https://dev.to/easybuoy/deploying-react-app-from-github-to-netlify-3a9j",
