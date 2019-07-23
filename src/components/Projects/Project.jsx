@@ -13,22 +13,22 @@ const Project = ({ project }) => {
     <StyledProject>
       <div className="project-image">
         <Link to={`/${slug}`}>
-          <Image fluid={imageData} alt={title} />
+          <Image fluid={imageData} alt={title} style={{height: '200px'}} />
         </Link>
       </div>
 
       <div className="project-body">
         <h3>{title}</h3>
 
-        <div className="project-technologies">
+        {/* <div className="project-technologies">
           {technologies.map(technology => (
             <span key={technology}>{technology}</span>
           ))}
-        </div>
+        </div> */}
 
-        <Link to={`/${slug}`}>
+        {/* <Link to={`/${slug}`}>
           <Button>View Project Detail &rarr;</Button>
-        </Link>
+        </Link> */}
       </div>
     </StyledProject>
   )

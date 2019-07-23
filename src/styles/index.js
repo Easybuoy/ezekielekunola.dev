@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const Navigation = styled.nav`
-  color: white;
+  background-color: #031a6b;
   opacity: 1;
   border-bottom: 0.1px solid #8c8c8c;
   margin: 0;
@@ -18,118 +18,182 @@ const Navigation = styled.nav`
 const Header = styled.header`
   display: flex;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   justify-content: space-around;
   padding: 2rem 0;
 
-  @media (max-width: 800px) {
-    flex-direction: column-reverse;
-    justify-content: space-evenly;
-  }
-
-  .header-content {
-    width: 50%;
-    justify-content: center;
+  .content {
     display: flex;
-    flex-direction: column;
+    align-items: center;
     text-align: center;
+    box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.2),
+      0 -1px 5px 0 rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    justify-content: center;
+    width: 100%;
 
-    @media (max-width: 800px) {
-      width: 100%;
-    }
+    border-radius: 10px;
 
-    .contact-details {
-      margin: 0 auto;
-      a {
-        color: white;
-        padding: 0 1rem;
+    .header-content {
+      width: 50%;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
 
-        i {
-          @media (max-width: 800px) {
-            margin: 1rem 0;
+      @media (max-width: 800px) {
+        width: 100%;
+      }
+
+      .contact-details {
+        margin: 0 auto;
+
+        a {
+          padding: 0 1rem;
+          color: #031a6b;
+
+          i {
+            transition: all 0.3s ease-in-out;
+
+            @media (max-width: 800px) {
+              margin: 1rem 0;
+              font-size: 4.5rem;
+            }
+
+            @media (max-width: 500px) {
+              font-size: 4rem;
+            }
+
+            @media (max-width: 365px) {
+              font-size: 3.5rem;
+            }
+            &:hover {
+              transform: scale(1.1);
+              color: black;
+            }
           }
+        }
+      }
+
+      .header-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        margin-top: 3rem;
+
+        h1 {
+          margin: 1rem 0;
+          font-family: "Concert One", cursive;
 
           @media (max-width: 500px) {
-            font-size: 4rem;
+            padding: 0 1rem;
+            font-size: 4.5rem;
           }
 
           @media (max-width: 350px) {
-            font-size: 3rem;
+            padding: 0 1rem;
+            font-size: 4rem;
           }
         }
 
-        @media (max-width: 800px) {
-          padding: 0 2rem;
+        .Typist {
+          font-size: 3rem;
+          @media (max-width: 350px) {
+            font-size: 2rem;
+          }
+          .Cursor {
+            padding: 0 0.1rem;
+          }
         }
-      }
-    }
-
-    .header-text {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      color: white;
-      margin-top: 3rem;
-
-      h1 {
-        margin: 1rem 0;
-        font-family: "Concert One", cursive;
-
-        @media (max-width: 350px) {
-          padding: 0 1rem;
-          font-size: 4rem;
-        }
-      }
-
-      .Typist {
-        font-size: 3rem;
-        @media (max-width: 350px) {
-          font-size: 2rem;
-        }
-        .Cursor {
-          padding: 0 0.1rem;
-        }
-      }
-      .header-actions {
-        display: flex;
-        justify-content: center;
-        margin-top: 2rem;
-        button {
-          margin: 0 1rem;
+        .header-actions {
+          display: flex;
+          justify-content: center;
+          margin-top: 2rem;
+          button {
+            margin: 0 1rem;
+          }
         }
       }
     }
   }
+`
 
-  .header-image {
+const About = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 2rem 0;
+  min-height: 50vh;
+
+  @media (max-width: 750px) {
+    flex-direction: column-reverse;
+  }
+
+  .about-content {
     width: 40%;
     display: flex;
+    flex-wrap: wrap;
+
+    @media (max-width: 750px) {
+      width: 90%;
+    }
+
+    h3 {
+      font-family: "Concert One", cursive;
+      padding: 2rem 0;
+
+      @media (max-width: 750px) {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    p {
+      line-height: 3rem;
+      color: #b2b2b2;
+      font-size: 2rem;
+    }
+  }
+  .about-image {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
 
-    @media (max-width: 800px) {
-      width: 100%;
+    @media (max-width: 750px) {
+      width: 90%;
     }
 
     img {
-      width: 70%;
+      -webkit-box-shadow: 10px 10px 2px 2px rgba(3, 26, 107, 1);
+      -moz-box-shadow: 10px 10px 2px 2px rgba(3, 26, 107, 1);
+      box-shadow: 10px 10px 2px 2px rgba(3, 26, 107, 1);
+      width: 400px;
       background-color: white;
-      padding: 0.5rem;
-      margin: 0 auto;
 
-      @media (max-width: 800px) {
+      margin: 0 auto;
+      border-radius: 10px;
+      height: 400px;
+
+      @media (max-width: 910px) {
+        width: 100%;
+      }
+
+      @media (max-width: 750px) {
         border-radius: 50%;
         width: 300px;
         height: 300px;
+        -webkit-box-shadow: 0px 0px 5px 3px rgba(3, 26, 107, 1);
+        -moz-box-shadow: 0px 0px 5px 3px rgba(3, 26, 107, 1);
+        box-shadow: 0px 0px 5px 3px rgba(3, 26, 107, 1);
       }
 
       @media (max-width: 400px) {
-        width: 200px;
-        height: 200px;
-      }
-
-      @media (max-width: 350px) {
-        width: 150px;
-        height: 150px;
+        width: 250px;
+        height: 250px;
       }
     }
   }
@@ -235,7 +299,7 @@ const Skill = styled.div`
   margin: 2rem;
   display: flex;
   align-items: center;
-  
+
   @media (max-width: 700px) {
     width: 15%;
   }
@@ -356,7 +420,7 @@ const Contact = styled.section`
 `
 
 const Footer = styled.footer`
-  background-color: #754ef9;
+  background-color: #031a6b;
   padding: 2rem 0;
   text-align: center;
   color: white;
@@ -374,10 +438,6 @@ const Particle = styled.div`
   }
 `
 
-const About = styled.section`
-
-`
-
 export {
   Navigation,
   ProjectsList,
@@ -390,5 +450,5 @@ export {
   Contact,
   Footer,
   Particle,
-  About
+  About,
 }
