@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const Navigation = styled.nav`
-  background-color: #031A6B;
+  background-color: #031a6b;
   opacity: 1;
   border-bottom: 0.1px solid #8c8c8c;
   margin: 0;
@@ -34,10 +34,7 @@ const Header = styled.header`
     /* background-color: white; */
     border-radius: 10px;
 
-    /* @media (max-width: 800px) {
-    flex-direction: column-reverse;
-    justify-content: space-evenly;
-  } */
+  
 
     .header-content {
       width: 50%;
@@ -46,27 +43,37 @@ const Header = styled.header`
       flex-direction: column;
       text-align: center;
 
-      /* @media (max-width: 800px) {
+      @media (max-width: 800px) {
       width: 100%;
-    } */
+    }
 
       .contact-details {
         margin: 0 auto;
+
         a {
           padding: 0 1rem;
-          color: black;
+          color: #031a6b;
+
           i {
-            /* @media (max-width: 800px) {
+            transition: all 0.3s ease-in-out;
+
+            @media (max-width: 800px) {
             margin: 1rem 0;
-          } */
+            font-size: 4.5rem;
 
-            /* @media (max-width: 500px) {
+          }
+
+            @media (max-width: 500px) {
             font-size: 4rem;
-          } */
+          }
 
-            /* @media (max-width: 350px) {
-            font-size: 3rem;
-          } */
+            @media (max-width: 365px) {
+            font-size: 3.5rem;
+          }
+            &:hover {
+              transform: scale(1.1);
+              color: black;
+            }
           }
 
           /* @media (max-width: 800px) {
@@ -86,17 +93,22 @@ const Header = styled.header`
           margin: 1rem 0;
           font-family: "Concert One", cursive;
 
-          /* @media (max-width: 350px) {
+          @media (max-width: 500px) {
+          padding: 0 1rem;
+          font-size: 4.5rem;
+        }
+
+          @media (max-width: 350px) {
           padding: 0 1rem;
           font-size: 4rem;
-        } */
+        }
         }
 
         .Typist {
           font-size: 3rem;
-          /* @media (max-width: 350px) {
+          @media (max-width: 350px) {
           font-size: 2rem;
-        } */
+        }
           .Cursor {
             padding: 0 0.1rem;
           }
@@ -369,7 +381,7 @@ const Contact = styled.section`
 `
 
 const Footer = styled.footer`
-  background-color: #031A6B;
+  background-color: #031a6b;
   padding: 2rem 0;
   text-align: center;
   color: white;

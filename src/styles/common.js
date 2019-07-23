@@ -52,14 +52,18 @@ const Form = styled.form`
 const DownArrow = styled.div`
   .downArrow {
     position: absolute;
-    bottom: 5%;
+    bottom: 0%;
     left: 50%;
     cursor: pointer;
+
+    /* @media (max-width: 800px) {
+      bottom: 0%;
+    } */
   }
   .bounce {
-    -moz-animation: bounce 3s infinite;
-    -webkit-animation: bounce 3s infinite;
-    animation: bounce 3s infinite;
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
   }
   @-moz-keyframes bounce {
     0%,
