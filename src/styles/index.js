@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const Navigation = styled.nav`
-  /* color: white; */
+  background-color: #031A6B;
   opacity: 1;
   border-bottom: 0.1px solid #8c8c8c;
   margin: 0;
@@ -369,7 +369,7 @@ const Contact = styled.section`
 `
 
 const Footer = styled.footer`
-  background-color: #754ef9;
+  background-color: #031A6B;
   padding: 2rem 0;
   text-align: center;
   color: white;
