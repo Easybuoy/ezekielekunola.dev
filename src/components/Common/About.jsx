@@ -7,6 +7,7 @@ export default function About() {
   return (
     <StyledAbout>
       <div className="about-content">
+          <h3>About Me</h3>
         <p>
           Experienced Web Developer with a demonstrated history of working in
           the information technology and services industry. Skilled in NODE,

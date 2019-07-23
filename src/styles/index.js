@@ -126,8 +126,21 @@ const About = styled.div`
   justify-content: space-around;
   align-items: center;
   margin: 2rem 0;
+  min-height: 50vh;
+
   .about-content {
     width: 40%;
+    
+    h3 {
+      font-family: "Concert One", cursive;
+      padding: 2rem 0;
+    }
+
+    p {
+      line-height: 3rem;
+      color: #b2b2b2;
+      font-size: 2rem;
+    }
   }
   .about-image {
     width: 40%;
