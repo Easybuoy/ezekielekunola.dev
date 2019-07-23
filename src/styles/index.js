@@ -31,10 +31,8 @@ const Header = styled.header`
     margin: 1rem;
     justify-content: center;
     width: 100%;
-    /* background-color: white; */
-    border-radius: 10px;
 
-  
+    border-radius: 10px;
 
     .header-content {
       width: 50%;
@@ -44,8 +42,8 @@ const Header = styled.header`
       text-align: center;
 
       @media (max-width: 800px) {
-      width: 100%;
-    }
+        width: 100%;
+      }
 
       .contact-details {
         margin: 0 auto;
@@ -58,27 +56,22 @@ const Header = styled.header`
             transition: all 0.3s ease-in-out;
 
             @media (max-width: 800px) {
-            margin: 1rem 0;
-            font-size: 4.5rem;
-
-          }
+              margin: 1rem 0;
+              font-size: 4.5rem;
+            }
 
             @media (max-width: 500px) {
-            font-size: 4rem;
-          }
+              font-size: 4rem;
+            }
 
             @media (max-width: 365px) {
-            font-size: 3.5rem;
-          }
+              font-size: 3.5rem;
+            }
             &:hover {
               transform: scale(1.1);
               color: black;
             }
           }
-
-          /* @media (max-width: 800px) {
-          padding: 0 2rem;
-        } */
         }
       }
 
@@ -94,21 +87,21 @@ const Header = styled.header`
           font-family: "Concert One", cursive;
 
           @media (max-width: 500px) {
-          padding: 0 1rem;
-          font-size: 4.5rem;
-        }
+            padding: 0 1rem;
+            font-size: 4.5rem;
+          }
 
           @media (max-width: 350px) {
-          padding: 0 1rem;
-          font-size: 4rem;
-        }
+            padding: 0 1rem;
+            font-size: 4rem;
+          }
         }
 
         .Typist {
           font-size: 3rem;
           @media (max-width: 350px) {
-          font-size: 2rem;
-        }
+            font-size: 2rem;
+          }
           .Cursor {
             padding: 0 0.1rem;
           }

@@ -55,10 +55,6 @@ const DownArrow = styled.div`
     bottom: 0%;
     left: 50%;
     cursor: pointer;
-
-    /* @media (max-width: 800px) {
-      bottom: 0%;
-    } */
   }
   .bounce {
     -moz-animation: bounce 2s infinite;
