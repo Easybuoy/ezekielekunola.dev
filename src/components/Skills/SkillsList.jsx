@@ -23,7 +23,7 @@ const SkillsList = () => {
   const skills = data.allSkillsJson.edges
   return (
     <StyledSkillsList>
-      <h2>Skills</h2>
+      <h2>Tools/Technologies</h2>
 
       {skills.map(({ node: skill }) => {
         return <Skill key={skill.id} skill={skill} />

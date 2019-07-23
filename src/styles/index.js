@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const Navigation = styled.nav`
-  color: white;
+  /* color: white; */
   opacity: 1;
   border-bottom: 0.1px solid #8c8c8c;
   margin: 0;
@@ -18,118 +18,131 @@ const Navigation = styled.nav`
 const Header = styled.header`
   display: flex;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   justify-content: space-around;
   padding: 2rem 0;
 
-  @media (max-width: 800px) {
-    flex-direction: column-reverse;
-    justify-content: space-evenly;
-  }
-
-  .header-content {
-    width: 50%;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-
-    @media (max-width: 800px) {
-      width: 100%;
-    }
-
-    .contact-details {
-      margin: 0 auto;
-      a {
-        color: white;
-        padding: 0 1rem;
-
-        i {
-          @media (max-width: 800px) {
-            margin: 1rem 0;
-          }
-
-          @media (max-width: 500px) {
-            font-size: 4rem;
-          }
-
-          @media (max-width: 350px) {
-            font-size: 3rem;
-          }
-        }
-
-        @media (max-width: 800px) {
-          padding: 0 2rem;
-        }
-      }
-    }
-
-    .header-text {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      color: white;
-      margin-top: 3rem;
-
-      h1 {
-        margin: 1rem 0;
-        font-family: "Concert One", cursive;
-
-        @media (max-width: 350px) {
-          padding: 0 1rem;
-          font-size: 4rem;
-        }
-      }
-
-      .Typist {
-        font-size: 3rem;
-        @media (max-width: 350px) {
-          font-size: 2rem;
-        }
-        .Cursor {
-          padding: 0 0.1rem;
-        }
-      }
-      .header-actions {
-        display: flex;
-        justify-content: center;
-        margin-top: 2rem;
-        button {
-          margin: 0 1rem;
-        }
-      }
-    }
-  }
-
-  .header-image {
-    width: 40%;
+  .content {
     display: flex;
     align-items: center;
+    text-align: center;
+    box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.2),
+      0 -1px 5px 0 rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    justify-content: center;
+    width: 100%;
+    /* background-color: white; */
+    border-radius: 10px;
 
-    @media (max-width: 800px) {
+    /* @media (max-width: 800px) {
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+  } */
+
+    .header-content {
+      width: 50%;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      /* @media (max-width: 800px) {
       width: 100%;
+    } */
+
+      .contact-details {
+        margin: 0 auto;
+        a {
+          padding: 0 1rem;
+          color: black;
+          i {
+            /* @media (max-width: 800px) {
+            margin: 1rem 0;
+          } */
+
+            /* @media (max-width: 500px) {
+            font-size: 4rem;
+          } */
+
+            /* @media (max-width: 350px) {
+            font-size: 3rem;
+          } */
+          }
+
+          /* @media (max-width: 800px) {
+          padding: 0 2rem;
+        } */
+        }
+      }
+
+      .header-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        margin-top: 3rem;
+
+        h1 {
+          margin: 1rem 0;
+          font-family: "Concert One", cursive;
+
+          /* @media (max-width: 350px) {
+          padding: 0 1rem;
+          font-size: 4rem;
+        } */
+        }
+
+        .Typist {
+          font-size: 3rem;
+          /* @media (max-width: 350px) {
+          font-size: 2rem;
+        } */
+          .Cursor {
+            padding: 0 0.1rem;
+          }
+        }
+        .header-actions {
+          display: flex;
+          justify-content: center;
+          margin-top: 2rem;
+          button {
+            margin: 0 1rem;
+          }
+        }
+      }
     }
 
-    img {
-      width: 70%;
-      background-color: white;
-      padding: 0.5rem;
-      margin: 0 auto;
+    .header-image {
+      width: 40%;
+      display: flex;
+      align-items: center;
 
-      @media (max-width: 800px) {
+      /* @media (max-width: 800px) {
+      width: 100%;
+    } */
+
+      img {
+        width: 350px;
+        background-color: white;
+        padding: 0.5rem;
+        margin: 0 auto;
+        border-radius: 50%;
+        height: 350px;
+        /* @media (max-width: 800px) {
         border-radius: 50%;
         width: 300px;
         height: 300px;
-      }
+      } */
 
-      @media (max-width: 400px) {
+        /* @media (max-width: 400px) {
         width: 200px;
         height: 200px;
-      }
+      } */
 
-      @media (max-width: 350px) {
+        /* @media (max-width: 350px) {
         width: 150px;
         height: 150px;
+      } */
       }
     }
   }
@@ -235,7 +248,7 @@ const Skill = styled.div`
   margin: 2rem;
   display: flex;
   align-items: center;
-  
+
   @media (max-width: 700px) {
     width: 15%;
   }

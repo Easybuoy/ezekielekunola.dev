@@ -16,17 +16,16 @@ import Navigation from "../components/Common/Navigation"
 
 const IndexPage = () => (
   <Layout>
-    <Particle>
-      <SEO title="Home" />
-      <Navigation />
-      <Header />
-      <ProjectsList />
-      <BlogsList />
-      <SkillsList />
-      <Contact />
-      <Footer />
-    </Particle>
+    <SEO title="Home" />
+    <Navigation />
+    <Header />
+    {/* <ProjectsList />
+    <BlogsList />
+    <SkillsList />
+    <Contact />
+    <Footer /> */}
   </Layout>
+  // <Header />
 )
 
 export default IndexPage
