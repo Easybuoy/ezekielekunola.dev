@@ -3,10 +3,9 @@ import Typist from "react-typist"
 import "react-typist/dist/Typist.css"
 
 import { Header as StyledHeader } from "../../styles"
-import { Button } from "../../styles/common"
-import Resume from "../../assets/resume.pdf"
 import PatternImage from "../../images/pattern.png"
 import Bounce from "../Common/Bounce"
+
 export default function Header() {
   return (
     <StyledHeader>
@@ -69,13 +68,6 @@ export default function Header() {
               {/* <Typist.Backspace count={16} delay={500} />
               <span>Technical Writer</span> */}
             </Typist>
-
-            {/* <div className="header-actions">
-              <a href={Resume} target="_blank" rel="noopener noreferrer">
-                <Button>View Resume</Button>
-              </a>
-              <Button>My Work</Button>
-            </div> */}
           </div>
         </div>
       </div>

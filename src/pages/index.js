@@ -21,13 +21,13 @@ const IndexPage = () => (
     <Navigation />
     <Header />
     <About />
-    {/* <ProjectsList />
-    <BlogsList />
+    <ProjectsList />
+    {/* <BlogsList />
     <SkillsList />
     <Contact /> */}
     <Footer />
   </Layout>
-  // <Header />
+
 )
 
 export default IndexPage
