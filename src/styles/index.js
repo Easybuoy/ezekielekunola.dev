@@ -116,39 +116,53 @@ const Header = styled.header`
         }
       }
     }
+  }
+`
 
-    .header-image {
-      width: 40%;
-      display: flex;
-      align-items: center;
+const About = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem 0;
+  .about-content {
+    width: 40%;
+  }
+  .about-image {
+    width: 40%;
+    display: flex;
+    align-items: center;
 
-      /* @media (max-width: 800px) {
+    /* @media (max-width: 800px) {
       width: 100%;
     } */
 
-      img {
-        width: 350px;
-        background-color: white;
-        padding: 0.5rem;
-        margin: 0 auto;
-        border-radius: 50%;
-        height: 350px;
-        /* @media (max-width: 800px) {
+    img {
+      -webkit-box-shadow: 10px 10px 2px 2px rgba(3, 26, 107, 1);
+      -moz-box-shadow: 10px 10px 2px 2px rgba(3, 26, 107, 1);
+      box-shadow: 10px 10px 2px 2px rgba(3, 26, 107, 1);
+      width: 350px;
+      background-color: white;
+
+      margin: 0 auto;
+      border-radius: 10px;
+      height: 350px;
+      /* @media (max-width: 800px) {
         border-radius: 50%;
         width: 300px;
         height: 300px;
       } */
 
-        /* @media (max-width: 400px) {
+      /* @media (max-width: 400px) {
         width: 200px;
         height: 200px;
       } */
 
-        /* @media (max-width: 350px) {
+      /* @media (max-width: 350px) {
         width: 150px;
         height: 150px;
       } */
-      }
     }
   }
 `
@@ -404,4 +418,5 @@ export {
   Contact,
   Footer,
   Particle,
+  About,
 }

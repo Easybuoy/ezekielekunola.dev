@@ -4,7 +4,6 @@ import "react-typist/dist/Typist.css"
 
 import { Header as StyledHeader } from "../../styles"
 import { Button } from "../../styles/common"
-import ProfileImage from "../../images/profile.png"
 import Resume from "../../assets/resume.pdf"
 import PatternImage from "../../images/pattern.png"
 import Bounce from "../Common/Bounce"
@@ -79,9 +78,6 @@ export default function Header() {
             </div> */}
           </div>
         </div>
-        {/* <div className="header-image">
-          <img src={ProfileImage} alt="profile" />
-        </div> */}
       </div>
       <Bounce />
     </StyledHeader>
