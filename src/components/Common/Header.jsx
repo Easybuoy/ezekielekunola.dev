@@ -79,7 +79,7 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <Bounce />
+      <Bounce to="about" />
     </StyledHeader>
   )
 }

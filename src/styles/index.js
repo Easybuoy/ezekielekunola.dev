@@ -123,17 +123,32 @@ const About = styled.div`
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   margin: 2rem 0;
   min-height: 50vh;
 
+  @media (max-width: 750px) {
+    flex-direction: column-reverse;
+  }
+
   .about-content {
     width: 40%;
-    
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (max-width: 750px) {
+      width: 90%;
+    }
+
     h3 {
       font-family: "Concert One", cursive;
       padding: 2rem 0;
+
+      @media (max-width: 750px) {
+        width: 100%;
+        text-align: center;
+      }
     }
 
     p {
@@ -145,37 +160,41 @@ const About = styled.div`
   .about-image {
     width: 40%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 
-    /* @media (max-width: 800px) {
-      width: 100%;
-    } */
+    @media (max-width: 750px) {
+      width: 90%;
+    }
 
     img {
       -webkit-box-shadow: 10px 10px 2px 2px rgba(3, 26, 107, 1);
       -moz-box-shadow: 10px 10px 2px 2px rgba(3, 26, 107, 1);
       box-shadow: 10px 10px 2px 2px rgba(3, 26, 107, 1);
-      width: 350px;
+      width: 400px;
       background-color: white;
 
       margin: 0 auto;
       border-radius: 10px;
-      height: 350px;
-      /* @media (max-width: 800px) {
+      height: 400px;
+
+      @media (max-width: 910px) {
+        width: 100%;
+      }
+
+      @media (max-width: 750px) {
         border-radius: 50%;
         width: 300px;
         height: 300px;
-      } */
+        -webkit-box-shadow: 0px 0px 5px 3px rgba(3, 26, 107, 1);
+        -moz-box-shadow: 0px 0px 5px 3px rgba(3, 26, 107, 1);
+        box-shadow: 0px 0px 5px 3px rgba(3, 26, 107, 1);
+      }
 
-      /* @media (max-width: 400px) {
-        width: 200px;
-        height: 200px;
-      } */
-
-      /* @media (max-width: 350px) {
-        width: 150px;
-        height: 150px;
-      } */
+      @media (max-width: 400px) {
+        width: 250px;
+        height: 250px;
+      }
     }
   }
 `

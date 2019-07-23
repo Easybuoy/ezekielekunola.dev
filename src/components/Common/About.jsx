@@ -1,13 +1,13 @@
 import React from "react"
 
 import ProfileImage from "../../images/profile.png"
-import { About as StyledAbout} from '../../styles'
+import { About as StyledAbout } from "../../styles"
 
 export default function About() {
   return (
-    <StyledAbout>
+    <StyledAbout id="about">
       <div className="about-content">
-          <h3>About Me</h3>
+        <h3>About Me</h3>
         <p>
           Experienced Web Developer with a demonstrated history of working in
           the information technology and services industry. Skilled in NODE,
