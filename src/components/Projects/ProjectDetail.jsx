@@ -35,7 +35,7 @@ const ProjectDetail = ({ data }) => {
       </p>
 
       <p>
-        <Link to="/"> &larr; Back to all projects</Link>
+        <Link to="/#projects"> &larr; Back to all projects</Link>
       </p>
     </div>
   )

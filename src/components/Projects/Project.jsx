@@ -8,12 +8,22 @@ import { Button } from "../../styles/common"
 const Project = ({ project }) => {
   const { title, slug, technologies } = project
   const imageData = project.image.childImageSharp.fluid
-
+  console.log(imageData)
   return (
+    // <Link to={`/${slug}`}>
+    //       <Image fluid={imageData} alt={title} style={{height: '200px'}} />
+    //     </Link>
     <StyledProject>
-      <div className="project-image">
+      <div
+        className="project-image"
+        style={{
+          backgroundImage: `url(${imageData.src})`,
+        }}
+      >
         <Link to={`/${slug}`}>
-          <Image fluid={imageData} alt={title} style={{height: '200px'}} />
+          <div className="project-content">
+            {/* <h1>View Meeee</h1> */}
+          </div>
         </Link>
       </div>
 
