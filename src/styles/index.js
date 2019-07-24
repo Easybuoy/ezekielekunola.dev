@@ -221,20 +221,20 @@ const ProjectsList = styled.div`
     margin-bottom: 5rem;
     width: 100%;
     text-align: center;
+    font-family: "Concert One", cursive;
   }
 `
 
 const Project = styled.div`
-  width: 23%;
+  width: 24%;
   margin: 1rem auto;
   color: white;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   transition: all 0.3s ease-in-out;
 
   &:hover {
     transform: scale(1.02);
   }
-  
+
   @media (max-width: 950px) {
     width: 30%;
   }
@@ -274,6 +274,8 @@ const Project = styled.div`
   .project-body {
     background-color: #fbfbf2;
     text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+      0 2px 10px 0 rgba(0, 0, 0, 0.12);
 
     padding-bottom: 1rem;
 
@@ -296,6 +298,7 @@ const Project = styled.div`
       color: #031a6b;
       padding: 1rem 0;
       margin: 0;
+      font-size: 2rem;
     }
   }
 `
