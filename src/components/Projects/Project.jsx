@@ -10,10 +10,20 @@ const Project = ({ project }) => {
   const imageData = project.image.childImageSharp.fluid
 
   return (
+    // <Link to={`/${slug}`}>
+    //       <Image fluid={imageData} alt={title} style={{height: '200px'}} />
+    //     </Link>
     <StyledProject>
-      <div className="project-image">
+      <div
+        className="project-image"
+        style={{
+          backgroundImage: `url(${imageData.src})`,
+        }}
+      >
         <Link to={`/${slug}`}>
-          <Image fluid={imageData} alt={title} style={{height: '200px'}} />
+          <div className="project-content">
+
+          </div>
         </Link>
       </div>
 
