@@ -2,23 +2,58 @@ import React from "react"
 
 import { Contact as StyledContact } from "../../styles"
 import { Input, Button, Form, TextArea } from "../../styles/common"
+import PatternImage from "../../images/pattern2.png"
+import ContactImage from '../../images/avatar.png'
 
 export default function Contact() {
   return (
     <StyledContact>
-      <h3>Contact Me</h3>
-      {/* action="https://formspree.io/ekunolaeasybuoy@gmail.com" method="POST" */}
-      <Form action="https://formspree.io/ekunolaeasybuoy@gmail.com" method="POST">
-        <label htmlFor="name">Your Name</label>
-        <Input type="text" id="name" placeholder="Your Name" name="name" required />
+      <div
+        className="contact"
+        style={{
+          backgroundImage: `linear-gradient(to right bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(${PatternImage})`,
+        }}
+      >
+        <h3>Contact Me</h3>
 
-        <label htmlFor="email">Your Email</label>
-        <Input type="email" id="email" placeholder="Your Email" name="email" required />
+        <div className="contact-form">
+          <Form
+            action="https://formspree.io/ekunolaeasybuoy@gmail.com"
+            method="POST"
+          >
+            <label htmlFor="name">Your Name</label>
+            <Input
+              type="text"
+              id="name"
+              placeholder="Your Name"
+              name="name"
+              required
+            />
 
-        <label htmlFor="message">Message</label>
-        <TextArea id="message" placeholder="Your message" name="message" required/>
-        <Button>Send</Button>
-      </Form>
+            <label htmlFor="email">Your Email</label>
+            <Input
+              type="email"
+              id="email"
+              placeholder="Your Email"
+              name="email"
+              required
+            />
+
+            <label htmlFor="message">Message</label>
+            <TextArea
+              id="message"
+              placeholder="Your message"
+              name="message"
+              required
+            />
+            <Button>Send</Button>
+          </Form>
+        </div>
+
+        <div className="contact-form-image">
+          <img src={ContactImage} alt="contact" />
+        </div>
+      </div>
     </StyledContact>
   )
 }

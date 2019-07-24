@@ -387,7 +387,7 @@ const Blog = styled.div`
   align-items: center;
 
   &:hover {
-  background-color: #031a6b;
+    background-color: #031a6b;
     transform: scale(1.01);
 
     @media (max-width: 570px) {
@@ -441,17 +441,55 @@ const Blog = styled.div`
 `
 
 const Contact = styled.section`
-  background-color: indigo;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   padding: 2rem 0;
 
-  h3 {
+  .contact {
     width: 100%;
-    text-align: center;
-    color: white;
+    margin: 2rem;
+    padding: 2rem 0;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    h3 {
+      width: 100%;
+      text-align: center;
+      color: white;
+      font-family: "Concert One", cursive;
+    }
+
+    .contact-form {
+      width: 50%;
+
+      @media (max-width: 900px) {
+        width: 70%;
+      }
+
+      @media (max-width: 710px) {
+        width: 90%;
+      }
+    }
+
+    .contact-form-image {
+      @media (max-width: 710px) {
+        display: none;
+      }
+      
+      img {
+        width: 300px;
+        height: 300px;
+
+        @media (max-width: 900px) {
+          width: 200px;
+          height: 200px;
+        }
+      }
+    }
   }
 `
 
