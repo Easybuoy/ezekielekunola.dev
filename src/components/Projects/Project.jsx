@@ -8,7 +8,7 @@ import { Button } from "../../styles/common"
 const Project = ({ project }) => {
   const { title, slug, technologies } = project
   const imageData = project.image.childImageSharp.fluid
-  console.log(imageData)
+
   return (
     // <Link to={`/${slug}`}>
     //       <Image fluid={imageData} alt={title} style={{height: '200px'}} />
@@ -22,7 +22,7 @@ const Project = ({ project }) => {
       >
         <Link to={`/${slug}`}>
           <div className="project-content">
-            {/* <h1>View Meeee</h1> */}
+
           </div>
         </Link>
       </div>
