@@ -59,15 +59,13 @@ export default function Header() {
               }}
               startDelay={1000}
             >
-              <span>I am a Software Developer</span>
+              <span>I am a Frontend-Developer</span>
+              <Typist.Backspace count={18} delay={500} />
+              <span>Backend-Developer</span>
+              <Typist.Backspace count={17} delay={500} />
+              <span>Software Developer</span>
               <Typist.Backspace count={9} delay={500} />
               <span>Engineer</span>
-              <Typist.Backspace count={17} delay={500} />
-              <span>Frontend-Engineer</span>
-              <Typist.Backspace count={17} delay={500} />
-              <span>Backend-Engineer</span>
-              {/* <Typist.Backspace count={16} delay={500} />
-              <span>Technical Writer</span> */}
             </Typist>
           </div>
         </div>
