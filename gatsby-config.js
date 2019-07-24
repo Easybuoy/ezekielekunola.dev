@@ -1,3 +1,4 @@
+console.log(process.env.ANALYTICS_ID)
 module.exports = {
   siteMetadata: {
     title: `Ezekiel Ekunola`,
@@ -48,6 +49,13 @@ module.exports = {
         display: `standalone`,
         icon: `src/images/logo.png`, // This path is relative to the root of the site.
       },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.ANALYTICS_ID,
+        head: true
+      }
     },
     "gatsby-transformer-json",
     "gatsby-plugin-styled-components",
