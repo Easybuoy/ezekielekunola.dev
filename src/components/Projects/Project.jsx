@@ -23,12 +23,6 @@ const Project = ({ project }) => {
       <div className="project-body">
         <h3>{title}</h3>
 
-        {/* <div className="project-technologies">
-          {technologies.map(technology => (
-            <span key={technology}>{technology}</span>
-          ))}
-        </div> */}
-
         {/* <Link to={`/${slug}`}>
           <Button>View Project Detail &rarr;</Button>
         </Link> */}
