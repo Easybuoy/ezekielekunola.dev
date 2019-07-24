@@ -36,7 +36,7 @@ const ProjectsList = () => {
   const projects = data.allProjectsJson.edges
 
   return (
-    <StyledProjectsList
+    <StyledProjectsList id="projects"
       style={{
         backgroundImage: `linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(${Projects})`,
       }}
