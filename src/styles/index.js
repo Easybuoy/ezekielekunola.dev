@@ -249,26 +249,62 @@ const Project = styled.div`
 
     padding-bottom: 1rem;
 
-    .project-technologies {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      width: 100%;
-
-      span {
-        background-color: #754ef9;
-        padding: 1rem;
-        margin: 1rem 0;
-        font-size: 1.2rem;
-        border-radius: 0.2rem;
-      }
-    }
-
     h3 {
       color: #031a6b;
       padding: 1rem 0;
       margin: 0;
       font-size: 2rem;
+    }
+  }
+`
+
+const ProjectDetail = styled.section`
+  width: 100%;
+  margin: 1rem 0;
+  min-height: 100vh;
+  display: flex;
+
+  .project-detail {
+    margin: 2rem auto;
+    box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.2),
+      0 -1px 5px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 100%;
+
+    h2 {
+      width: 100%;
+      text-align: center;
+      font-family: "Concert One", sans-serif;
+      padding: 2rem 0;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    .project-image {
+      padding: 1rem;
+    }
+
+    .project-content {
+      /* width: 50%; */
+
+      .project-technologies {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+
+        span {
+          background-color: #754ef9;
+          padding: 1rem;
+          margin: 1rem;
+          font-size: 2rem;
+          border-radius: 0.2rem;
+          color: white;
+        }
+      }
     }
   }
 `
@@ -425,6 +461,8 @@ const Contact = styled.section`
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.2),
+      0 -1px 5px 0 rgba(0, 0, 0, 0.1);
 
     h3 {
       width: 100%;
@@ -486,4 +524,5 @@ export {
   Contact,
   Footer,
   About,
+  ProjectDetail,
 }
