@@ -2,6 +2,8 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
 import { BlogsList as StyledBlogsList } from "../../styles"
+import PatternImage from "../../images/pattern2.png"
+
 import Blog from "./Blog"
 
 const BlogsList = () => {
@@ -25,12 +27,19 @@ const BlogsList = () => {
 
   return (
     <StyledBlogsList>
-      <div className="blog-header">
-        <h2>Blog Posts</h2>
+      <div
+        className="blog"
+        style={{
+          backgroundImage: `linear-gradient(to right bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(${PatternImage})`,
+        }}
+      >
+        <div className="blog-header">
+          <h3>Blog Posts</h3>
+        </div>
+        {blogs.map(({ node: blog }) => {
+          return <Blog key={blog.id} blog={blog} />
+        })}
       </div>
-      {blogs.map(({ node: blog }) => {
-        return <Blog key={blog.id} blog={blog} />
-      })}
     </StyledBlogsList>
   )
 }

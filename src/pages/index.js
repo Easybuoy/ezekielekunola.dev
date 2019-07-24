@@ -22,9 +22,9 @@ const IndexPage = () => (
     <Header />
     <About />
     <ProjectsList />
-    {/* <BlogsList />
+    <BlogsList />
     <SkillsList />
-    <Contact /> */}
+    {/* <Contact /> */}
     <Footer />
   </Layout>
 
