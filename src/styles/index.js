@@ -479,7 +479,7 @@ const Contact = styled.section`
       @media (max-width: 710px) {
         display: none;
       }
-      
+
       img {
         width: 300px;
         height: 300px;
@@ -500,18 +500,6 @@ const Footer = styled.footer`
   color: white;
 `
 
-const Particle = styled.div`
-  .particles {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    background-color: black;
-  }
-`
-
 export {
   Navigation,
   ProjectsList,
@@ -523,6 +511,5 @@ export {
   Blog,
   Contact,
   Footer,
-  Particle,
   About,
 }
