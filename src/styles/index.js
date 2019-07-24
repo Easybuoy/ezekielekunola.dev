@@ -45,36 +45,6 @@ const Header = styled.header`
         width: 100%;
       }
 
-      .contact-details {
-        margin: 0 auto;
-
-        a {
-          padding: 0 1rem;
-          color: #031a6b;
-
-          i {
-            transition: all 0.3s ease-in-out;
-
-            @media (max-width: 800px) {
-              margin: 1rem 0;
-              font-size: 4.5rem;
-            }
-
-            @media (max-width: 500px) {
-              font-size: 4rem;
-            }
-
-            @media (max-width: 365px) {
-              font-size: 3.5rem;
-            }
-            &:hover {
-              transform: scale(1.1);
-              color: black;
-            }
-          }
-        }
-      }
-
       .header-text {
         display: flex;
         flex-direction: column;
@@ -498,6 +468,10 @@ const Footer = styled.footer`
   padding: 2rem 0;
   text-align: center;
   color: white;
+
+  p {
+    padding: 1rem 0;
+  }
 `
 
 export {

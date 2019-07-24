@@ -3,6 +3,7 @@ import Typist from "react-typist"
 import "react-typist/dist/Typist.css"
 
 import { Header as StyledHeader } from "../../styles"
+import { ContactDetail } from "../../styles/common.js"
 import PatternImage from "../../images/pattern.png"
 import Bounce from "../Common/Bounce"
 
@@ -16,7 +17,7 @@ export default function Header() {
         }}
       >
         <div className="header-content">
-          <div className="contact-details">
+          <ContactDetail>
             <a href="mailto:ekunolaeasybuoy@gmail.com">
               <i className="fas fa-envelope fa-5x"></i>
             </a>
@@ -29,18 +30,18 @@ export default function Header() {
               <i className="fab fa-linkedin fa-5x"></i>
             </a>
 
-            <a href="https://dev.to/easybuoy">
-              <i className="fab fa-dev fa-5x"></i>
+            <a href="https://www.blog.ezekielekunola.com/">
+              <i className="fas fa-blog fa-5x"></i>
             </a>
 
-            <a href="https://medium.com/@easybuoy">
-              <i className="fab fa-medium fa-5x"></i>
+            <a href="https://dev.to/easybuoy">
+              <i className="fab fa-dev fa-5x"></i>
             </a>
 
             <a href="https://twitter.com/easybuoy">
               <i className="fab fa-twitter fa-5x"></i>
             </a>
-          </div>
+          </ContactDetail>
           <div className="header-text">
             <h1>
               Hello{" "}

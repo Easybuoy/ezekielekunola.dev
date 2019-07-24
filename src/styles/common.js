@@ -15,6 +15,36 @@ const Button = styled.button`
     transform: scale(1.03);
   }
 `
+const ContactDetail = styled.div`
+  margin: 0 auto;
+
+  a {
+    padding: 0 1rem;
+    color: ${props => props.color || "#031a6b"};
+
+    
+    i {
+      transition: all 0.3s ease-in-out;
+
+      @media (max-width: 800px) {
+        margin: 1rem 0;
+        font-size: 4.5rem;
+      }
+
+      @media (max-width: 500px) {
+        font-size: 4rem;
+      }
+
+      @media (max-width: 365px) {
+        font-size: 3.5rem;
+      }
+      &:hover {
+        transform: scale(1.1);
+        color: black;
+      }
+    }
+  }
+`
 
 const Input = styled.input`
   padding: 1rem;
@@ -122,4 +152,4 @@ const DownArrow = styled.div`
   }
 `
 
-export { Button, Input, Form, TextArea, DownArrow }
+export { Button, Input, Form, TextArea, DownArrow, ContactDetail }
