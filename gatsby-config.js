@@ -49,6 +49,13 @@ module.exports = {
         icon: `src/images/logo.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: { 
+        trackingId: process.env.ANALYTICS_ID,
+        head: true
+      }
+    },
     "gatsby-transformer-json",
     "gatsby-plugin-styled-components",
     // this (optional) plugin enables Progressive Web App + Offline functionality
