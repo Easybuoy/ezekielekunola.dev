@@ -350,27 +350,44 @@ const BlogsList = styled.section`
   flex-wrap: wrap;
   padding: 5rem 0;
   justify-content: center;
-  background-color: #170a1c;
-  color: white;
 
-  .blog-header {
-    text-align: center;
+  .blog {
+    background-color: #170a1c;
+    margin: 1rem;
     width: 100%;
-    padding-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.2),
+      0 -1px 5px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    min-height: 50vh;
+    padding: 2rem 0;
+
+    .blog-header {
+      text-align: center;
+      width: 100%;
+      padding-bottom: 2rem;
+      color: white;
+      h3 {
+        font-family: "Concert One", cursive;
+      }
+    }
   }
 `
 
 const Blog = styled.div`
-  width: 20%;
+  width: 35%;
   margin: 1rem auto;
   padding: 2rem;
   margin: 0 auto;
-
   transition: all 0.3s ease-in-out;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &:hover {
-    background-color: #754ef9;
+  background-color: #031a6b;
     transform: scale(1.01);
 
     @media (max-width: 570px) {
@@ -384,10 +401,9 @@ const Blog = styled.div`
     }
 
     .blog-content {
-      background-color: #754ef9;
+      background-color: #031a6b;
       border: 2px solid white;
       color: white;
-
       p {
         color: white;
       }
@@ -395,11 +411,7 @@ const Blog = styled.div`
   }
 
   @media (max-width: 950px) {
-    width: 30%;
-  }
-
-  @media (max-width: 770px) {
-    width: 40%;
+    width: 45%;
   }
 
   @media (max-width: 570px) {
