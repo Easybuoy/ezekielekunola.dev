@@ -63,18 +63,20 @@ const ProjectDetail = ({ data }) => {
 
           <p>{description}</p>
 
-          <a href="https://github.com/easybuoy">
-            <i className="fab fa-github fa-4x"></i>
-          </a>
-
-          <a href="https://github.com/easybuoy">
-            <i className="fas fa-globe fa-4x"></i>
-          </a>
-
           <div className="project-technologies">
             {technologies.map(technology => (
               <span key={technology}>{technology}</span>
             ))}
+          </div>
+
+          <div className="project-links">
+            <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-github fa-4x"></i>
+            </a>
+
+            <a href={url} target="_blank" rel="noopener noreferrer">
+              <i className="fas fa-globe fa-4x"></i>
+            </a>
           </div>
 
           <p>

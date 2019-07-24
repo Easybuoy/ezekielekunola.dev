@@ -265,7 +265,7 @@ const ProjectDetail = styled.section`
   display: flex;
 
   .project-detail {
-    margin: 2rem auto;
+    margin: 2rem;
     box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.2),
       0 -1px 5px 0 rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -276,10 +276,14 @@ const ProjectDetail = styled.section`
       text-align: center;
       font-family: "Concert One", sans-serif;
       padding: 2rem 0;
+      color: #031a6b;
     }
 
     p {
       text-align: center;
+      font-size: 2rem;
+      width: 90%;
+      margin: 0 auto;
     }
 
     .project-image {
@@ -294,15 +298,27 @@ const ProjectDetail = styled.section`
         flex-wrap: wrap;
         justify-content: center;
         width: 100%;
-        margin: 0 auto;
+        margin: 1rem auto;
 
         span {
-          background-color: #754ef9;
+          background-color: #031a6b;
           padding: 1rem;
           margin: 1rem;
           font-size: 2rem;
           border-radius: 0.2rem;
           color: white;
+        }
+      }
+
+      .project-links {
+        display: flex;
+        justify-content: center;
+
+        a {
+          color: #031a6b;
+          i {
+            padding: 0 2rem;
+          }
         }
       }
     }
