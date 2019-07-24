@@ -291,8 +291,6 @@ const ProjectDetail = styled.section`
     }
 
     .project-content {
-      /* width: 50%; */
-
       .project-technologies {
         display: flex;
         flex-wrap: wrap;
@@ -307,6 +305,14 @@ const ProjectDetail = styled.section`
           font-size: 2rem;
           border-radius: 0.2rem;
           color: white;
+
+          @media (max-width: 650px) {
+            font-size: 1.5rem;
+          }
+
+          @media (max-width: 400px) {
+            font-size: 1.3rem;
+          }
         }
       }
 
@@ -318,6 +324,24 @@ const ProjectDetail = styled.section`
           color: #031a6b;
           i {
             padding: 0 2rem;
+          }
+        }
+      }
+
+      .project-actions {
+        display: flex;
+        margin: 2rem auto;
+        padding: 2rem 0;
+        justify-content: center;
+
+        p {
+          font-size: 3rem;
+
+          @media (max-width: 400px) {
+            font-size: 2rem;
+          }
+          a {
+            color: #031a6b;
           }
         }
       }

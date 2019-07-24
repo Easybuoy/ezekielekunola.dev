@@ -27,7 +27,7 @@ export const query = graphql`
 
 const ProjectDetail = ({ data }) => {
   const project = data.projectsJson
-  console.log(project)
+
   const { url, title, technologies, githubUrl, description } = project
 
   const imageData = project.image.childImageSharp.fluid
@@ -70,24 +70,20 @@ const ProjectDetail = ({ data }) => {
           </div>
 
           <div className="project-links">
-            <a href={githubUrl} target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-github fa-4x"></i>
-            </a>
-
             <a href={url} target="_blank" rel="noopener noreferrer">
               <i className="fas fa-globe fa-4x"></i>
             </a>
+
+            <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-github fa-4x"></i>
+            </a>
           </div>
 
-          <p>
-            <a href={`${url}`} target="_blank" rel="noopener noreferrer">
-              View Content &rarr;
-            </a>
-          </p>
-
-          <p>
-            <Link to="/#projects"> &larr; Back to all projects</Link>
-          </p>
+          <div className="project-actions">
+            <p>
+              <Link to="/#projects"> &larr; Back to all projects</Link>
+            </p>
+          </div>
         </div>
       </div>
     </StyledProjectDetail>
