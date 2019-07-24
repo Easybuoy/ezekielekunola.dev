@@ -1,4 +1,3 @@
-console.log(process.env.ANALYTICS_ID)
 module.exports = {
   siteMetadata: {
     title: `Ezekiel Ekunola`,
