@@ -43,8 +43,8 @@ module.exports = {
         name: `Ezekiel Ekunola`,
         short_name: `EE`,
         start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#754ef9`,
+        background_color: `#f5f5f5`,
+        theme_color: `#031a6b`,
         display: `standalone`,
         icon: `src/images/logo.png`, // This path is relative to the root of the site.
       },

@@ -2,8 +2,7 @@ import styled from "styled-components"
 
 const Button = styled.button`
   padding: 1rem;
-  /* background-color: #754ef9; */
-  /* color: white; */
+
   border: none;
   outline: none;
   font-size: 1.5rem;
@@ -11,9 +10,39 @@ const Button = styled.button`
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    background-color: #754ef9;
+    background-color: #031a6b;
     color: white;
     transform: scale(1.03);
+  }
+`
+const ContactDetail = styled.div`
+  margin: 0 auto;
+
+  a {
+    padding: 0 1rem;
+    color: ${props => props.color || "#031a6b"};
+
+    
+    i {
+      transition: all 0.3s ease-in-out;
+
+      @media (max-width: 800px) {
+        margin: 1rem 0;
+        font-size: 4.5rem;
+      }
+
+      @media (max-width: 500px) {
+        font-size: 4rem;
+      }
+
+      @media (max-width: 365px) {
+        font-size: 3.5rem;
+      }
+      &:hover {
+        transform: scale(1.1);
+        color: black;
+      }
+    }
   }
 `
 
@@ -123,4 +152,4 @@ const DownArrow = styled.div`
   }
 `
 
-export { Button, Input, Form, TextArea, DownArrow }
+export { Button, Input, Form, TextArea, DownArrow, ContactDetail }

@@ -1,18 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
-import Image from "gatsby-image"
 
 import { Project as StyledProject } from "../../styles"
-import { Button } from "../../styles/common"
 
 const Project = ({ project }) => {
-  const { title, slug, technologies } = project
+  const { title, slug } = project
   const imageData = project.image.childImageSharp.fluid
 
   return (
-    // <Link to={`/${slug}`}>
-    //       <Image fluid={imageData} alt={title} style={{height: '200px'}} />
-    //     </Link>
     <StyledProject>
       <div
         className="project-image"
@@ -21,9 +16,7 @@ const Project = ({ project }) => {
         }}
       >
         <Link to={`/${slug}`}>
-          <div className="project-content">
-
-          </div>
+          <div className="project-content"></div>
         </Link>
       </div>
 

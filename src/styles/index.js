@@ -45,36 +45,6 @@ const Header = styled.header`
         width: 100%;
       }
 
-      .contact-details {
-        margin: 0 auto;
-
-        a {
-          padding: 0 1rem;
-          color: #031a6b;
-
-          i {
-            transition: all 0.3s ease-in-out;
-
-            @media (max-width: 800px) {
-              margin: 1rem 0;
-              font-size: 4.5rem;
-            }
-
-            @media (max-width: 500px) {
-              font-size: 4rem;
-            }
-
-            @media (max-width: 365px) {
-              font-size: 3.5rem;
-            }
-            &:hover {
-              transform: scale(1.1);
-              color: black;
-            }
-          }
-        }
-      }
-
       .header-text {
         display: flex;
         flex-direction: column;
@@ -387,7 +357,7 @@ const Blog = styled.div`
   align-items: center;
 
   &:hover {
-  background-color: #031a6b;
+    background-color: #031a6b;
     transform: scale(1.01);
 
     @media (max-width: 570px) {
@@ -441,17 +411,55 @@ const Blog = styled.div`
 `
 
 const Contact = styled.section`
-  background-color: indigo;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   padding: 2rem 0;
 
-  h3 {
+  .contact {
     width: 100%;
-    text-align: center;
-    color: white;
+    margin: 2rem;
+    padding: 2rem 0;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    h3 {
+      width: 100%;
+      text-align: center;
+      color: white;
+      font-family: "Concert One", cursive;
+    }
+
+    .contact-form {
+      width: 50%;
+
+      @media (max-width: 900px) {
+        width: 70%;
+      }
+
+      @media (max-width: 710px) {
+        width: 90%;
+      }
+    }
+
+    .contact-form-image {
+      @media (max-width: 710px) {
+        display: none;
+      }
+
+      img {
+        width: 300px;
+        height: 300px;
+
+        @media (max-width: 900px) {
+          width: 200px;
+          height: 200px;
+        }
+      }
+    }
   }
 `
 
@@ -460,17 +468,9 @@ const Footer = styled.footer`
   padding: 2rem 0;
   text-align: center;
   color: white;
-`
 
-const Particle = styled.div`
-  .particles {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    background-color: black;
+  p {
+    padding: 1rem 0;
   }
 `
 
@@ -485,6 +485,5 @@ export {
   Blog,
   Contact,
   Footer,
-  Particle,
   About,
 }
