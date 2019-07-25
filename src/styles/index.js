@@ -390,7 +390,6 @@ const Skill = styled.div`
     color: white;
 
     img {
-      /* height: 150px; */
       width: 100%;
     }
   }
