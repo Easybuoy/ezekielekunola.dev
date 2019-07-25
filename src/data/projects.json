@@ -7,7 +7,7 @@
     "githubUrl": "https://github.com/Easybuoy/storemanager",
     "image": "../images/projects/store-manager.png",
     "gif": "",
-    "technologies": ["React", "Redux", "Material-Design-Bootstrap", "API"],
+    "technologies": ["React", "Redux", "Css", "API"],
     "description": "A web application that helps store owners manage sales and product inventory records. Store owners/managers can create store attendant accounts who would be in charge of selling of items in the store."
   },
   {
