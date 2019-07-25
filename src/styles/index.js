@@ -322,6 +322,12 @@ const ProjectDetail = styled.section`
 
         a {
           color: #031a6b;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            transform: scale(1.09);
+            color: black;
+          }
           i {
             padding: 0 2rem;
           }
@@ -384,7 +390,6 @@ const Skill = styled.div`
     color: white;
 
     img {
-      /* height: 150px; */
       width: 100%;
     }
   }
