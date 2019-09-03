@@ -427,7 +427,7 @@ const BlogsList = styled.section`
 `
 
 const Blog = styled.div`
-  width: 35%;
+  width: 30%;
   margin: 1rem auto;
   padding: 2rem;
   margin: 0 auto;
