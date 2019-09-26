@@ -1,14 +1,14 @@
 [
   {
     "id": "1",
-    "title": "Store Manager",
-    "slug": "store-manager",
+    "title": "Anonymous Team Feedback",
+    "slug": "atf",
     "url": "https://storemanagerreact.herokuapp.com",
-    "githubUrl": "https://github.com/Easybuoy/storemanager",
-    "image": "../images/projects/store-manager.png",
+    "githubUrl": "https://github.com/labseu2-anonymous-team-feedback",
+    "image": "../images/projects/atf.png",
     "gif": "",
-    "technologies": ["react", "redux", "css", "api"],
-    "description": "A web application that helps store owners manage sales and product inventory records. Store owners/managers can create store attendant accounts who would be in charge of selling of items in the store."
+    "technologies": ["react", "graphql", "node", "api", "apollo", "material-design-bootstrap", "styled-components"],
+    "description": "A web application that helps you get honest feedback from your co-workers"
   },
   {
     "id": "2",
