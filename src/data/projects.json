@@ -7,7 +7,7 @@
     "githubUrl": "https://github.com/labseu2-anonymous-team-feedback",
     "image": "../images/projects/atf.png",
     "gif": "",
-    "technologies": ["react", "graphql", "node", "api", "apollo", "material-design-bootstrap", "styled-components"],
+    "technologies": ["node", "express", "postgres", "react", "graphql", "apollo", "material-design-bootstrap", "styled-components"],
     "description": "A web application that helps you get honest feedback from your co-workers"
   },
   {
@@ -18,7 +18,7 @@
     "githubUrl": "https://github.com/Easybuoy/storemanager",
     "image": "../images/projects/store-manager.png",
     "gif": "",
-    "technologies": ["react", "redux", "css", "api"],
+    "technologies": ["react", "redux", "css", "api", "postgres"],
     "description": "A web application that helps store owners manage sales and product inventory records. Store owners/managers can create store attendant accounts who would be in charge of selling of items in the store."
   },
   {
