@@ -3,7 +3,7 @@
     "id": "1",
     "title": "Anonymous Team Feedback",
     "slug": "atf",
-    "url": "#",
+    "url": "https://anonymous-feedback-fe.herokuapp.com/",
     "githubUrl": "https://github.com/labseu2-anonymous-team-feedback",
     "image": "../images/projects/atf.png",
     "gif": "",
