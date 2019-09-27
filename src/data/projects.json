@@ -1,17 +1,28 @@
 [
   {
     "id": "1",
+    "title": "Anonymous Team Feedback",
+    "slug": "atf",
+    "url": "https://anonymous-feedback-fe.herokuapp.com/",
+    "githubUrl": "https://github.com/labseu2-anonymous-team-feedback",
+    "image": "../images/projects/atf.png",
+    "gif": "",
+    "technologies": ["node", "express", "postgres", "react", "graphql", "apollo", "material-design-bootstrap", "styled-components"],
+    "description": "A web application that helps you get honest feedback from your co-workers"
+  },
+  {
+    "id": "2",
     "title": "Store Manager",
     "slug": "store-manager",
     "url": "https://storemanagerreact.herokuapp.com",
     "githubUrl": "https://github.com/Easybuoy/storemanager",
     "image": "../images/projects/store-manager.png",
     "gif": "",
-    "technologies": ["React", "Redux", "Css", "API"],
+    "technologies": ["react", "redux", "css", "api", "postgres"],
     "description": "A web application that helps store owners manage sales and product inventory records. Store owners/managers can create store attendant accounts who would be in charge of selling of items in the store."
   },
   {
-    "id": "2",
+    "id": "3",
     "title": "Use My Tech Stuff",
     "slug": "use-my-tech-stuff",
     "url": "https://ls-umts.netlify.com",
@@ -19,27 +30,27 @@
     "image": "../images/projects/use-my-tech-stuff.png",
     "gif": "../images/projects/use-my-tech-stuff.gif",
     "technologies": [
-      "React",
-      "Redux",
-      "Material-Design-Bootstrap",
-      "Styled-Components",
-      "API"
+      "react",
+      "redux",
+      "material-design-bootstrap",
+      "styled-components",
+      "api"
     ],
     "description": "Use My Tech Stuff aims to provide a safe, guaranteed, and efficient way to effortlessly share professional tech equipment."
   },
   {
-    "id": "3",
+    "id": "4",
     "title": "School In The Cloud",
     "slug": "school-in-the-cloud",
     "url": "https://distracted-stonebraker-f30c76.netlify.com/",
     "githubUrl": "https://github.com/Easybuoy/school-in-the-cloud",
     "image": "../images/projects/school-in-the-cloud.png",
     "gif": "",
-    "technologies": ["Html", "Css", "Javascript", "Styled-Components", "AOS"],
+    "technologies": ["html", "css", "javascript", "styled-components", "aos"],
     "description": "School in the Cloud is a platform that trains senior volunteers to teach students in a group or individual setting. This helps kids in communities with high student to teacher ratios. It also provides retired volunteers a sense of purpose and meaning in their day to day life when they find themselves with more free time. The platform also connects volunteers with the students."
   },
   {
-    "id": "4",
+    "id": "5",
     "title": "Marvel Comics",
     "slug": "marvel-comics",
     "url": "https://marvel-comic-characters.netlify.com/",
@@ -47,33 +58,33 @@
     "image": "../images/projects/marvel-comics.png",
     "gif": "",
     "technologies": [
-      "React",
-      "Styled-Components",
-      "Material-Design-Bootstrap",
-      "API"
+      "react",
+      "styled-components",
+      "material-design-bootstrap",
+      "api"
     ],
     "description": "Progressive Web Application that displays information about Marvel Comics and Characters."
   },
   {
-    "id": "5",
+    "id": "6",
     "title": "Movie Listing",
     "slug": "movie-listing",
     "url": "https://reactmovieapptmdb.herokuapp.com/",
     "githubUrl": "https://github.com/Easybuoy/reactmovieapp",
     "image": "../images/projects/movie-listings.png",
     "gif": "",
-    "technologies": ["React", "Material-Design-Bootstrap", "API"],
+    "technologies": ["react", "material-design-bootstrap", "api"],
     "description": "Web Application that lists comprehensive details about Movies and TV-Series."
   },
   {
-    "id": "6",
+    "id": "7",
     "title": "Headline News",
     "slug": "headline-news",
     "url": "https://headline-pwa.herokuapp.com/",
     "githubUrl": "https://github.com/Easybuoy/headlines_pwa_app",
     "image": "../images/projects/headline-news.png",
     "gif": "",
-    "technologies": ["Html", "Css", "Jquery", "Node", "Express"],
+    "technologies": ["html", "css", "jquery", "node", "express"],
     "description": "This is a progressive web app that allows you view latest and currrent news accross the world."
   }
 ]
