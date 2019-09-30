@@ -7,7 +7,16 @@
     "githubUrl": "https://github.com/labseu2-anonymous-team-feedback",
     "image": "../images/projects/atf.png",
     "gif": "",
-    "technologies": ["node", "express", "postgres", "react", "graphql", "apollo", "material-design-bootstrap", "styled-components"],
+    "technologies": [
+      "node",
+      "express",
+      "postgres",
+      "react",
+      "graphql",
+      "apollo",
+      "material-design-bootstrap",
+      "styled-components"
+    ],
     "description": "A web application that helps you get honest feedback from your co-workers"
   },
   {
