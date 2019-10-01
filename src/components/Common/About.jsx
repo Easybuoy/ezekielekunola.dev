@@ -1,6 +1,6 @@
 import React from "react"
 
-import ProfileImage from "../../images/profile.png"
+import ProfileImage from "../../images/profile.jpeg"
 import { About as StyledAbout } from "../../styles"
 
 export default function About() {
