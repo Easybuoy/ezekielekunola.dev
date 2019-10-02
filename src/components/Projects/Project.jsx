@@ -22,10 +22,6 @@ const Project = ({ project }) => {
 
       <div className="project-body">
         <h3>{title}</h3>
-
-        {/* <Link to={`/${slug}`}>
-          <Button>View Project Detail &rarr;</Button>
-        </Link> */}
       </div>
     </StyledProject>
   )

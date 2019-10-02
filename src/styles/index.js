@@ -211,12 +211,16 @@ const Project = styled.div`
     transform: scale(1.02);
   }
 
-  @media (max-width: 950px) {
+  @media (max-width: 1150px) {
     width: 30%;
   }
 
-  @media (max-width: 750px) {
+  @media (max-width: 900px) {
     width: 45%;
+  }
+
+  @media (max-width: 750px) {
+    width: 47%;
   }
 
   @media (max-width: 550px) {
@@ -297,6 +301,10 @@ const ProjectDetail = styled.section`
     }
 
     .project-content {
+      .contribution-text {
+        color: #031a6b;
+        padding: 1rem 0;
+      }
       .project-technologies {
         display: flex;
         flex-wrap: wrap;
