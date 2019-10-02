@@ -55,6 +55,7 @@ const Header = styled.header`
         h1 {
           margin: 1rem 0;
           font-family: "Concert One", cursive;
+          font-size: 7rem;
 
           @media (max-width: 500px) {
             padding: 0 1rem;
@@ -68,7 +69,12 @@ const Header = styled.header`
         }
 
         .Typist {
-          font-size: 3rem;
+          font-size: 4rem;
+
+          @media (max-width: 450px) {
+            font-size: 3rem;
+          }
+
           @media (max-width: 350px) {
             font-size: 2rem;
           }
