@@ -14,6 +14,7 @@ export const query = graphql`
       githubUrl
       technologies
       description
+      contribution
       image {
         childImageSharp {
           fluid {
@@ -28,7 +29,7 @@ export const query = graphql`
 const ProjectDetail = ({ data }) => {
   const project = data.projectsJson
 
-  const { url, title, technologies, githubUrl, description } = project
+  const { url, title, technologies, githubUrl, description, contribution } = project
 
   const imageData = project.image.childImageSharp.fluid
   return (
@@ -62,6 +63,8 @@ const ProjectDetail = ({ data }) => {
           <h2>{title}</h2>
 
           <p>{description}</p>
+
+          <p className="contribution-text">"{contribution}"</p>
 
           <div className="project-technologies">
             {technologies.map(technology => (

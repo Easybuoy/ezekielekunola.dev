@@ -17,7 +17,8 @@
       "material-design-bootstrap",
       "styled-components"
     ],
-    "description": "A web application that helps you get honest feedback from your co-workers"
+    "description": "A web application that helps you get honest feedback from your co-workers",
+    "contribution": "I contributed in developing the both frontend, backend and design of Anonymous Team Feedback using React, GraphQL, Apollo, Styled-Components Material Design Bootstrap, Node and Postgres."
   },
   {
     "id": "2",
@@ -28,7 +29,8 @@
     "image": "../images/projects/store-manager.png",
     "gif": "",
     "technologies": ["react", "redux", "css", "api", "postgres"],
-    "description": "A web application that helps store owners manage sales and product inventory records. Store owners/managers can create store attendant accounts who would be in charge of selling of items in the store."
+    "description": "A web application that helps store owners manage sales and product inventory records. Store owners/managers can create store attendant accounts who would be in charge of selling of items in the store.",
+    "contribution": "I contributed in developing both the frontend and backend of the Store Manager using React, Redux, Css, and Node, Express and Postgres."
   },
   {
     "id": "3",
@@ -45,7 +47,8 @@
       "styled-components",
       "api"
     ],
-    "description": "Use My Tech Stuff aims to provide a safe, guaranteed, and efficient way to effortlessly share professional tech equipment."
+    "description": "Use My Tech Stuff aims to provide a safe, guaranteed, and efficient way to effortlessly share professional tech equipment.",
+    "contribution": "I contributed in developing the frontend of the project using React, Redux, Styled-Components, and Material Design Bootstrap."
   },
   {
     "id": "4",
@@ -55,8 +58,9 @@
     "githubUrl": "https://github.com/Easybuoy/school-in-the-cloud",
     "image": "../images/projects/school-in-the-cloud.png",
     "gif": "",
-    "technologies": ["html", "css", "javascript", "styled-components", "aos"],
-    "description": "School in the Cloud is a platform that trains senior volunteers to teach students in a group or individual setting. This helps kids in communities with high student to teacher ratios. It also provides retired volunteers a sense of purpose and meaning in their day to day life when they find themselves with more free time. The platform also connects volunteers with the students."
+    "technologies": ["html", "css", "javascript", "aos"],
+    "description": "School in the Cloud is a platform that trains senior volunteers to teach students in a group or individual setting. This helps kids in communities with high student to teacher ratios. It also provides retired volunteers a sense of purpose and meaning in their day to day life when they find themselves with more free time. The platform also connects volunteers with the students.",
+    "contribution": "I contributed in the desgin and implementation of School in the cloud using Html, Css and Javascript."
   },
   {
     "id": "5",
@@ -72,7 +76,8 @@
       "material-design-bootstrap",
       "api"
     ],
-    "description": "Progressive Web Application that displays information about Marvel Comics and Characters."
+    "description": "Progressive Web Application that displays information about Marvel Comics and Characters.",
+    "contribution": "I contributed in the desgin and implementation of Marvel Comics using React, Styled-Components and Material Design Bootstrap."
   },
   {
     "id": "6",
@@ -83,7 +88,8 @@
     "image": "../images/projects/movie-listings.png",
     "gif": "",
     "technologies": ["react", "material-design-bootstrap", "api"],
-    "description": "Web Application that lists comprehensive details about Movies and TV-Series."
+    "description": "Web Application that lists comprehensive details about Movies and TV-Series.",
+    "contribution": "I contributed in the desgin and implementation of Movie Listing using React and Material Design Bootstrap."
   },
   {
     "id": "7",
@@ -94,6 +100,7 @@
     "image": "../images/projects/headline-news.png",
     "gif": "",
     "technologies": ["html", "css", "jquery", "node", "express"],
-    "description": "This is a progressive web app that allows you view latest and currrent news accross the world."
+    "description": "This is a progressive web app that allows you view latest and currrent news accross the world.",
+    "contribution": "I contributed in the desgin and implementation of Headline News using Html, Css, Jquery, Node and Express."
   }
 ]
