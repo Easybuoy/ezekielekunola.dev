@@ -301,6 +301,10 @@ const ProjectDetail = styled.section`
     }
 
     .project-content {
+      .contribution-text {
+        color: #031a6b;
+        padding: 1rem 0;
+      }
       .project-technologies {
         display: flex;
         flex-wrap: wrap;
