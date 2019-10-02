@@ -2,8 +2,8 @@ import React from "react"
 
 import "../styles/reset.css"
 import "../styles/global.css"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../components/Layout"
+import SEO from "../components/Seo"
 import ProjectsList from "../components/Projects/ProjectsList"
 
 import Header from "../components/Common/Header"
