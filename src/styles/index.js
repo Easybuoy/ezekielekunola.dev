@@ -211,12 +211,16 @@ const Project = styled.div`
     transform: scale(1.02);
   }
 
-  @media (max-width: 950px) {
+  @media (max-width: 1150px) {
     width: 30%;
   }
 
-  @media (max-width: 750px) {
+  @media (max-width: 900px) {
     width: 45%;
+  }
+
+  @media (max-width: 750px) {
+    width: 47%;
   }
 
   @media (max-width: 550px) {
