@@ -18,8 +18,9 @@ export default function Contact() {
 
         <div className="contact-form">
           <Form
-            action="https://formspree.io/ekunolaeasybuoy@gmail.com"
+            // action="https://formspree.io/ekunolaeasybuoy@gmail.com"
             method="POST"
+            data-netlify="true"
           >
             <label htmlFor="name">Your Name</label>
             <Input
