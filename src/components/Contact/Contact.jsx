@@ -18,7 +18,8 @@ export default function Contact() {
 
         <div className="contact-form">
           <Form
-            // action="https://formspree.io/ekunolaeasybuoy@gmail.com"
+            action="/"
+            name="contact"
             method="POST"
             data-netlify="true"
           >
