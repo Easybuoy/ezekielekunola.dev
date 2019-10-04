@@ -48,7 +48,7 @@ export default function Contact() {
               name="message"
               required
             />
-            <Button>Send</Button>
+            <Button type="submit">Send</Button>
           </Form>
         </div>
 
