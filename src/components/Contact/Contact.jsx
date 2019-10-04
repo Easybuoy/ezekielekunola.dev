@@ -3,7 +3,7 @@ import React from "react"
 import { Contact as StyledContact } from "../../styles"
 import { Input, Button, Form, TextArea } from "../../styles/common"
 import PatternImage from "../../images/pattern2.png"
-import ContactImage from '../../images/avatar.png'
+import ContactImage from "../../images/avatar.png"
 
 export default function Contact() {
   return (
@@ -22,7 +22,10 @@ export default function Contact() {
             name="contact"
             method="POST"
             data-netlify="true"
+            data-netlify-honeypot="bot-field"
           >
+            <input type="hidden" name="form-name" value="contact" />
+
             <label htmlFor="name">Your Name</label>
             <Input
               type="text"
