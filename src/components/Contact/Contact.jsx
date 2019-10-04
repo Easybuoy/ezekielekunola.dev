@@ -42,7 +42,7 @@ export default function Contact() {
             <label htmlFor="message">Message</label>
             <TextArea
               id="message"
-              placeholder="Your message"
+              placeholder="Your Message"
               name="message"
               required
             />
