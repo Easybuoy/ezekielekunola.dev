@@ -570,6 +570,9 @@ const Footer = styled.footer`
     padding: 1rem 0;
   }
 `
+const Success = styled.div`
+background-color: red;
+`
 
 export {
   Navigation,
@@ -584,4 +587,5 @@ export {
   Footer,
   About,
   ProjectDetail,
+  Success
 }
