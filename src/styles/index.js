@@ -158,7 +158,7 @@ const About = styled.div`
         width: 100%;
       }
 
-      @media (max-width: 750px) {
+      @media (max-width: 850px) {
         border-radius: 50%;
         width: 300px;
         height: 300px;
