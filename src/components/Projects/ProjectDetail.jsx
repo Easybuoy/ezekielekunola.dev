@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import Image from "gatsby-image"
 import Helmet from "react-helmet"
 
+import Navigation from "../Common/Navigation"
 import { ProjectDetail as StyledProjectDetail } from "../../styles"
 import PatternImage from "../../images/pattern.png"
 
@@ -29,67 +30,78 @@ export const query = graphql`
 const ProjectDetail = ({ data }) => {
   const project = data.projectsJson
 
-  const { url, title, technologies, githubUrl, description, contribution } = project
+  const {
+    url,
+    title,
+    technologies,
+    githubUrl,
+    description,
+    contribution,
+  } = project
 
   const imageData = project.image.childImageSharp.fluid
   return (
-    <StyledProjectDetail>
-      <Helmet>
-        <link
-          href="https://fonts.googleapis.com/css?family=Alegreya+Sans&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css?family=Concert+One&display=swap"
-          rel="stylesheet"
-        />
-      </Helmet>
+    <div>
+      <Navigation />
 
-      <div
-        className="project-detail"
-        style={{
-          backgroundImage: `linear-gradient(to right bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(${PatternImage})`,
-        }}
-      >
-        <div className="project-image">
-          <Image fluid={imageData} alt={title} />
+      <StyledProjectDetail>
+        <Helmet>
+          <link
+            href="https://fonts.googleapis.com/css?family=Alegreya+Sans&display=swap"
+            rel="stylesheet"
+          />
+          <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+            rel="stylesheet"
+          />
+          <link
+            href="https://fonts.googleapis.com/css?family=Concert+One&display=swap"
+            rel="stylesheet"
+          />
+        </Helmet>
+
+        <div
+          className="project-detail"
+          style={{
+            backgroundImage: `linear-gradient(to right bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(${PatternImage})`,
+          }}
+        >
+          <div className="project-image">
+            <Image fluid={imageData} alt={title} />
+          </div>
+
+          <div className="project-content">
+            <h2>{title}</h2>
+
+            <p>{description}</p>
+
+            <p className="contribution-text">"{contribution}"</p>
+
+            <div className="project-technologies">
+              {technologies.map(technology => (
+                <span key={technology}>{technology}</span>
+              ))}
+            </div>
+
+            <div className="project-links">
+              <a href={url} target="_blank" rel="noopener noreferrer">
+                <i className="fas fa-globe fa-4x"></i>
+              </a>
+
+              <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-github fa-4x"></i>
+              </a>
+            </div>
+
+            <div className="project-actions">
+              <p>
+                <Link to="/#projects"> &larr; Back to all projects</Link>
+              </p>
+            </div>
+          </div>
         </div>
-
-        <div className="project-content">
-          <h2>{title}</h2>
-
-          <p>{description}</p>
-
-          <p className="contribution-text">"{contribution}"</p>
-
-          <div className="project-technologies">
-            {technologies.map(technology => (
-              <span key={technology}>{technology}</span>
-            ))}
-          </div>
-
-          <div className="project-links">
-            <a href={url} target="_blank" rel="noopener noreferrer">
-              <i className="fas fa-globe fa-4x"></i>
-            </a>
-
-            <a href={githubUrl} target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-github fa-4x"></i>
-            </a>
-          </div>
-
-          <div className="project-actions">
-            <p>
-              <Link to="/#projects"> &larr; Back to all projects</Link>
-            </p>
-          </div>
-        </div>
-      </div>
-    </StyledProjectDetail>
+      </StyledProjectDetail>
+    </div>
   )
 }
 

@@ -3,7 +3,7 @@ import React from "react"
 import { Contact as StyledContact } from "../../styles"
 import { Input, Button, Form, TextArea } from "../../styles/common"
 import PatternImage from "../../images/pattern2.png"
-import ContactImage from '../../images/avatar.png'
+import ContactImage from "../../images/avatar.png"
 
 export default function Contact() {
   return (
@@ -18,9 +18,15 @@ export default function Contact() {
 
         <div className="contact-form">
           <Form
-            action="https://formspree.io/ekunolaeasybuoy@gmail.com"
+            action="/success"
+            name="contact"
             method="POST"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
           >
+            <input type="hidden" name="bot-field" />
+            <input type="hidden" name="form-name" value="contact" />
+
             <label htmlFor="name">Your Name</label>
             <Input
               type="text"
@@ -42,11 +48,11 @@ export default function Contact() {
             <label htmlFor="message">Message</label>
             <TextArea
               id="message"
-              placeholder="Your message"
+              placeholder="Your Message"
               name="message"
               required
             />
-            <Button>Send</Button>
+            <Button type="submit">Send</Button>
           </Form>
         </div>
 
