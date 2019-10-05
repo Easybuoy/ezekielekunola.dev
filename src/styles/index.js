@@ -571,7 +571,93 @@ const Footer = styled.footer`
   }
 `
 const Success = styled.div`
-background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .success {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 95vh;
+    align-items: center;
+    text-align: center;
+    box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.2),
+      0 -1px 5px 0 rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    border-radius: 10px;
+    padding: 0 5rem;
+
+    @media (max-width: 1030px) {
+      padding: 0 2rem;
+    }
+
+    @media (max-width: 875px) {
+      flex-direction: column;
+    }
+    .success-image {
+      display: flex;
+      justify-content: center;
+      width: 50%;
+      img {
+        width: 450px;
+        height: 450px;
+
+        @media (max-width: 875px) {
+          width: 350px;
+          height: 350px;
+        }
+
+        @media (max-width: 450px) {
+          width: 300px;
+          height: 300px;
+        }
+
+        @media (max-width: 350px) {
+          width: 250px;
+          height: 250px;
+        }
+
+        @media (max-width: 250px) {
+          width: 150px;
+          height: 150px;
+        }
+      }
+    }
+
+    .success-content {
+      display: flex;
+      justify-content: center;
+      width: 50%;
+
+      .success-content-detail {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+          font-size: 3rem;
+          @media (max-width: 380px) {
+            font-size: 2.5rem;
+          }
+        }
+        a {
+          font-size: 2.5rem;
+          text-align: center;
+          padding: 2rem 0;
+          text-decoration: none;
+          color: #031a6b;
+          @media (max-width: 300px) {
+            font-size: 2rem;
+          }
+        }
+      }
+
+      @media (max-width: 875px) {
+        margin: 3rem 0;
+      }
+    }
+  }
 `
 
 export {
@@ -587,5 +673,5 @@ export {
   Footer,
   About,
   ProjectDetail,
-  Success
+  Success,
 }
