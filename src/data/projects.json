@@ -18,7 +18,7 @@
       "styled-components"
     ],
     "description": "A web application that helps you get honest feedback from your co-workers",
-    "contribution": "I contributed in developing the both frontend, backend and design of Anonymous Team Feedback using React, GraphQL, Apollo, Styled-Components Material Design Bootstrap, Node and Postgres."
+    "contribution": "Contributed in developing both frontend, backend and design of Anonymous Team Feedback using React, GraphQL, Apollo, Styled-Components Material Design Bootstrap, Node, Postgres and Jest"
   },
   {
     "id": "2",
@@ -30,7 +30,7 @@
     "gif": "",
     "technologies": ["react", "redux", "css", "api", "postgres"],
     "description": "A web application that helps store owners manage sales and product inventory records. Store owners/managers can create store attendant accounts who would be in charge of selling of items in the store.",
-    "contribution": "I contributed to developing both the frontend and backend of the Store Manager using React, Redux, CSS, and Node, Express and Postgres."
+    "contribution": "Contributed to developing both the frontend and backend of the Store Manager using React, Redux, CSS, and Node, Express and Postgres."
   },
   {
     "id": "3",
@@ -48,7 +48,7 @@
       "api"
     ],
     "description": "Use My Tech Stuff aims to provide a safe, guaranteed, and efficient way to effortlessly share professional tech equipment.",
-    "contribution": "I contributed to developing the frontend of the project using React, Redux, Styled-Components, and Material Design Bootstrap."
+    "contribution": "Contributed to developing the frontend of the project using React, Redux, Styled-Components, and Material Design Bootstrap."
   },
   {
     "id": "4",
@@ -60,7 +60,7 @@
     "gif": "",
     "technologies": ["html", "css", "javascript", "aos"],
     "description": "School in the Cloud is a platform that trains senior volunteers to teach students in a group or individual setting. This helps kids in communities with high student to teacher ratios. It also provides retired volunteers a sense of purpose and meaning in their day to day life when they find themselves with more free time. The platform also connects volunteers with the students.",
-    "contribution": "I contributed to the design and implementation of School in the cloud using Html, CSS and Javascript."
+    "contribution": "Contributed to the design and implementation of School in the cloud using Html, CSS and Javascript."
   },
   {
     "id": "5",
@@ -77,7 +77,7 @@
       "api"
     ],
     "description": "Progressive Web Application that displays information about Marvel Comics and Characters.",
-    "contribution": "I contributed to the design and implementation of Marvel Comics using React, Styled-Components, and Material Design Bootstrap."
+    "contribution": "Contributed to the design and implementation of Marvel Comics using React, Styled-Components, and Material Design Bootstrap."
   },
   {
     "id": "6",
@@ -89,7 +89,7 @@
     "gif": "",
     "technologies": ["react", "material-design-bootstrap", "api"],
     "description": "Web Application that lists comprehensive details about Movies and TV-Series.",
-    "contribution": "I contributed in the desgin and implementation of Movie Listing using React and Material Design Bootstrap."
+    "contribution": "Contributed in the desgin and implementation of Movie Listing using React and Material Design Bootstrap."
   },
   {
     "id": "7",
@@ -101,6 +101,6 @@
     "gif": "",
     "technologies": ["html", "css", "jquery", "node", "express"],
     "description": "This is a progressive web app that allows you view latest and currrent news accross the world.",
-    "contribution": "I contributed in the desgin and implementation of Headline News using Html, Css, Jquery, Node and Express."
+    "contribution": "Contributed in the desgin and implementation of Headline News using Html, Css, Jquery, Node and Express."
   }
 ]
