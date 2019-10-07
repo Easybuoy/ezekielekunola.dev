@@ -30,7 +30,7 @@
     "gif": "",
     "technologies": ["react", "redux", "css", "api", "postgres"],
     "description": "A web application that helps store owners manage sales and product inventory records. Store owners/managers can create store attendant accounts who would be in charge of selling of items in the store.",
-    "contribution": "Contributed to developing both the frontend and backend of the Store Manager using React, Redux, CSS, and Node, Express and Postgres."
+    "contribution": "Contributed to developing both the frontend and backend of the Store Manager using React, Redux, CSS, and Node, Express and Postgres, Mocha and Chai."
   },
   {
     "id": "3",
