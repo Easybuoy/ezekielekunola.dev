@@ -16,7 +16,7 @@ export const query = graphql`
       technologies
       description
       contribution
-      image {
+      imageDetails {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
@@ -39,7 +39,8 @@ const ProjectDetail = ({ data }) => {
     contribution,
   } = project
 
-  const imageData = project.image.childImageSharp.fluid
+  const imageData = project.imageDetails.childImageSharp.fluid
+  // const imageData = project.image.childImageSharp.fluid
   return (
     <div>
       <Navigation />
