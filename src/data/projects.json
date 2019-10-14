@@ -32,7 +32,7 @@
     "gif": "",
     "technologies": ["react", "redux", "css", "api", "postgres"],
     "description": "A web application that helps store owners manage sales and product inventory records. Store owners/managers can create store attendant accounts who would be in charge of selling of items in the store.",
-    "contribution": "Contributed to developing both the frontend and backend of the Store Manager using React, Redux, CSS, and Node, Express and Postgres, Mocha and Chai."
+    "contribution": "Developed both the frontend and backend of the Store Manager using React, Redux, CSS, and Node, Express and Postgres, Mocha and Chai."
   },
   {
     "id": "3",
@@ -51,7 +51,7 @@
       "api"
     ],
     "description": "Use My Tech Stuff aims to provide a safe, guaranteed, and efficient way to effortlessly share professional tech equipment.",
-    "contribution": "Contributed to developing the frontend of the project using React, Redux, Styled-Components, and Material Design Bootstrap."
+    "contribution": "Built the frontend of the project using React, Redux, Styled-Components, and Material Design Bootstrap."
   },
   {
     "id": "4",
@@ -82,7 +82,7 @@
       "api"
     ],
     "description": "Progressive Web Application that displays information about Marvel Comics and Characters.",
-    "contribution": "Contributed to the design and implementation of Marvel Comics using React, Styled-Components, and Material Design Bootstrap."
+    "contribution": "Applied the knowledge of React, Styled-Components, and Material-Design to the design and implementation of Marvel Comics."
   },
   {
     "id": "6",
