@@ -109,7 +109,7 @@ const About = styled.div`
   }
 
   .about-content {
-    width: 40%;
+    width: 45%;
     display: flex;
     flex-wrap: wrap;
 
@@ -134,10 +134,11 @@ const About = styled.div`
     }
   }
   .about-image {
-    width: 40%;
+    width: 45%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
 
     @media (max-width: 750px) {
       width: 90%;
@@ -510,6 +511,8 @@ const Contact = styled.section`
   display: flex;
   flex-wrap: wrap;
   padding: 2rem 0;
+  justify-content: center;
+  align-items: center;
 
   .contact {
     width: 100%;
@@ -532,18 +535,23 @@ const Contact = styled.section`
 
     .contact-form {
       width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       @media (max-width: 900px) {
         width: 70%;
       }
 
-      @media (max-width: 710px) {
+      @media (max-width: 750px) {
         width: 90%;
       }
     }
 
     .contact-form-image {
-      @media (max-width: 710px) {
+      width: 30%;
+
+      @media (max-width: 750px) {
         display: none;
       }
 
