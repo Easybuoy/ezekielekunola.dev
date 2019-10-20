@@ -510,6 +510,8 @@ const Contact = styled.section`
   display: flex;
   flex-wrap: wrap;
   padding: 2rem 0;
+  justify-content: center;
+  align-items: center;
 
   .contact {
     width: 100%;
@@ -532,7 +534,10 @@ const Contact = styled.section`
 
     .contact-form {
       width: 50%;
-
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
       @media (max-width: 900px) {
         width: 70%;
       }
@@ -543,6 +548,8 @@ const Contact = styled.section`
     }
 
     .contact-form-image {
+      width: 30%;
+
       @media (max-width: 710px) {
         display: none;
       }

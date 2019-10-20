@@ -40,7 +40,6 @@ const ProjectDetail = ({ data }) => {
   } = project
 
   const imageData = project.imageDetails.childImageSharp.fluid
-  // const imageData = project.image.childImageSharp.fluid
   return (
     <div>
       <Navigation />
