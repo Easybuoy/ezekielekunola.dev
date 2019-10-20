@@ -1,8 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 import Image from "gatsby-image"
-import Helmet from "react-helmet"
 
+import Layout from "../Layout"
 import Navigation from "../Common/Navigation"
 import { ProjectDetail as StyledProjectDetail } from "../../styles"
 import PatternImage from "../../images/pattern.png"
@@ -41,25 +41,10 @@ const ProjectDetail = ({ data }) => {
 
   const imageData = project.imageDetails.childImageSharp.fluid
   return (
-    <div>
+    <Layout>
       <Navigation />
 
       <StyledProjectDetail>
-        <Helmet>
-          <link
-            href="https://fonts.googleapis.com/css?family=Alegreya+Sans&display=swap"
-            rel="stylesheet"
-          />
-          <link
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
-            rel="stylesheet"
-          />
-          <link
-            href="https://fonts.googleapis.com/css?family=Concert+One&display=swap"
-            rel="stylesheet"
-          />
-        </Helmet>
-
         <div
           className="project-detail"
           style={{
@@ -101,7 +86,7 @@ const ProjectDetail = ({ data }) => {
           </div>
         </div>
       </StyledProjectDetail>
-    </div>
+    </Layout>
   )
 }
 
