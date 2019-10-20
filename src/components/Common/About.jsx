@@ -1,7 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
-import ProfileImage from "../../images/profile2.jpg"
 import { About as StyledAbout } from "../../styles"
 
 export default function About() {
@@ -17,7 +16,6 @@ export default function About() {
       }
     }
   `)
-  console.log(data)
 
   return (
     <StyledAbout id="about">
