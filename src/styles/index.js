@@ -521,7 +521,7 @@ const Contact = styled.section`
     border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.2),
       0 -1px 5px 0 rgba(0, 0, 0, 0.1);
@@ -549,8 +549,11 @@ const Contact = styled.section`
     }
 
     .contact-form-image {
-      width: 30%;
-
+      width: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
       @media (max-width: 750px) {
         display: none;
       }
