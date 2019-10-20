@@ -1,6 +1,6 @@
 import React from "react"
-import Image from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
+
 import { Contact as StyledContact } from "../../styles"
 import { Input, Button, Form, TextArea } from "../../styles/common"
 import PatternImage from "../../images/pattern2.png"
@@ -8,7 +8,7 @@ import PatternImage from "../../images/pattern2.png"
 export default function Contact() {
   const data = useStaticQuery(graphql`
     query {
-      imageOne: file(relativePath: { eq: "avatar.png" }) {
+      contactImage: file(relativePath: { eq: "avatar.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
@@ -17,7 +17,6 @@ export default function Contact() {
       }
     }
   `)
-  console.log(data)
 
   return (
     <StyledContact>
@@ -70,7 +69,7 @@ export default function Contact() {
         </div>
 
         <div className="contact-form-image">
-          <Image fluid={data.imageOne.childImageSharp.fluid} alt="contact" />
+          <img src={data.contactImage.childImageSharp.fluid.src} alt="contact" />
         </div>
       </div>
     </StyledContact>

@@ -1,9 +1,24 @@
 import React from "react"
+import { graphql, useStaticQuery } from "gatsby"
 
 import ProfileImage from "../../images/profile2.jpg"
 import { About as StyledAbout } from "../../styles"
 
 export default function About() {
+  const data = useStaticQuery(graphql`
+    query {
+      aboutImage: file(relativePath: { eq: "profile2.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 500, quality: 100) {
+            aspectRatio
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+  console.log(data)
+
   return (
     <StyledAbout id="about">
       <div className="about-content">
@@ -17,7 +32,7 @@ export default function About() {
         </p>
       </div>
       <div className="about-image">
-        <img src={ProfileImage} alt="profile" />
+        <img src={data.aboutImage.childImageSharp.fluid.src} alt="profile" />
       </div>
     </StyledAbout>
   )

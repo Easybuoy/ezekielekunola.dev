@@ -109,7 +109,7 @@ const About = styled.div`
   }
 
   .about-content {
-    width: 40%;
+    width: 45%;
     display: flex;
     flex-wrap: wrap;
 
@@ -134,10 +134,11 @@ const About = styled.div`
     }
   }
   .about-image {
-    width: 40%;
+    width: 45%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
 
     @media (max-width: 750px) {
       width: 90%;
@@ -537,7 +538,7 @@ const Contact = styled.section`
       display: flex;
       align-items: center;
       justify-content: center;
-      
+
       @media (max-width: 900px) {
         width: 70%;
       }
