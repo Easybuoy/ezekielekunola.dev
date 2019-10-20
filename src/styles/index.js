@@ -543,7 +543,7 @@ const Contact = styled.section`
         width: 70%;
       }
 
-      @media (max-width: 710px) {
+      @media (max-width: 750px) {
         width: 90%;
       }
     }
@@ -551,7 +551,7 @@ const Contact = styled.section`
     .contact-form-image {
       width: 30%;
 
-      @media (max-width: 710px) {
+      @media (max-width: 750px) {
         display: none;
       }
 
