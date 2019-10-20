@@ -48,7 +48,7 @@ export default function Header() {
               <span role="img" aria-label="Wave">
                 👋🏾
               </span>
-              , I'm Ezekiel
+              , I'm <span className="name">Ezekiel</span>
             </h1>
             <Typist
               cursor={{

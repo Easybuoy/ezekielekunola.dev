@@ -22,7 +22,6 @@ const ContactDetail = styled.div`
     padding: 0 1rem;
     color: ${props => props.color || "#031a6b"};
 
-    
     i {
       transition: all 0.3s ease-in-out;
 

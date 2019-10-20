@@ -57,6 +57,10 @@ const Header = styled.header`
           font-family: "Concert One", cursive;
           font-size: 7rem;
 
+          .name {
+            color: #031a6b;
+          }
+
           @media (max-width: 500px) {
             padding: 0 1rem;
             font-size: 4.5rem;
