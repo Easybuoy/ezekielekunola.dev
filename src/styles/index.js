@@ -549,7 +549,10 @@ const Contact = styled.section`
     }
 
     .contact-form-image {
-      width: 30%;
+      width: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       @media (max-width: 750px) {
         display: none;
