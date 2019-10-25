@@ -22,11 +22,11 @@ export default function About() {
       <div className="about-content">
         <h3>About Me</h3>
         <p>
-          Experienced Web Developer with a demonstrated history of working in
-          the information technology and services industry. Skilled in NODE,
-          REACT, GRAPHQL, MongoDB, PHP, JAVASCRIPT, HTML and Search Engine
-          Optimization (SEO). Strong engineering professional graduated from
-          Aptech Computer Education.
+          Experienced Software Engineer with a demonstrated history of working
+          in the information technology and services industry. Skilled in Node,
+          React, Redux, GraphQL, MongoDB, PHP, Javascript, Python. Strong engineering
+          professional graduated from Aptech Computer Education and Lambda
+          School.
         </p>
       </div>
       <div className="about-image">
