@@ -18,7 +18,7 @@
       "python",
       "postgres"
     ],
-    "description": "A web application MUD game that has chat functionality.",
+    "description": "Mount Doom is a Multi-User Dimension web application game that has chat functionality.",
     "contribution": "Contributed in developing the frontend and design of the Multi-User Dimension(MUD) Game using React, Styled-Component, React-Vis and Pusher"
   },
   {
