@@ -11,13 +11,14 @@
     "technologies": [
       "react",
       "react-vis",
-      "django",
-      "python",
       "material-design-bootstrap",
-      "styled-components"
+      "styled-components",
+      "pusher",
+      "django",
+      "python"
     ],
-    "description": "A web application game that helps you get honest feedback from your co-workers",
-    "contribution": "Contributed in developing both frontend, backend and design of Anonymous Team Feedback using React, GraphQL, Apollo, Styled-Components Material Design Bootstrap, Node, Postgres and Jest"
+    "description": "A web application MUD game that has chat functionality.",
+    "contribution": "Contributed in developing the frontend and design of the Multi-User Dimension(MUD) Game using React, Styled-Component, React-Vis and Pusher"
   },
   {
     "id": "2",
