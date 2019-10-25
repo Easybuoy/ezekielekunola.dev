@@ -5,7 +5,7 @@ export default function ContactDetail({ size, color = "#031a6b" }) {
   let mailClassName = `fas fa-envelope fa-${size}`
   let githubClassName = `fab fa-github fa-${size}`
   let linkedInClassName = `fab fa-linkedin fa-${size}`
-  let blogClassName = `fas fa-newspaper fa-${size}`
+  let blogClassName = `far fa-newspaper fa-${size}`
   let devClassName = `fab fa-dev fa-${size}`
   let twitterClassName = `fab fa-twitter fa-${size}`
 
