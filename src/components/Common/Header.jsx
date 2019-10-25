@@ -31,7 +31,7 @@ export default function Header() {
             </a>
 
             <a href="https://www.blog.ezekielekunola.com/">
-              <i className="fas fa-blog fa-5x"></i>
+              <i className="fas fa-newspaper fa-5x"></i>
             </a>
 
             <a href="https://dev.to/easybuoy">

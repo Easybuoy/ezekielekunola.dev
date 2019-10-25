@@ -19,7 +19,7 @@ const Footer = () => {
         </a>
 
         <a href="https://www.blog.ezekielekunola.com/">
-          <i className="fas fa-blog fa-3x"></i>
+          <i className="fas fa-newspaper fa-3x"></i>
         </a>
 
         <a href="https://dev.to/easybuoy">
