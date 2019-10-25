@@ -24,9 +24,16 @@ export default function About() {
         <p>
           Experienced Software Engineer with a demonstrated history of working
           in the information technology and services industry. Skilled in Node,
-          React, Redux, GraphQL, MongoDB, PHP, Javascript, Python. Strong engineering
-          professional graduated from Aptech Computer Education and Lambda
-          School.
+          React, Redux, GraphQL, MongoDB, PHP, Javascript, Python. I have a
+          strong engineering background from Aptech Computer Education and
+          Lambda School.
+        </p>
+        <br />
+        <p>
+          When not working on a project or thinking about programming, I'm most
+          likely watching TV series on Netflix, playing
+          tennis, sight-seeing, watching Manchester City play football, or spending time with
+          family and friends.
         </p>
       </div>
       <div className="about-image">
