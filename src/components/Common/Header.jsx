@@ -3,9 +3,9 @@ import Typist from "react-typist"
 import "react-typist/dist/Typist.css"
 
 import { Header as StyledHeader } from "../../styles"
-import { ContactDetail } from "../../styles/common.js"
 import PatternImage from "../../images/pattern.png"
 import Bounce from "../Common/Bounce"
+import ContactDetail from "../Common/Reuseables/ContactDetail"
 
 export default function Header() {
   return (
@@ -17,31 +17,7 @@ export default function Header() {
         }}
       >
         <div className="header-content">
-          <ContactDetail>
-            <a href="mailto:ekunolaeasybuoy@gmail.com">
-              <i className="fas fa-envelope fa-5x"></i>
-            </a>
-
-            <a href="https://github.com/easybuoy">
-              <i className="fab fa-github fa-5x"></i>
-            </a>
-
-            <a href="https://www.linkedin.com/in/easybuoy/">
-              <i className="fab fa-linkedin fa-5x"></i>
-            </a>
-
-            <a href="https://www.blog.ezekielekunola.com/">
-              <i className="fas fa-newspaper fa-5x"></i>
-            </a>
-
-            <a href="https://dev.to/easybuoy">
-              <i className="fab fa-dev fa-5x"></i>
-            </a>
-
-            <a href="https://twitter.com/easybuoy">
-              <i className="fab fa-twitter fa-5x"></i>
-            </a>
-          </ContactDetail>
+          <ContactDetail size="5x" />
           <div className="header-text">
             <h1>
               Hello{" "}

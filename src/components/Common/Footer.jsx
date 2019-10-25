@@ -1,36 +1,12 @@
 import React from "react"
 
+import ContactDetail from "./Reuseables/ContactDetail"
 import { Footer as StyledFooter } from "../../styles"
-import { ContactDetail } from "../../styles/common"
+
 const Footer = () => {
   return (
     <StyledFooter>
-      <ContactDetail color="white">
-        <a href="mailto:ekunolaeasybuoy@gmail.com">
-          <i className="fas fa-envelope fa-3x"></i>
-        </a>
-
-        <a href="https://github.com/easybuoy">
-          <i className="fab fa-github fa-3x"></i>
-        </a>
-
-        <a href="https://www.linkedin.com/in/easybuoy/">
-          <i className="fab fa-linkedin fa-3x"></i>
-        </a>
-
-        <a href="https://www.blog.ezekielekunola.com/">
-          <i className="fas fa-newspaper fa-3x"></i>
-        </a>
-
-        <a href="https://dev.to/easybuoy">
-          <i className="fab fa-dev fa-3x"></i>
-        </a>
-
-        <a href="https://twitter.com/easybuoy">
-          <i className="fab fa-twitter fa-3x"></i>
-        </a>
-      </ContactDetail>
-
+      <ContactDetail size="3x" color="white" />
       <p>
         {" "}
         Designed by easybuoy{" "}
