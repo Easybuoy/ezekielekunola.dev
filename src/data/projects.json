@@ -2,7 +2,7 @@
   {
     "id": "1",
     "title": "Mount Doom",
-    "slug": "atf",
+    "slug": "mount-doom",
     "url": "https://mud-mount-doom.herokuapp.com/",
     "githubUrl": "https://github.com/lambda-mud-poe",
     "image": "../images/projects/mud-game.png",
