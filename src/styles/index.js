@@ -375,15 +375,40 @@ const ProjectDetail = styled.section`
 `
 
 const SkillsList = styled.section`
+  /* width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5rem 0;
+  justify-content: center;
+  color: white; */
+
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   padding: 5rem 0;
   justify-content: center;
-  color: white;
-  h2 {
-    text-align: center;
+
+  .skills {
+    background-color: #170a1c;
+    margin: 1rem;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.2),
+      0 -1px 5px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    min-height: 50vh;
+    padding: 2rem 0;
+
+    .skills-header {
+      text-align: center;
+      width: 100%;
+      padding-bottom: 2rem;
+      /* color: white; */
+      h3 {
+        font-family: "Concert One", cursive;
+      }
+    }
   }
 `
 

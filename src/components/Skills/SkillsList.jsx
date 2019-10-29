@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
+import PatternImage from "../../images/pattern.png"
 import { SkillsList as StyledSkillsList } from "../../styles"
 import Skill from "./Skill"
 
@@ -23,11 +24,20 @@ const SkillsList = () => {
   const skills = data.allSkillsJson.edges
   return (
     <StyledSkillsList>
-      <h2>Tools/Technologies</h2>
+      <div
+        className="skills"
+        style={{
+          backgroundImage: `linear-gradient(to right bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(${PatternImage})`,
+        }}
+      >
+        <div className="skills-header">
+          <h3>Skills</h3>
+        </div>
 
-      {skills.map(({ node: skill }) => {
+        {/* {skills.map(({ node: skill }) => {
         return <Skill key={skill.id} skill={skill} />
-      })}
+      })} */}
+      </div>
     </StyledSkillsList>
   )
 }
