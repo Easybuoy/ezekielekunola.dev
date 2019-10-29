@@ -37,7 +37,7 @@ const SkillsList = () => {
 
         <div className="skills-body">
           <div className="skills-body-content">
-            <p>
+            <h3>
               As someone who loves the art of software development, I have a
               passion for writing robust, clean, and maintainable code. This
               also means I strive to follow best practices and use
@@ -47,7 +47,7 @@ const SkillsList = () => {
               the technology I prefer and/or am most familiar with includes
               Python, Django, PostgreSQL, React.js, JavaScript ES6,
               Sass/CSS/PostCSS, HTML, Twitter Bootstrap, and Linux.
-            </p>
+            </h3>
           </div>
           <div className="skills-body-items">
             {skills.map(({ node: skill }) => (

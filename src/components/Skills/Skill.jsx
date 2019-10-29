@@ -5,7 +5,7 @@ import { Skill as StyledSkill } from "../../styles"
 export default function Skill({ skill }) {
   const { title, skillset } = skill
   let iconClass = `${skill.icon} fa-3x`
-  console.log(iconClass)
+
   return (
     <StyledSkill>
       <div className="skill-header">
@@ -14,8 +14,8 @@ export default function Skill({ skill }) {
       </div>
 
       <div className="skill">
-        {skillset.map((singleSkill, i) => (
-          <p>{singleSkill}</p>
+        {skillset.map((singleSkill, index) => (
+          <p key={index}>{singleSkill}</p>
         ))}
       </div>
     </StyledSkill>

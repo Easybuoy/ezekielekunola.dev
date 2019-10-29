@@ -416,6 +416,7 @@ const SkillsList = styled.section`
       flex-wrap: wrap;
       padding: 1rem;
       justify-content: space-evenly;
+      flex-direction: row-reverse;
 
       .skills-body-content {
         border: 1px solid blue;
@@ -434,10 +435,11 @@ const SkillsList = styled.section`
 
 const Skill = styled.div`
   width: 100%;
-  margin: 1rem auto;
+  margin: 2rem auto;
   padding: 0 0.5rem;
   display: flex;
   flex-wrap: wrap;
+
   /* align-items: center; */
 
   /* @media (max-width: 700px) {

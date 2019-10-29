@@ -3,7 +3,7 @@
     "id": "1",
     "title": "Frontend Development",
     "icon": "fab fa-react",
-    "skillset": ["React", "Redux"]
+    "skillset": ["React", "Redux", "Styled-Components", "Jest", "HTML", "CSS", "JavaScript", "Webpack", "LESS"]
   },
   {
     "id": "2",
@@ -11,12 +11,17 @@
     "icon": "fab fa-node-js",
     "skillset": [
       "Python",
-      "GraphQL",
       "Node",
+      "PHP",
+      "YII",
+      "GraphQL",
       "Postgres",
       "MongoDB",
-      "PHP",
-      "YII"
+      "REST",
+      "TDD",
+      "Mocha",
+      "Chai",
+      "Travis-CI"
     ]
   },
   {
