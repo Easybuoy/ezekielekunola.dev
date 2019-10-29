@@ -14,7 +14,7 @@ const SkillsList = () => {
             id
             title
             icon
-            iconUrl
+            skillset
           }
         }
       }
@@ -22,6 +22,7 @@ const SkillsList = () => {
   `)
 
   const skills = data.allSkillsJson.edges
+  console.log(skills)
   return (
     <StyledSkillsList>
       <div
@@ -49,13 +50,11 @@ const SkillsList = () => {
             </p>
           </div>
           <div className="skills-body-items">
-            
+            {skills.map(({ node: skill }) => (
+              <Skill key={skill.id} skill={skill} />
+            ))}
           </div>
         </div>
-
-        {/* {skills.map(({ node: skill }) => {
-        return <Skill key={skill.id} skill={skill} />
-      })} */}
       </div>
     </StyledSkillsList>
   )

@@ -433,29 +433,36 @@ const SkillsList = styled.section`
 `
 
 const Skill = styled.div`
-  width: 10%;
+  width: 100%;
   margin: 1rem auto;
   padding: 0 0.5rem;
-  margin: 2rem;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  /* align-items: center; */
 
-  @media (max-width: 700px) {
+  /* @media (max-width: 700px) {
     width: 15%;
   }
 
   @media (max-width: 570px) {
     width: 20%;
+  } */
+
+  .skill-header {
+    width: 100%;
+    display: flex;
+
+    i {
+      padding: 0 2rem;
+    }
   }
 
   .skill {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
-    color: white;
-
-    img {
-      width: 100%;
-    }
+    /* color: white; */
   }
 `
 

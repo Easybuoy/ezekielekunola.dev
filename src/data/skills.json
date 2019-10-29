@@ -8,8 +8,16 @@
   {
     "id": "2",
     "title": "Backend Development",
-    "icon": "fab fa-node",
-    "skillset": ["Python", "GraphQL", "Node", "Postgres", "MongoDB", "PHP", "YII"]
+    "icon": "fab fa-node-js",
+    "skillset": [
+      "Python",
+      "GraphQL",
+      "Node",
+      "Postgres",
+      "MongoDB",
+      "PHP",
+      "YII"
+    ]
   },
   {
     "id": "3",
