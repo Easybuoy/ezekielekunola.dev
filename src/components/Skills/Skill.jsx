@@ -10,14 +10,12 @@ export default function Skill({ skill }) {
     <StyledSkill>
       <div className="skill-header">
         <i className={iconClass}></i>
-        <p>{title}</p>
+        <h4>{title}</h4>
       </div>
 
       <div className="skill">
         {skillset.map((singleSkill, i) => (
-          <div>
-            <p>{singleSkill}</p>
-          </div>
+          <p>{singleSkill}</p>
         ))}
       </div>
     </StyledSkill>

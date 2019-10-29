@@ -451,9 +451,16 @@ const Skill = styled.div`
   .skill-header {
     width: 100%;
     display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
 
     i {
       padding: 0 2rem;
+    }
+
+    h4 {
+      font-family: "Concert One", cursive;
+      font-size: 2.5rem;
     }
   }
 
@@ -462,7 +469,14 @@ const Skill = styled.div`
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    /* color: white; */
+
+    p {
+      padding: 0.8rem;
+      background-color: #031a6b;
+      color: white;
+      margin: 1rem;
+      border-radius: 5px;
+    }
   }
 `
 
