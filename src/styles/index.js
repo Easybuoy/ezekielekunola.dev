@@ -404,9 +404,29 @@ const SkillsList = styled.section`
       text-align: center;
       width: 100%;
       padding-bottom: 2rem;
-      /* color: white; */
+
       h3 {
         font-family: "Concert One", cursive;
+      }
+    }
+
+    .skills-body {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 1rem;
+      justify-content: space-evenly;
+
+      .skills-body-content {
+        border: 1px solid blue;
+        height: 100%;
+        width: 45%;
+      }
+
+      .skills-body-items {
+        border: 1px solid red;
+        height: 100%;
+        width: 45%;
       }
     }
   }

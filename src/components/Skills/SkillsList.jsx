@@ -34,6 +34,11 @@ const SkillsList = () => {
           <h3>Skills</h3>
         </div>
 
+        <div className="skills-body">
+          <div className="skills-body-content"></div>
+          <div className="skills-body-items"></div>
+        </div>
+
         {/* {skills.map(({ node: skill }) => {
         return <Skill key={skill.id} skill={skill} />
       })} */}
