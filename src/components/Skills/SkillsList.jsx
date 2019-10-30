@@ -50,9 +50,9 @@ const SkillsList = () => {
 
               <h4>
                 This also means I strive to follow best practices and use
-                industry-standard tools, including git-flow, TDD, linting,
+                industry-standard tools, including git-flow, Test Driven Development(TDD), Continous Integration (Travis-CI, Coveralls, Codeclimate, Hound), linting (ESLint, Prettier),
                 package management (Yarn, NPM, and Pipenv), and modern build
-                tools (Webpack and Parcel).
+                tools (Webpack, Babel).
               </h4>
 
               <h4>

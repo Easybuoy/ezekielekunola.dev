@@ -41,11 +41,5 @@
     "title": "Version Control",
     "icon": "fas fa-code-branch",
     "skillset": ["Github", "Gitlab"]
-  },
-  {
-    "id": "4",
-    "title": "Tools",
-    "icon": "fas fa-tools",
-    "skillset": ["ESLint", "Travis-CI", "Babel", "Webpack"]
   }
 ]
