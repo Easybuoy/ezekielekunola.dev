@@ -3,7 +3,17 @@
     "id": "1",
     "title": "Frontend Development",
     "icon": "fab fa-react",
-    "skillset": ["React", "Redux", "Styled-Components", "Jest", "HTML", "CSS", "JavaScript", "Webpack", "LESS"]
+    "skillset": [
+      "React",
+      "Redux",
+      "Styled-Components",
+      "Jest",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "LESS",
+      "Netlify"
+    ]
   },
   {
     "id": "2",
@@ -21,7 +31,9 @@
       "TDD",
       "Mocha",
       "Chai",
-      "Travis-CI"
+      "Travis-CI",
+      "SQL",
+      "Heroku"
     ]
   },
   {
@@ -29,5 +41,11 @@
     "title": "Version Control",
     "icon": "fas fa-code-branch",
     "skillset": ["Github", "Gitlab"]
+  },
+  {
+    "id": "4",
+    "title": "Tools",
+    "icon": "fas fa-tools",
+    "skillset": ["ESLint", "Travis-CI", "Babel", "Webpack"]
   }
 ]

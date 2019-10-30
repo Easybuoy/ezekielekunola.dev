@@ -375,17 +375,9 @@ const ProjectDetail = styled.section`
 `
 
 const SkillsList = styled.section`
-  /* width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 5rem 0;
-  justify-content: center;
-  color: white; */
-
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 5rem 0;
   justify-content: center;
 
   .skills {
@@ -419,13 +411,42 @@ const SkillsList = styled.section`
       flex-direction: row-reverse;
 
       .skills-body-content {
-        border: 1px solid blue;
         height: 100%;
         width: 45%;
+
+        .skills-body-content-header {
+          display: flex;
+          align-items: center;
+          color: #031a6b;
+          margin: 2rem auto;
+          i {
+            padding: 0 2rem;
+          }
+          h3 {
+            margin: 1 2rem;
+          }
+        }
+
+        .skills-body-content-details {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+          padding: 1rem;
+
+          span {
+            color: #031a6b;
+            font-weight: 900;
+          }
+          h4 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            line-height: 3rem;
+          }
+        }
       }
 
       .skills-body-items {
-        border: 1px solid red;
         height: 100%;
         width: 45%;
       }
