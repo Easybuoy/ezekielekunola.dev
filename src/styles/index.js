@@ -442,6 +442,7 @@ const SkillsList = styled.section`
             font-size: 2.5rem;
             margin-bottom: 2rem;
             line-height: 3rem;
+            font-family: 'Jaldi', sans-serif;
           }
         }
       }

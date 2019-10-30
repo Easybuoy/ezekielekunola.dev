@@ -45,14 +45,17 @@ const SkillsList = () => {
             <div className="skills-body-content-details">
               <h4>
                 As someone who loves the art of software development, I have a
-                passion for writing robust, clean, and maintainable code.
+                passion for writing robust, clean, re-usable and maintainable
+                code.
               </h4>
 
               <h4>
                 This also means I strive to follow best practices and use
-                industry-standard tools, including git-flow, Test Driven Development(TDD), Continous Integration (Travis-CI, Coveralls, Codeclimate, Hound), linting (ESLint, Prettier),
-                package management (Yarn, NPM, and Pipenv), and modern build
-                tools (Webpack, Babel).
+                industry-standard tools, including git-flow, Test Driven
+                Development(TDD), Continous Integration (Travis-CI, Coveralls,
+                Codeclimate, Hound), linting (ESLint, Prettier), package
+                management (Yarn, NPM, and Pipenv), and modern build tools
+                (Webpack, Babel).
               </h4>
 
               <h4>

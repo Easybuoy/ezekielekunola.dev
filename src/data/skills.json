@@ -27,12 +27,12 @@
       "GraphQL",
       "Postgres",
       "MongoDB",
+      "SQL",
       "REST",
       "TDD",
       "Mocha",
       "Chai",
       "Travis-CI",
-      "SQL",
       "Heroku"
     ]
   },
