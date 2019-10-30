@@ -410,10 +410,18 @@ const SkillsList = styled.section`
       justify-content: space-evenly;
       flex-direction: row-reverse;
 
+      @media (max-width: 850px) {
+        flex-direction: column;
+      }
+
       .skills-body-content {
-        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
         width: 45%;
 
+        @media (max-width: 850px) {
+          width: 95%;
+        }
         .skills-body-content-header {
           display: flex;
           align-items: center;
@@ -443,14 +451,19 @@ const SkillsList = styled.section`
             font-size: 2.5rem;
             margin-bottom: 2rem;
             line-height: 3rem;
-            font-family: 'Jaldi', sans-serif;
+            font-family: "Jaldi", sans-serif;
           }
         }
       }
 
       .skills-body-items {
-        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
         width: 45%;
+
+        @media (max-width: 850px) {
+          width: 95%;
+        }
       }
     }
   }
@@ -462,16 +475,6 @@ const Skill = styled.div`
   padding: 0 0.5rem;
   display: flex;
   flex-wrap: wrap;
-
-  /* align-items: center; */
-
-  /* @media (max-width: 700px) {
-    width: 15%;
-  }
-
-  @media (max-width: 570px) {
-    width: 20%;
-  } */
 
   .skill-header {
     width: 100%;
@@ -486,6 +489,10 @@ const Skill = styled.div`
     h4 {
       font-family: "Concert One", cursive;
       font-size: 2.5rem;
+
+      @media (max-width: 300px) {
+        font-size: 1.5rem;
+      }
     }
   }
 
