@@ -52,18 +52,18 @@ const SkillsList = () => {
               <h4>
                 This also means I strive to follow best practices and use
                 industry-standard tools, including git-flow, Test Driven
-                Development(TDD), Continous Integration (Travis-CI, Coveralls,
-                Codeclimate, Hound), linting (ESLint, Prettier), package
-                management (Yarn, NPM, and Pipenv), and modern build tools
-                (Webpack, Babel).
+                Development(<span>Jest, Mocha, Chai</span>), Continous Integration (<span>Travis-CI, Coveralls,
+                Codeclimate, Hound</span>), linting (<span>ESLint, Prettier</span>), package
+                management (<span>Yarn, NPM, and Pipenv</span>), and modern build tools
+                (<span>Webpack, Babel</span>).
               </h4>
 
               <h4>
                 Although I've a wide range of experience, the technology I
                 prefer and/or am most familiar with includes{" "}
                 <span>
-                  Python, Django, PostgreSQL, React.js, JavaScript ES6,
-                  Sass/CSS/PostCSS, HTML, Twitter Bootstrap, and Linux.
+                  React, Redux, Node, Postgres, JavaScript ES6,
+                  Sass/CSS/PostCSS, HTML.
                 </span>
               </h4>
             </div>

@@ -424,6 +424,7 @@ const SkillsList = styled.section`
           }
           h3 {
             margin: 1 2rem;
+            font-family: "Concert One", cursive;
           }
         }
 
