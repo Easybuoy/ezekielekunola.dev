@@ -490,8 +490,8 @@ const Skill = styled.div`
       font-family: "Concert One", cursive;
       font-size: 2.5rem;
 
-      @media (max-width: 300px) {
-        font-size: 1.5rem;
+      @media (max-width: 400px) {
+        font-size: 2.3rem;
       }
     }
   }
@@ -501,13 +501,19 @@ const Skill = styled.div`
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-
+    @media (max-width: 850px) {
+      justify-content: center;
+    }
+    
     p {
-      padding: 0.8rem;
+      padding: 0.7rem;
       background-color: #031a6b;
       color: white;
       margin: 1rem;
       border-radius: 5px;
+      text-align: center;
+      display: flex;
+      align-items: center;
     }
   }
 `

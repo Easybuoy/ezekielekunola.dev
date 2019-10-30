@@ -38,7 +38,7 @@ const SkillsList = () => {
         <div className="skills-body">
           <div className="skills-body-content">
             <div className="skills-body-content-header">
-              <i class="fas fa-code fa-3x"></i>
+              <i className="fas fa-code fa-3x"></i>
               <h3>Developer</h3>
             </div>
 
