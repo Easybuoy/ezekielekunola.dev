@@ -36,15 +36,16 @@ const ProjectsList = () => {
   const projects = data.allProjectsJson.edges
 
   return (
-    <StyledProjectsList id="projects"
+    <StyledProjectsList
+      id="projects"
       style={{
         backgroundImage: `linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(${Projects})`,
       }}
     >
       <h3>Projects</h3>
-      {projects.map(({ node: project }) => {
-        return <Project key={project.id} project={project} />
-      })}
+      {projects.map(({ node: project }) => (
+        <Project key={project.id} project={project} />
+      ))}
     </StyledProjectsList>
   )
 }

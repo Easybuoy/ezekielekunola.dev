@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
+import PatternImage from "../../images/pattern.png"
 import { SkillsList as StyledSkillsList } from "../../styles"
 import Skill from "./Skill"
 
@@ -13,7 +14,7 @@ const SkillsList = () => {
             id
             title
             icon
-            iconUrl
+            skillset
           }
         }
       }
@@ -21,13 +22,59 @@ const SkillsList = () => {
   `)
 
   const skills = data.allSkillsJson.edges
+  console.log(skills)
   return (
     <StyledSkillsList>
-      <h2>Tools/Technologies</h2>
+      <div
+        className="skills"
+        style={{
+          backgroundImage: `linear-gradient(to right bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(${PatternImage})`,
+        }}
+      >
+        <div className="skills-header">
+          <h3>Skills</h3>
+        </div>
 
-      {skills.map(({ node: skill }) => {
-        return <Skill key={skill.id} skill={skill} />
-      })}
+        <div className="skills-body">
+          <div className="skills-body-content">
+            <div className="skills-body-content-header">
+              <i className="fas fa-code fa-3x"></i>
+              <h3>Developer</h3>
+            </div>
+
+            <div className="skills-body-content-details">
+              <h4>
+                As someone who loves the art of software development, I have a
+                passion for writing robust, clean, re-usable and maintainable
+                code.
+              </h4>
+
+              <h4>
+                This also means I strive to follow best practices and use
+                industry-standard tools, including git-flow, Test Driven
+                Development(<span>Jest, Mocha, Chai</span>), Continous Integration (<span>Travis-CI, Coveralls,
+                Codeclimate, Hound</span>), linting (<span>ESLint, Prettier</span>), package
+                management (<span>Yarn, NPM, and Pipenv</span>), and modern build tools
+                (<span>Webpack, Babel</span>).
+              </h4>
+
+              <h4>
+                Although I've a wide range of experience, the technology I
+                prefer and/or am most familiar with includes{" "}
+                <span>
+                  React, Redux, Node, Postgres, JavaScript ES6,
+                  Sass/CSS/PostCSS, HTML.
+                </span>
+              </h4>
+            </div>
+          </div>
+          <div className="skills-body-items">
+            {skills.map(({ node: skill }) => (
+              <Skill key={skill.id} skill={skill} />
+            ))}
+          </div>
+        </div>
+      </div>
     </StyledSkillsList>
   )
 }

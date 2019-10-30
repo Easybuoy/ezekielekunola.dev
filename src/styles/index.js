@@ -378,38 +378,142 @@ const SkillsList = styled.section`
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 5rem 0;
   justify-content: center;
-  color: white;
-  h2 {
-    text-align: center;
+
+  .skills {
+    background-color: #170a1c;
+    margin: 1rem;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.2),
+      0 -1px 5px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    min-height: 50vh;
+    padding: 2rem 0;
+
+    .skills-header {
+      text-align: center;
+      width: 100%;
+      padding-bottom: 2rem;
+
+      h3 {
+        font-family: "Concert One", cursive;
+      }
+    }
+
+    .skills-body {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 1rem;
+      justify-content: space-evenly;
+      flex-direction: row-reverse;
+
+      @media (max-width: 850px) {
+        flex-direction: column;
+      }
+
+      .skills-body-content {
+        display: flex;
+        flex-wrap: wrap;
+        width: 45%;
+
+        @media (max-width: 850px) {
+          width: 95%;
+        }
+        .skills-body-content-header {
+          display: flex;
+          align-items: center;
+          color: #031a6b;
+          margin: 2rem auto;
+          i {
+            padding: 0 2rem;
+          }
+          h3 {
+            margin: 1 2rem;
+            font-family: "Concert One", cursive;
+          }
+        }
+
+        .skills-body-content-details {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+          padding: 1rem;
+
+          span {
+            color: #031a6b;
+            font-weight: 900;
+          }
+          h4 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            line-height: 3rem;
+            font-family: "Jaldi", sans-serif;
+          }
+        }
+      }
+
+      .skills-body-items {
+        display: flex;
+        flex-wrap: wrap;
+        width: 45%;
+
+        @media (max-width: 850px) {
+          width: 95%;
+        }
+      }
+    }
   }
 `
 
 const Skill = styled.div`
-  width: 10%;
-  margin: 1rem auto;
+  width: 100%;
+  margin: 2rem auto;
   padding: 0 0.5rem;
-  margin: 2rem;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
 
-  @media (max-width: 700px) {
-    width: 15%;
-  }
+  .skill-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
 
-  @media (max-width: 570px) {
-    width: 20%;
+    i {
+      padding: 0 2rem;
+    }
+
+    h4 {
+      font-family: "Concert One", cursive;
+      font-size: 2.5rem;
+
+      @media (max-width: 400px) {
+        font-size: 2.3rem;
+      }
+    }
   }
 
   .skill {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
-    color: white;
-
-    img {
-      width: 100%;
+    @media (max-width: 850px) {
+      justify-content: center;
+    }
+    
+    p {
+      padding: 0.7rem;
+      background-color: #031a6b;
+      color: white;
+      margin: 1rem;
+      border-radius: 5px;
+      text-align: center;
+      display: flex;
+      align-items: center;
     }
   }
 `
