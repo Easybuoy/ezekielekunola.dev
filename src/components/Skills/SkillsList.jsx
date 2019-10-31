@@ -44,7 +44,7 @@ const SkillsList = () => {
 
             <div className="skills-body-content-details">
               <h4>
-                I am Full-Stack Web Application developer with a passion for web
+                I am a Full-Stack Web Application developer with a passion for web
                 technologies. I write robust, clean, re-usable and
                 maintainable code.
               </h4>
