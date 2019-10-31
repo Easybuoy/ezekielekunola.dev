@@ -44,18 +44,20 @@ const SkillsList = () => {
 
             <div className="skills-body-content-details">
               <h4>
-                As someone who loves the art of software development, I have a
-                passion for writing robust, clean, re-usable and maintainable
-                code.
+                I am a Full-Stack Web Application developer with a passion for web
+                technologies. I write robust, clean, re-usable and
+                maintainable code.
               </h4>
 
               <h4>
                 This also means I strive to follow best practices and use
                 industry-standard tools, including git-flow, Test Driven
-                Development(<span>Jest, Mocha, Chai</span>), Continous Integration (<span>Travis-CI, Coveralls,
-                Codeclimate, Hound</span>), linting (<span>ESLint, Prettier</span>), package
-                management (<span>Yarn, NPM, and Pipenv</span>), and modern build tools
-                (<span>Webpack, Babel</span>).
+                Development(<span>Jest, Mocha, Chai</span>), Continous
+                Integration (
+                <span>Travis-CI, Coveralls, Codeclimate, Hound</span>), linting
+                (<span>ESLint, Prettier</span>), package management (
+                <span>Yarn, NPM, and Pipenv</span>), and modern build tools (
+                <span>Webpack, Babel</span>).
               </h4>
 
               <h4>
