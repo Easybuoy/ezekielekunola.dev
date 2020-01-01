@@ -1,6 +1,30 @@
 [
   {
     "id": "1",
+    "title": "Trackdrills",
+    "slug": "trackdrills",
+    "url": "http://trackdrills.com",
+    "githubUrl": "https://github.com/LABS-EU3/wt_landing",
+    "image": "../images/projects/trackdrills.png",
+    "imageDetails": "../images/projects/trackdrills-details.png",
+    "gif": "",
+    "technologies": [
+      "react",
+      "GraphQL",
+      "chakra-ui",
+      "styled-components",
+      "apollo-client",
+      "html",
+      "css",
+      "node",
+      "express",
+      "MongoDB"
+    ],
+    "description": "Trackdrills is a fitness web application that helps users plan, schedule excercises and workouts  ",
+    "contribution": ""
+  },
+  {
+    "id": "2",
     "title": "Mount Doom",
     "slug": "mount-doom",
     "url": "https://mud-mount-doom.herokuapp.com/",
@@ -22,7 +46,7 @@
     "contribution": "Contributed in developing the frontend and design of the Multi-User Dimension(MUD) Game using React, Styled-Component, React-Vis and Pusher"
   },
   {
-    "id": "2",
+    "id": "3",
     "title": "Anonymous Team Feedback",
     "slug": "atf",
     "url": "https://anonymous-feedback-fe.herokuapp.com/",
@@ -44,7 +68,7 @@
     "contribution": "Contributed in developing both frontend, backend and design of Anonymous Team Feedback using React, GraphQL, Apollo, Styled-Components Material Design Bootstrap, Node, Postgres and Jest"
   },
   {
-    "id": "3",
+    "id": "4",
     "title": "Store Manager",
     "slug": "store-manager",
     "url": "https://storemanagerreact.herokuapp.com",
@@ -57,7 +81,7 @@
     "contribution": "Developed both the frontend and backend of the Store Manager using React, Redux, CSS, and Node, Express and Postgres, Mocha and Chai."
   },
   {
-    "id": "4",
+    "id": "5",
     "title": "Use My Tech Stuff",
     "slug": "use-my-tech-stuff",
     "url": "https://ls-umts.netlify.com",
@@ -76,7 +100,7 @@
     "contribution": "Built the frontend of the project using React, Redux, Styled-Components, and Material Design Bootstrap."
   },
   {
-    "id": "5",
+    "id": "6",
     "title": "School In The Cloud",
     "slug": "school-in-the-cloud",
     "url": "https://distracted-stonebraker-f30c76.netlify.com/",
@@ -89,7 +113,7 @@
     "contribution": "Contributed to the design and implementation of School in the cloud using Html, CSS and Javascript."
   },
   {
-    "id": "6",
+    "id": "7",
     "title": "Marvel Comics",
     "slug": "marvel-comics",
     "url": "https://marvel-comic-characters.netlify.com/",
@@ -107,7 +131,7 @@
     "contribution": "Applied the knowledge of React, Styled-Components, and Material-Design to the design and implementation of Marvel Comics."
   },
   {
-    "id": "7",
+    "id": "8",
     "title": "Movie Listing",
     "slug": "movie-listing",
     "url": "https://reactmovieapptmdb.herokuapp.com/",
@@ -118,18 +142,5 @@
     "technologies": ["react", "material-design-bootstrap", "api"],
     "description": "Web Application that lists comprehensive details about Movies and TV-Series.",
     "contribution": "Contributed in the desgin and implementation of Movie Listing using React and Material Design Bootstrap."
-  },
-  {
-    "id": "8",
-    "title": "Headline News",
-    "slug": "headline-news",
-    "url": "https://headline-pwa.herokuapp.com/",
-    "githubUrl": "https://github.com/Easybuoy/headlines_pwa_app",
-    "image": "../images/projects/headline-news.png",
-    "imageDetails": "../images/projects/headline-news-details.png",
-    "gif": "",
-    "technologies": ["html", "css", "jquery", "node", "express"],
-    "description": "This is a progressive web app that allows you view latest and currrent news accross the world.",
-    "contribution": "Contributed in the desgin and implementation of Headline News using Html, Css, Jquery, Node and Express."
   }
 ]
