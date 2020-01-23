@@ -1,7 +1,9 @@
 import styled from "styled-components"
+export const primaryColor = '#2118a2';
+export const secondaryColor = '#031a6b';
 
 const Navigation = styled.nav`
-  background-color: #031a6b;
+  background-color: ${primaryColor};
   opacity: 1;
   border-bottom: 0.1px solid #8c8c8c;
   margin: 0;
@@ -58,7 +60,7 @@ const Header = styled.header`
           font-size: 7rem;
 
           .name {
-            color: #031a6b;
+            color: ${primaryColor};
           }
 
           @media (max-width: 500px) {
@@ -149,12 +151,12 @@ const About = styled.div`
     }
 
     img {
-      -webkit-box-shadow: 10px 10px 2px 2px rgba(3, 26, 107, 1);
-      -moz-box-shadow: 10px 10px 2px 2px rgba(3, 26, 107, 1);
-      box-shadow: 10px 10px 2px 2px rgba(3, 26, 107, 1);
+      -webkit-box-shadow: 10px 10px 2px 2px ${primaryColor};
+      -moz-box-shadow: 10px 10px 2px 2px ${primaryColor};
+      box-shadow: 10px 10px 2px 2px ${primaryColor};
       width: 400px;
       background-color: white;
-
+      object-fit: cover;
       margin: 0 auto;
       border-radius: 10px;
       height: 400px;
@@ -265,7 +267,7 @@ const Project = styled.div`
     padding-bottom: 1rem;
 
     h3 {
-      color: #031a6b;
+      color: ${primaryColor};
       padding: 1rem 0;
       margin: 0;
       font-size: 2rem;
@@ -291,7 +293,7 @@ const ProjectDetail = styled.section`
       text-align: center;
       font-family: "Concert One", sans-serif;
       padding: 2rem 0;
-      color: #031a6b;
+      color: ${primaryColor};
     }
 
     p {
@@ -307,7 +309,7 @@ const ProjectDetail = styled.section`
 
     .project-content {
       .contribution-text {
-        color: #031a6b;
+        color: ${primaryColor};
         padding: 1rem 0;
       }
       .project-technologies {
@@ -318,7 +320,7 @@ const ProjectDetail = styled.section`
         margin: 1rem auto;
 
         span {
-          background-color: #031a6b;
+          background-color: ${primaryColor};
           padding: 1rem;
           margin: 1rem;
           font-size: 2rem;
@@ -340,7 +342,7 @@ const ProjectDetail = styled.section`
         justify-content: center;
 
         a {
-          color: #031a6b;
+          color: ${primaryColor};
           transition: all 0.3s ease-in-out;
 
           &:hover {
@@ -366,7 +368,7 @@ const ProjectDetail = styled.section`
             font-size: 2rem;
           }
           a {
-            color: #031a6b;
+            color: ${primaryColor};
           }
         }
       }
@@ -425,7 +427,7 @@ const SkillsList = styled.section`
         .skills-body-content-header {
           display: flex;
           align-items: center;
-          color: #031a6b;
+          color: ${primaryColor};
           margin: 2rem auto;
           i {
             padding: 0 2rem;
@@ -444,7 +446,7 @@ const SkillsList = styled.section`
           padding: 1rem;
 
           span {
-            color: #031a6b;
+            color: ${primaryColor};
             font-weight: 900;
           }
           h4 {
@@ -507,7 +509,7 @@ const Skill = styled.div`
     
     p {
       padding: 0.7rem;
-      background-color: #031a6b;
+      background-color: ${primaryColor};
       color: white;
       margin: 1rem;
       border-radius: 5px;
@@ -561,7 +563,7 @@ const Blog = styled.div`
   align-items: center;
 
   &:hover {
-    background-color: #031a6b;
+    background-color: ${primaryColor};
     transform: scale(1.01);
 
     @media (max-width: 570px) {
@@ -575,7 +577,7 @@ const Blog = styled.div`
     }
 
     .blog-content {
-      background-color: #031a6b;
+      background-color: ${primaryColor};
       border: 2px solid white;
       color: white;
       p {
@@ -680,11 +682,14 @@ const Contact = styled.section`
 `
 
 const Footer = styled.footer`
-  background-color: #031a6b;
-  padding: 2rem 0;
+  background-color: #2118a2;
+  padding: 1rem 0;
   text-align: center;
   color: white;
-
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   p {
     padding: 1rem 0;
   }
@@ -765,7 +770,7 @@ const Success = styled.div`
           text-align: center;
           padding: 2rem 0;
           text-decoration: none;
-          color: #031a6b;
+          color: #2118a2;
           @media (max-width: 300px) {
             font-size: 2rem;
           }
