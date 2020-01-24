@@ -1,7 +1,9 @@
 import React from "react"
-import { ContactDetail as ContactDetailStyle } from "../../../styles/common"
 
-export default function ContactDetail({ size, color = "#031a6b" }) {
+import { ContactDetail as ContactDetailStyle } from "../../../styles/common"
+import { primaryColor } from "../../../styles/index"
+
+export default function ContactDetail({ size, color = primaryColor }) {
   let mailClassName = `fas fa-envelope fa-${size}`
   let githubClassName = `fab fa-github fa-${size}`
   let linkedInClassName = `fab fa-linkedin fa-${size}`
