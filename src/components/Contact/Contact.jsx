@@ -69,7 +69,10 @@ export default function Contact() {
         </div>
 
         <div className="contact-form-image">
-          <img src={data.contactImage.childImageSharp.fluid.src} alt="contact" />
+          <img
+            src={data.contactImage.childImageSharp.fluid.src}
+            alt="contact"
+          />
         </div>
       </div>
     </StyledContact>

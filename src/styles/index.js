@@ -1,6 +1,6 @@
 import styled from "styled-components"
-export const primaryColor = '#2118a2';
-export const secondaryColor = '#031a6b';
+export const primaryColor = "#2118a2"
+export const secondaryColor = "#031a6b"
 
 const Navigation = styled.nav`
   background-color: ${primaryColor};
@@ -506,7 +506,7 @@ const Skill = styled.div`
     @media (max-width: 850px) {
       justify-content: center;
     }
-    
+
     p {
       padding: 0.7rem;
       background-color: ${primaryColor};

@@ -1,5 +1,5 @@
 import styled from "styled-components"
-
+import { primaryColor } from "./index"
 const Button = styled.button`
   padding: 1rem;
 
@@ -10,7 +10,7 @@ const Button = styled.button`
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    background-color: #031a6b;
+    background-color: ${primaryColor};
     color: white;
     transform: scale(1.03);
   }
@@ -20,7 +20,7 @@ const ContactDetail = styled.div`
 
   a {
     padding: 0 1rem;
-    color: ${props => props.color || "#031a6b"};
+    color: ${props => props.color || `${primaryColor}`};
 
     i {
       transition: all 0.3s ease-in-out;
