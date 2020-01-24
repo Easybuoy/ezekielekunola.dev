@@ -16,12 +16,13 @@
       "apollo-client",
       "html",
       "css",
-      "node",
-      "express",
-      "MongoDB"
+      "less",
+      "MongoDB",
+      "apollo-server",
+      "cloudinary"
     ],
     "description": "Trackdrills is a fitness web application that helps users plan, schedule excercises and workouts  ",
-    "contribution": ""
+    "contribution": "Contributed in supervising and overseeing project execution, I also worked on building out interfaces of the frontend of Trackdrills application."
   },
   {
     "id": "2",

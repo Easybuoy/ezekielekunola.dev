@@ -6,7 +6,7 @@ import { About as StyledAbout } from "../../styles"
 export default function About() {
   const data = useStaticQuery(graphql`
     query {
-      aboutImage: file(relativePath: { eq: "profile2.jpg" }) {
+      aboutImage: file(relativePath: { eq: "profile3.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 500, quality: 100) {
             aspectRatio
