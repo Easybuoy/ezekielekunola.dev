@@ -6,6 +6,7 @@
     "url": "http://trackdrills.com",
     "githubUrl": "https://github.com/LABS-EU3/wt_landing",
     "image": "../images/projects/trackdrills.png",
+    "youtubeUrl": "https://www.youtube.com/watch?v=SfKx1s_eONA",
     "imageDetails": "../images/projects/trackdrills-details.png",
     "gif": "",
     "technologies": [
@@ -21,7 +22,7 @@
       "apollo-server",
       "cloudinary"
     ],
-    "description": "Trackdrills is a fitness web application that helps users plan, schedule excercises and workouts  ",
+    "description": "Trackdrills is an application that gives you access to over 500 workouts and exercises to choose from to suit your fitness goals. It is a health-focused app that also gives you the ability to create your own customized workout plans and track your progress.",
     "contribution": "Contributed in supervising and overseeing project execution, I also worked on building out interfaces of the frontend of Trackdrills application."
   },
   {

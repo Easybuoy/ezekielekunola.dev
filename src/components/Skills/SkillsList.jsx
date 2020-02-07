@@ -22,7 +22,7 @@ const SkillsList = () => {
   `)
 
   const skills = data.allSkillsJson.edges
-  console.log(skills)
+
   return (
     <StyledSkillsList>
       <div
@@ -44,8 +44,8 @@ const SkillsList = () => {
 
             <div className="skills-body-content-details">
               <h4>
-                I am a Full-Stack Web Application developer with a passion for web
-                technologies. I write robust, clean, re-usable and
+                I am a Full-Stack Web Application developer with a passion for
+                web technologies. I write robust, clean, re-usable and
                 maintainable code.
               </h4>
 
