@@ -15,6 +15,7 @@ export const query = graphql`
       githubUrl
       technologies
       description
+      youtubeUrl
       contribution
       imageDetails {
         childImageSharp {
@@ -37,6 +38,7 @@ const ProjectDetail = ({ data }) => {
     githubUrl,
     description,
     contribution,
+    youtubeUrl,
   } = project
 
   const imageData = project.imageDetails.childImageSharp.fluid
@@ -76,6 +78,14 @@ const ProjectDetail = ({ data }) => {
               <a href={githubUrl} target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-github fa-4x"></i>
               </a>
+
+              {youtubeUrl ? (
+                <a href={youtubeUrl} target="_blank" rel="noopener noreferrer">
+                  <i className="fab fa-youtube fa-4x"></i>
+                </a>
+              ) : (
+                ""
+              )}
             </div>
 
             <div className="project-actions">
