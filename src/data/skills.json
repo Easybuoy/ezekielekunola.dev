@@ -5,13 +5,14 @@
     "icon": "fab fa-react",
     "skillset": [
       "React",
+      "Vue",
       "Redux",
       "Styled-Components",
-      "Jest",
       "HTML",
       "CSS",
       "JavaScript",
       "LESS",
+      "Jest",
       "Netlify"
     ]
   },
@@ -20,8 +21,8 @@
     "title": "Backend Development",
     "icon": "fab fa-node-js",
     "skillset": [
-      "Python",
       "Node",
+      "Python",
       "PHP",
       "YII",
       "GraphQL",
@@ -33,6 +34,7 @@
       "Mocha",
       "Chai",
       "Travis-CI",
+      "Continous-Integration",
       "Heroku"
     ]
   },
