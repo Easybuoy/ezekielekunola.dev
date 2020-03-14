@@ -1,6 +1,7 @@
 import styled from "styled-components"
 export const primaryColor = "#2118a2"
 export const secondaryColor = "#031a6b"
+export const tertiaryColor = "#031a6b"
 
 const Navigation = styled.nav`
   background-color: ${primaryColor};
@@ -784,6 +785,49 @@ const Success = styled.div`
   }
 `
 
+const StyledHireMe = styled.section`
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+
+  h3 {
+    font-family: "Concert One", cursive;
+    padding: 2rem 0;
+    width: 100%;
+    margin: 2rem 0;
+    text-align: center;
+
+    @media (max-width: 750px) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  iframe {
+    width: 50%;
+    height: 400px;
+
+    @media (max-width: 900px) {
+      width: 60%;
+    }
+
+    @media (max-width: 800px) {
+      width: 70%;
+    }
+
+    @media (max-width: 700px) {
+      width: 80%;
+    }
+
+    @media (max-width: 500px) {
+      width: 80%;
+      height: 300px;
+      margin-bottom: 2rem;
+    }
+  }
+`
+
 export {
   Navigation,
   ProjectsList,
@@ -798,4 +842,5 @@ export {
   About,
   ProjectDetail,
   Success,
+  StyledHireMe,
 }
