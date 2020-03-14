@@ -151,9 +151,9 @@ const About = styled.div`
     }
 
     img {
-      -webkit-box-shadow: 10px 10px 2px 2px ${primaryColor};
-      -moz-box-shadow: 10px 10px 2px 2px ${primaryColor};
-      box-shadow: 10px 10px 2px 2px ${primaryColor};
+      -webkit-box-shadow: 10px 10px 2px 2px #a3a3a3;
+      -moz-box-shadow: 10px 10px 2px 2px #a3a3a3;
+      box-shadow: 10px 10px 2px 2px #a3a3a3;
       width: 400px;
       background-color: white;
       object-fit: cover;
@@ -169,9 +169,9 @@ const About = styled.div`
         border-radius: 50%;
         width: 300px;
         height: 300px;
-        -webkit-box-shadow: 0px 0px 5px 3px rgba(3, 26, 107, 1);
-        -moz-box-shadow: 0px 0px 5px 3px rgba(3, 26, 107, 1);
-        box-shadow: 0px 0px 5px 3px rgba(3, 26, 107, 1);
+        -webkit-box-shadow: 0px 0px 5px 3px #a3a3a3;
+        -moz-box-shadow: 0px 0px 5px 3px #a3a3a3;
+        box-shadow: 0px 0px 5px 3px #a3a3a3;
       }
 
       @media (max-width: 400px) {
