@@ -42,6 +42,6 @@
     "id": "3",
     "title": "Version Control",
     "icon": "fas fa-code-branch",
-    "skillset": ["Github", "Gitlab"]
+    "skillset": ["Github", "Gitlab", "Bitbucket"]
   }
 ]
