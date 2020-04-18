@@ -805,7 +805,7 @@ const StyledHireMe = styled.section`
   }
 
   iframe {
-    width: 50%;
+    width: 700px;
     height: 400px;
 
     @media (max-width: 900px) {
