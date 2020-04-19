@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
+import { Link } from "gatsby"
 
 import { ProjectsList as StyledProjectsList } from "../../styles"
 import Project from "./Project"
@@ -46,6 +47,8 @@ const ProjectsList = () => {
       {projects.map(({ node: project }) => (
         <Project key={project.id} project={project} />
       ))}
+
+      <Link to="/projects">View More Projects</Link>
     </StyledProjectsList>
   )
 }

@@ -29,7 +29,7 @@ const Header = styled.header`
     display: flex;
     align-items: center;
     text-align: center;
-      box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 6px 0px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 6px 0px;
     margin: 1rem;
     justify-content: center;
     width: 100%;
@@ -205,6 +205,22 @@ const ProjectsList = styled.div`
     width: 100%;
     text-align: center;
     font-family: "Concert One", cursive;
+  }
+
+  a {
+    width: 100%;
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 1.7rem;
+    font-weight: 900;
+    font-family: "Concert One", sans-serif;
+    color: ${primaryColor};
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.02);
+      color: ${tertiaryColor};
+    }
   }
 `
 
