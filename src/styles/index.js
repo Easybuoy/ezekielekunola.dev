@@ -743,6 +743,98 @@ const Projects = styled.div`
     margin: 1rem;
     border-radius: 10px;
     padding: 0 5rem;
+    overflow: scroll;
+
+    .home {
+      width: 100%;
+      text-align: center;
+      color: white;
+      font-size: 2rem;
+      margin: 3rem 0;
+    }
+
+    .projects-list {
+      display: flex;
+      flex-wrap: wrap;
+      width: 70%;
+      flex-direction: column;
+
+      @media (max-width: 1000px) {
+        width: 80%;
+      }
+
+      @media (max-width: 800px) {
+        width: 90%;
+      }
+
+      @media (max-width: 700px) {
+        width: 100%;
+      }
+
+      .project {
+        background-color: white;
+        margin: 2rem 0;
+        padding: 2rem 0;
+        min-height: 200px;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 6px 0px;
+        border-radius: 10px;
+
+        h3 {
+          width: 100%;
+          text-align: center;
+          color: ${primaryColor};
+          font-family: "Concert One", cursive;
+        }
+
+        p {
+          font-size: 1.6rem;
+          margin: 2rem 0;
+        }
+
+        .project-technologies {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          width: 100%;
+          margin: 1rem auto;
+
+          span {
+            background-color: ${secondaryColor};
+            padding: 1rem;
+            margin: 1rem;
+            font-size: 1.3rem;
+            border-radius: 0.2rem;
+            color: white;
+
+            @media (max-width: 650px) {
+              font-size: 1.5rem;
+            }
+
+            @media (max-width: 400px) {
+              font-size: 1.3rem;
+            }
+          }
+        }
+
+        .project-links {
+          display: flex;
+          justify-content: center;
+
+          a {
+            color: ${secondaryColor};
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+              transform: scale(1.09);
+              color: black;
+            }
+            i {
+              padding: 0 2rem;
+            }
+          }
+        }
+      }
+    }
   }
 `
 const Success = styled.div`
@@ -758,8 +850,8 @@ const Success = styled.div`
     height: 95vh;
     align-items: center;
     text-align: center;
-    box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.2),
-      0 -1px 5px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 6px 0px;
+
     margin: 1rem;
     border-radius: 10px;
     padding: 0 5rem;
@@ -911,5 +1003,5 @@ export {
   ProjectDetail,
   Success,
   StyledHireMe,
-  Projects
+  Projects,
 }
