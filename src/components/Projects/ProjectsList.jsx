@@ -44,7 +44,7 @@ const ProjectsList = () => {
         }}
       >
         <h3>Projects</h3>
-        {projects.map(({ node: project }) => (
+        {projects.slice(0, 8).map(({ node: project }) => (
           <Project key={project.id} project={project} />
         ))}
 
