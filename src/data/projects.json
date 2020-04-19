@@ -27,25 +27,22 @@
   },
   {
     "id": "2",
-    "title": "Mount Doom",
-    "slug": "mount-doom",
-    "url": "https://mud-mount-doom.herokuapp.com/",
-    "githubUrl": "https://github.com/lambda-mud-poe",
-    "image": "../images/projects/mud-game.png",
-    "imageDetails": "../images/projects/mud-game-details.png",
-    "gif": "",
+    "title": "Use My Tech Stuff",
+    "slug": "use-my-tech-stuff",
+    "url": "https://ls-umts.netlify.com",
+    "githubUrl": "https://github.com/Easybuoy/use-my-tech-stuff",
+    "image": "../images/projects/use-my-tech-stuff.png",
+    "imageDetails": "../images/projects/use-my-tech-stuff-details.png",
+    "gif": "../images/projects/use-my-tech-stuff.gif",
     "technologies": [
       "react",
-      "react-vis",
+      "redux",
       "material-design-bootstrap",
       "styled-components",
-      "pusher",
-      "django",
-      "python",
-      "postgres"
+      "api"
     ],
-    "description": "Mount Doom is a Multi-User Dimension web application game that has chat functionality.",
-    "contribution": "Contributed in developing the frontend and design of the Multi-User Dimension(MUD) Game using React, Styled-Component, React-Vis and Pusher"
+    "description": "Use My Tech Stuff aims to provide a safe, guaranteed, and efficient way to effortlessly share professional tech equipment.",
+    "contribution": "Built the frontend of the project using React, Redux, Styled-Components, and Material Design Bootstrap."
   },
   {
     "id": "3",
@@ -84,22 +81,25 @@
   },
   {
     "id": "5",
-    "title": "Use My Tech Stuff",
-    "slug": "use-my-tech-stuff",
-    "url": "https://ls-umts.netlify.com",
-    "githubUrl": "https://github.com/Easybuoy/use-my-tech-stuff",
-    "image": "../images/projects/use-my-tech-stuff.png",
-    "imageDetails": "../images/projects/use-my-tech-stuff-details.png",
-    "gif": "../images/projects/use-my-tech-stuff.gif",
+    "title": "Mount Doom",
+    "slug": "mount-doom",
+    "url": "https://mud-mount-doom.herokuapp.com/",
+    "githubUrl": "https://github.com/lambda-mud-poe",
+    "image": "../images/projects/mud-game.png",
+    "imageDetails": "../images/projects/mud-game-details.png",
+    "gif": "",
     "technologies": [
       "react",
-      "redux",
+      "react-vis",
       "material-design-bootstrap",
       "styled-components",
-      "api"
+      "pusher",
+      "django",
+      "python",
+      "postgres"
     ],
-    "description": "Use My Tech Stuff aims to provide a safe, guaranteed, and efficient way to effortlessly share professional tech equipment.",
-    "contribution": "Built the frontend of the project using React, Redux, Styled-Components, and Material Design Bootstrap."
+    "description": "Mount Doom is a Multi-User Dimension web application game that has chat functionality.",
+    "contribution": "Contributed in developing the frontend and design of the Multi-User Dimension(MUD) Game using React, Styled-Component, React-Vis and Pusher"
   },
   {
     "id": "6",
@@ -144,5 +144,96 @@
     "technologies": ["react", "material-design-bootstrap", "api"],
     "description": "Web Application that lists comprehensive details about Movies and TV-Series.",
     "contribution": "Contributed in the desgin and implementation of Movie Listing using React and Material Design Bootstrap."
+  },
+  {
+    "id": "9",
+    "title": "AngularRank",
+    "slug": "angularank",
+    "url": "https://angular-rank.netlify.app/",
+    "githubUrl": "https://github.com/Easybuoy/angularank",
+    "image": "../images/projects/angularank.png",
+    "imageDetails": "../images/projects/angularank-details.png",
+    "gif": "",
+    "technologies": ["vue", "vuetify", "vuex", "api"],
+    "description": "Web Application that ranks repositories contributors of the Angular organization on Github.",
+    "contribution": "Contributed in the desgin and implementation of Angularank using Vue, Vuetify and Github API."
+  },
+  {
+    "id": "10",
+    "title": "Movie Info",
+    "slug": "vue-movie-info",
+    "url": "https://vuemovieapp.netlify.com",
+    "githubUrl": "https://github.com/Easybuoy/vue-movie-app",
+    "image": "",
+    "imageDetails": "../images/projects/default.png",
+    "gif": "",
+    "technologies": ["vue", "vuetify", "TMDB API"],
+    "description": "Web Application that lists comprehensive details about Movies and TV-Series.",
+    "contribution": "Contributed in the desgin and implementation of Movie Listing application using Vue, Vuetify and TMDB API."
+  },
+  {
+    "id": "11",
+    "title": "Vue Calendar",
+    "slug": "vue-calendar",
+    "url": "https://my-vue-calendar.netlify.app",
+    "githubUrl": "https://github.com/Easybuoy/vue-calendar",
+    "image": "",
+    "imageDetails": "../images/projects/default.png",
+    "gif": "",
+    "technologies": ["Vue", "Vuetify"],
+    "description": "Web Application that shows events on calendar, and schedule events as well.",
+    "contribution": ""
+  },
+  {
+    "id": "12",
+    "title": "Headline News",
+    "slug": "headline-news",
+    "url": "https://headline-pwa.herokuapp.com",
+    "githubUrl": "https://github.com/Easybuoy/headlines_pwa_app",
+    "image": "",
+    "imageDetails": "../images/projects/default.png",
+    "gif": "",
+    "technologies": ["html", "css", "javascript", "nodejs", "express"],
+    "description": "A progressive web application that allows you view latest and currrent news accross the world.",
+    "contribution": ""
+  },
+  {
+    "id": "13",
+    "title": "Laravel Blog",
+    "slug": "lara-blog",
+    "url": "https://lara-blog.herokuapp.com",
+    "githubUrl": "https://github.com/Easybuoy/laravelblog",
+    "image": "",
+    "imageDetails": "../images/projects/default.png",
+    "gif": "",
+    "technologies": ["php", "laravel", "bootstrapp"],
+    "description": "A web application for writing blogs and articles.",
+    "contribution": ""
+  },
+  {
+    "id": "14",
+    "title": "Face Detection",
+    "slug": "face-detection",
+    "url": "https://facedetectionapp.herokuapp.com",
+    "githubUrl": "https://github.com/Easybuoy/facedetection",
+    "image": "",
+    "imageDetails": "../images/projects/default.png",
+    "gif": "",
+    "technologies": ["react", "tachyons", "clarifai"],
+    "description": "A web application for detecting celebrity faces using photos.",
+    "contribution": ""
+  },
+  {
+    "id": "15",
+    "title": "Robofriends",
+    "slug": "robo-friends",
+    "url": "https://robofriends1.herokuapp.com",
+    "githubUrl": "https://github.com/Easybuoy/robofriends",
+    "image": "",
+    "imageDetails": "../images/projects/default.png",
+    "gif": "",
+    "technologies": ["react", "tachyons"],
+    "description": "A web application for listing friends details using robots.",
+    "contribution": ""
   }
 ]
