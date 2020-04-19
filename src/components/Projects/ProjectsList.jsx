@@ -1,10 +1,10 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
+import { Link } from "gatsby"
 
 import { ProjectsList as StyledProjectsList } from "../../styles"
 import Project from "./Project"
-
-import Projects from "../../images/projects.svg"
+import PatternImage from "../../images/pattern.png"
 
 const ProjectsList = () => {
   const data = useStaticQuery(graphql`
@@ -36,16 +36,20 @@ const ProjectsList = () => {
   const projects = data.allProjectsJson.edges
 
   return (
-    <StyledProjectsList
-      id="projects"
-      style={{
-        backgroundImage: `linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(${Projects})`,
-      }}
-    >
-      <h3>Projects</h3>
-      {projects.map(({ node: project }) => (
-        <Project key={project.id} project={project} />
-      ))}
+    <StyledProjectsList id="projects">
+      <div
+        className="projects-list"
+        style={{
+          backgroundImage: `linear-gradient(to right bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(${PatternImage})`,
+        }}
+      >
+        <h3>Projects</h3>
+        {projects.slice(0, 8).map(({ node: project }) => (
+          <Project key={project.id} project={project} />
+        ))}
+
+        <Link to="/projects">View More Projects</Link>
+      </div>
     </StyledProjectsList>
   )
 }
