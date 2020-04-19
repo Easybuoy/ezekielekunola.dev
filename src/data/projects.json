@@ -144,5 +144,31 @@
     "technologies": ["react", "material-design-bootstrap", "api"],
     "description": "Web Application that lists comprehensive details about Movies and TV-Series.",
     "contribution": "Contributed in the desgin and implementation of Movie Listing using React and Material Design Bootstrap."
+  },
+  {
+    "id": "9",
+    "title": "AngularRank",
+    "slug": "angularank",
+    "url": "https://angular-rank.netlify.app/",
+    "githubUrl": "https://github.com/Easybuoy/angularank",
+    "image": "../images/projects/angularank.png",
+    "imageDetails": "../images/projects/angularank-details.png",
+    "gif": "",
+    "technologies": ["vue", "vuetify", "vuex", "api"],
+    "description": "Web Application that ranks repositories contributors of the Angular organization on Github.",
+    "contribution": "Contributed in the desgin and implementation of Angularank using Vue, Vuetify and Github API."
+  },
+  {
+    "id": "10",
+    "title": "Vue Calendar",
+    "slug": "vue-calendar",
+    "url": "https://my-vue-calendar.netlify.app/",
+    "githubUrl": "https://github.com/Easybuoy/vue-calendar",
+    "image": "",
+    "imageDetails": "",
+    "gif": "",
+    "technologies": ["vue", "vuetify"],
+    "description": "Web Application that shows events on calendar, and schedule events as well.",
+    "contribution": ""
   }
 ]
