@@ -134,7 +134,7 @@ const About = styled.div`
 
     p {
       line-height: 3rem;
-      color: #b2b2b2;
+      color: ${secondaryColor};
       font-size: 2rem;
     }
   }
