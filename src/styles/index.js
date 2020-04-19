@@ -182,7 +182,7 @@ const About = styled.div`
 `
 
 const ProjectsList = styled.div`
-  background-color: white;
+  /* background-color: white;
   display: flex;
   flex-wrap: wrap;
   padding-top: 10rem;
@@ -197,28 +197,47 @@ const ProjectsList = styled.div`
   @media (max-width: 550px) {
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
     padding-top: 1rem;
-  }
+  } */
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  justify-content: center;
+  align-items: center;
 
-  h3 {
-    margin-bottom: 5rem;
+  .projects-list {
     width: 100%;
-    text-align: center;
-    font-family: "Concert One", cursive;
-  }
+    margin: 2rem;
+    padding: 2rem 0;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 6px 0px;
+    min-height: 70vh;
 
-  a {
-    width: 100%;
-    text-align: center;
-    margin: 1rem 0;
-    font-size: 1.7rem;
-    font-weight: 900;
-    font-family: "Concert One", sans-serif;
-    color: ${primaryColor};
-    transition: all 0.3s ease-in-out;
+    h3 {
+      margin-bottom: 5rem;
+      width: 100%;
+      text-align: center;
+      font-family: "Concert One", cursive;
+    }
 
-    &:hover {
-      transform: scale(1.02);
-      color: ${tertiaryColor};
+    a {
+      width: 100%;
+      text-align: center;
+      margin: 1rem 0;
+      font-size: 1.7rem;
+      font-weight: 900;
+      font-family: "Concert One", sans-serif;
+      color: ${primaryColor};
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.02);
+        color: ${tertiaryColor};
+      }
     }
   }
 `
@@ -706,6 +725,26 @@ const Footer = styled.footer`
     padding: 1rem 0;
   }
 `
+const Projects = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .projects {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 95vh;
+    align-items: center;
+    text-align: center;
+    box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.2),
+      0 -1px 5px 0 rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    border-radius: 10px;
+    padding: 0 5rem;
+  }
+`
 const Success = styled.div`
   display: flex;
   justify-content: center;
@@ -803,7 +842,7 @@ const StyledHireMe = styled.section`
   padding: 2rem 0;
   justify-content: center;
   align-items: center;
-  
+
   .hire {
     width: 100%;
     margin: 2rem;
@@ -816,43 +855,45 @@ const StyledHireMe = styled.section`
     box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 6px 0px;
     min-height: 70vh;
 
-    
-  h3 {
-    width: 100%;
+    h3 {
+      width: 100%;
       text-align: center;
       color: white;
       font-family: "Concert One", cursive;
 
-    @media (max-width: 750px) {
-      width: 100%;
-      text-align: center;
+      @media (max-width: 750px) {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    iframe {
+      width: 800px;
+      height: 400px;
+
+      @media (max-width: 900px) {
+        width: 60%;
+      }
+
+      @media (max-width: 800px) {
+        width: 70%;
+      }
+
+      @media (max-width: 700px) {
+        width: 80%;
+      }
+
+      @media (max-width: 500px) {
+        width: 95%;
+        height: 300px;
+        margin-bottom: 2rem;
+      }
+
+      @media (max-width: 450px) {
+        height: 250px;
+      }
     }
   }
-
-  iframe {
-    width: 800px;
-    height: 400px;
-
-    @media (max-width: 900px) {
-      width: 60%;
-    }
-
-    @media (max-width: 800px) {
-      width: 70%;
-    }
-
-    @media (max-width: 700px) {
-      width: 80%;
-    }
-
-    @media (max-width: 500px) {
-      width: 80%;
-      height: 300px;
-      margin-bottom: 2rem;
-    }
-  }
-  }
-
 `
 
 export {
@@ -870,4 +911,5 @@ export {
   ProjectDetail,
   Success,
   StyledHireMe,
+  Projects
 }
