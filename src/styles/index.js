@@ -29,8 +29,7 @@ const Header = styled.header`
     display: flex;
     align-items: center;
     text-align: center;
-    box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.2),
-      0 -1px 5px 0 rgba(0, 0, 0, 0.1);
+      box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 6px 0px;
     margin: 1rem;
     justify-content: center;
     width: 100%;
@@ -389,8 +388,7 @@ const SkillsList = styled.section`
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.2),
-      0 -1px 5px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 6px 0px;
     border-radius: 10px;
     min-height: 50vh;
     padding: 2rem 0;
@@ -534,8 +532,7 @@ const BlogsList = styled.section`
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.2),
-      0 -1px 5px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 6px 0px;
     border-radius: 10px;
     min-height: 50vh;
     padding: 2rem 0;
@@ -634,8 +631,7 @@ const Contact = styled.section`
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.2),
-      0 -1px 5px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 6px 0px;
 
     h3 {
       width: 100%;
@@ -805,7 +801,7 @@ const StyledHireMe = styled.section`
   }
 
   iframe {
-    width: 700px;
+    width: 800px;
     height: 400px;
 
     @media (max-width: 900px) {
