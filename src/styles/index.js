@@ -51,7 +51,6 @@ const Header = styled.header`
         display: flex;
         flex-direction: column;
         justify-content: center;
-
         margin-top: 3rem;
 
         h1 {
@@ -798,17 +797,31 @@ const Success = styled.div`
 `
 
 const StyledHireMe = styled.section`
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  padding: 2rem 0;
   justify-content: center;
-
-  h3 {
-    font-family: "Concert One", cursive;
-    padding: 2rem 0;
+  align-items: center;
+  
+  .hire {
     width: 100%;
-    margin: 2rem 0;
-    text-align: center;
+    margin: 2rem;
+    padding: 2rem 0;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 6px 0px;
+    min-height: 70vh;
+
+    
+  h3 {
+    width: 100%;
+      text-align: center;
+      color: white;
+      font-family: "Concert One", cursive;
 
     @media (max-width: 750px) {
       width: 100%;
@@ -838,6 +851,8 @@ const StyledHireMe = styled.section`
       margin-bottom: 2rem;
     }
   }
+  }
+
 `
 
 export {
