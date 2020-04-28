@@ -186,6 +186,19 @@
   },
   {
     "id": "12",
+    "title": "Weather App",
+    "slug": "weather-app",
+    "url": "https://weather-fore-cast.netlify.app",
+    "githubUrl": "https://github.com/Easybuoy/made-with-love-weather",
+    "image": "",
+    "imageDetails": "../images/projects/default.png",
+    "gif": "",
+    "technologies": ["react", "styled-components", "api"],
+    "description": "A web application for telling weather of a location.",
+    "contribution": ""
+  },
+  {
+    "id": "13",
     "title": "Headline News",
     "slug": "headline-news",
     "url": "https://headline-pwa.herokuapp.com",
@@ -198,7 +211,7 @@
     "contribution": ""
   },
   {
-    "id": "13",
+    "id": "14",
     "title": "Laravel Blog",
     "slug": "lara-blog",
     "url": "https://lara-blog.herokuapp.com",
@@ -211,7 +224,7 @@
     "contribution": ""
   },
   {
-    "id": "14",
+    "id": "15",
     "title": "Face Detection",
     "slug": "face-detection",
     "url": "https://facedetectionapp.herokuapp.com",
@@ -224,7 +237,7 @@
     "contribution": ""
   },
   {
-    "id": "15",
+    "id": "16",
     "title": "Robofriends",
     "slug": "robo-friends",
     "url": "https://robofriends1.herokuapp.com",
