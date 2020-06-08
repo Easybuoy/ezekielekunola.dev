@@ -35,6 +35,13 @@ function SEO({ description, lang, meta, title }) {
 
   const metaDescription = description || site.siteMetadata.description
 
+  const isBrowser = typeof window !== `undefined`
+
+  let origin = ""
+  if (isBrowser) {
+    origin = window.location.origin
+  }
+
   return (
     <Helmet
       htmlAttributes={{
@@ -61,7 +68,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `og:image`,
-          content: `${window.location.origin}${aboutImage.childImageSharp.fluid.src}`,
+          content: `${origin}${aboutImage.childImageSharp.fluid.src}`,
         },
         {
           name: `twitter:card`,
@@ -81,7 +88,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `og:image`,
-          content: `${window.location.origin}${aboutImage.childImageSharp.fluid.src}`,
+          content: `${origin}${aboutImage.childImageSharp.fluid.src}`,
         },
       ].concat(meta)}
     />
