@@ -61,16 +61,5 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
-    {
-      resolve: "gatsby-plugin-social-cards",
-      options: {
-        authorImage: "./src/images/profile4.jpg",
-        // image to use when no cover in frontmatter
-        backgroundImage: "./static/img/hvitserkur.JPG",
-        defaultAuthor: "Ezekiel Ekunola",
-        // card design
-        design: "default", // 'default' or 'card'
-      },
-    },
   ],
 }
