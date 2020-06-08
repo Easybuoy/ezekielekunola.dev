@@ -3,7 +3,7 @@ module.exports = {
     title: `Ezekiel Ekunola`,
     description: `Personal Website`,
     author: `Ezekiel Ekunola`,
-    image: './src/images/logo2.svg'
+    image: "./src/images/logo2.svg",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -51,15 +51,26 @@ module.exports = {
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
-      options: { 
+      options: {
         trackingId: process.env.ANALYTICS_ID,
-        head: true
-      }
+        head: true,
+      },
     },
     "gatsby-transformer-json",
     "gatsby-plugin-styled-components",
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
+    {
+      resolve: "gatsby-plugin-social-cards",
+      options: {
+        authorImage: "./src/images/profile4.jpg",
+        // image to use when no cover in frontmatter
+        backgroundImage: "./static/img/hvitserkur.JPG",
+        defaultAuthor: "Ezekiel Ekunola",
+        // card design
+        design: "default", // 'default' or 'card'
+      },
+    },
   ],
 }
