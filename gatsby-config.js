@@ -3,7 +3,7 @@ module.exports = {
     title: `Ezekiel Ekunola`,
     description: `Personal Website`,
     author: `Ezekiel Ekunola`,
-    image: './src/images/logo2.svg'
+    image: "./src/images/logo2.svg",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -51,10 +51,10 @@ module.exports = {
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
-      options: { 
+      options: {
         trackingId: process.env.ANALYTICS_ID,
-        head: true
-      }
+        head: true,
+      },
     },
     "gatsby-transformer-json",
     "gatsby-plugin-styled-components",
