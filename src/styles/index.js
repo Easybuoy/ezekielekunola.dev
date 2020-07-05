@@ -3,107 +3,6 @@ export const primaryColor = "#2118a2"
 export const secondaryColor = "#031a6b"
 export const tertiaryColor = "#031a6b"
 
-const ProjectDetail = styled.section`
-  width: 100%;
-  margin: 1rem 0;
-  min-height: 100vh;
-  display: flex;
-
-  .project-detail {
-    margin: 2rem;
-    box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.2),
-      0 -1px 5px 0 rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    width: 100%;
-
-    h2 {
-      width: 100%;
-      text-align: center;
-      font-family: "Concert One", sans-serif;
-      padding: 2rem 0;
-      color: ${primaryColor};
-    }
-
-    p {
-      text-align: center;
-      font-size: 2rem;
-      width: 90%;
-      margin: 0 auto;
-    }
-
-    .project-image {
-      padding: 1rem;
-    }
-
-    .project-content {
-      .contribution-text {
-        color: ${primaryColor};
-        padding: 1rem 0;
-      }
-      .project-technologies {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 100%;
-        margin: 1rem auto;
-
-        span {
-          background-color: ${primaryColor};
-          padding: 1rem;
-          margin: 1rem;
-          font-size: 2rem;
-          border-radius: 0.2rem;
-          color: white;
-
-          @media (max-width: 650px) {
-            font-size: 1.5rem;
-          }
-
-          @media (max-width: 400px) {
-            font-size: 1.3rem;
-          }
-        }
-      }
-
-      .project-links {
-        display: flex;
-        justify-content: center;
-
-        a {
-          color: ${primaryColor};
-          transition: all 0.3s ease-in-out;
-
-          &:hover {
-            transform: scale(1.09);
-            color: black;
-          }
-          i {
-            padding: 0 2rem;
-          }
-        }
-      }
-
-      .project-actions {
-        display: flex;
-        margin: 2rem auto;
-        padding: 2rem 0;
-        justify-content: center;
-
-        p {
-          font-size: 3rem;
-
-          @media (max-width: 400px) {
-            font-size: 2rem;
-          }
-          a {
-            color: ${primaryColor};
-          }
-        }
-      }
-    }
-  }
-`
-
 const Projects = styled.div`
   display: flex;
   justify-content: center;
@@ -371,4 +270,4 @@ const StyledHireMe = styled.section`
   }
 `
 
-export { ProjectDetail, Success, StyledHireMe, Projects }
+export { Success, StyledHireMe, Projects }
