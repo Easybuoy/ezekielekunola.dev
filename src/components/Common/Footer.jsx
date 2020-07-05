@@ -1,6 +1,6 @@
 import React from "react"
 
-import ContactDetail from "./Reuseables/ContactDetail"
+import ContactDetail from "./Reuseables/ContactDetail/ContactDetail"
 import { Footer as StyledFooter } from "../../styles"
 
 const Footer = () => {

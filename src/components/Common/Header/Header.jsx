@@ -6,7 +6,7 @@ import StyledHeader from "./Styles"
 import PatternImageLight from "../../../images/pattern2.svg"
 import PatternImageDark from "../../../images/pattern.svg"
 import Bounce from "../Bounce"
-import ContactDetail from "../Reuseables/ContactDetail"
+import ContactDetail from "../Reuseables/ContactDetail/ContactDetail"
 
 export default function Header({ theme }) {
   let patterImage = PatternImageLight

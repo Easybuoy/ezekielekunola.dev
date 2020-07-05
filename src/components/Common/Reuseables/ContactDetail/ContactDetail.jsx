@@ -1,9 +1,8 @@
 import React from "react"
 
-import { ContactDetail as ContactDetailStyle } from "../../../styles/common"
-import { primaryColor } from "../../../styles/index"
+import ContactDetailStyle from "./Styles"
 
-export default function ContactDetail({ size, color = primaryColor }) {
+export default function ContactDetail({ size }) {
   let mailClassName = `fas fa-envelope fa-${size}`
   let githubClassName = `fab fa-github fa-${size}`
   let linkedInClassName = `fab fa-linkedin fa-${size}`
@@ -12,7 +11,7 @@ export default function ContactDetail({ size, color = primaryColor }) {
   let twitterClassName = `fab fa-twitter fa-${size}`
 
   return (
-    <ContactDetailStyle color={color}>
+    <ContactDetailStyle>
       <a href="mailto:ekunolaeasybuoy@gmail.com">
         <i className={mailClassName}></i>
       </a>
