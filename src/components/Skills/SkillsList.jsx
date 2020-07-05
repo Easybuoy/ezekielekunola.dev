@@ -1,11 +1,19 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
-import PatternImage from "../../images/pattern.png"
-import { SkillsList as StyledSkillsList } from "../../styles"
+import PatternImageLight from "../../images/pattern2.svg"
+import PatternImageDark from "../../images/pattern.svg"
+
+import { SkillsList as StyledSkillsList } from "./Styles"
 import Skill from "./Skill"
 
-const SkillsList = () => {
+const SkillsList = ({ theme }) => {
+  let PatternImage = PatternImageLight
+
+  if (theme === "dark") {
+    PatternImage = PatternImageDark
+  }
+
   const data = useStaticQuery(graphql`
     {
       allSkillsJson {

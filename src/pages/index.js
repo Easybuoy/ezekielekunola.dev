@@ -32,7 +32,7 @@ const IndexPage = () => {
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <>
         <GlobalStyles />
-        <Layout>
+        <Layout theme={theme}>
           <SEO title="Home" />
           <Navigation theme={theme} toggleTheme={themeToggler} />
           <Header theme={theme} />
@@ -40,8 +40,8 @@ const IndexPage = () => {
           {/* <HireMe /> */}
           <ProjectsList theme={theme} />
           <BlogsList theme={theme} />
-          <SkillsList />
-          <Contact />
+          <SkillsList theme={theme} />
+          <Contact theme={theme} />
           <Footer />
         </Layout>
       </>

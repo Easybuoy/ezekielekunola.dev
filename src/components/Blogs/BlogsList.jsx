@@ -2,7 +2,7 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
 import { BlogsList as StyledBlogsList } from "./Styles"
-// import PatternImage from "../../images/pattern2.png"
+
 import PatternImageLight from "../../images/pattern2.svg"
 import PatternImageDark from "../../images/pattern.svg"
 

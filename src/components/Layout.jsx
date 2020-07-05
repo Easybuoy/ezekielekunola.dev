@@ -2,7 +2,16 @@ import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 
-const Layout = ({ children }) => {
+import PatternImageDark from "../images/pattern-bg-dark.svg"
+import PatternImageLight from "../images/pattern-bg-light.svg"
+
+const Layout = ({ children, theme }) => {
+  let PatternImage = PatternImageLight
+
+  if (theme === "dark") {
+    PatternImage = PatternImageDark
+  }
+
   return (
     <>
       <Helmet>
@@ -10,7 +19,10 @@ const Layout = ({ children }) => {
           href="https://fonts.googleapis.com/css?family=Alegreya+Sans&display=swap"
           rel="stylesheet"
         />
-        <link href="https://fonts.googleapis.com/css?family=Jaldi&display=swap" rel="stylesheet"></link>
+        <link
+          href="https://fonts.googleapis.com/css?family=Jaldi&display=swap"
+          rel="stylesheet"
+        ></link>
         <link
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
           rel="stylesheet"
@@ -21,7 +33,13 @@ const Layout = ({ children }) => {
         />
       </Helmet>
 
-      <main>{children}</main>
+      <main
+        style={{
+          backgroundImage: `linear-gradient(to right bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(${PatternImage})`,
+        }}
+      >
+        {children}
+      </main>
     </>
   )
 }
