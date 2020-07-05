@@ -22,7 +22,7 @@ const BlogsList = styled.section`
       text-align: center;
       width: 100%;
       padding-bottom: 2rem;
-      color: white;
+      color: ${props => props.theme.text};
       h3 {
         font-family: "Concert One", cursive;
       }
@@ -41,6 +41,9 @@ const Blog = styled.div`
   justify-content: center;
   align-items: center;
 
+  a {
+    width: 100%;
+  }
   &:hover {
     background-color: ${props => props.theme.primaryColor};
     transform: scale(1.01);

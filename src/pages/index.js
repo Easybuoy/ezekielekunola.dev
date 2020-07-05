@@ -39,7 +39,7 @@ const IndexPage = () => {
           <About />
           {/* <HireMe /> */}
           <ProjectsList theme={theme} />
-          <BlogsList />
+          <BlogsList theme={theme} />
           <SkillsList />
           <Contact />
           <Footer />

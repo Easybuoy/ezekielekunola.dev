@@ -2,11 +2,18 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
 import { BlogsList as StyledBlogsList } from "./Styles"
-import PatternImage from "../../images/pattern2.png"
+// import PatternImage from "../../images/pattern2.png"
+import PatternImageLight from "../../images/pattern2.svg"
+import PatternImageDark from "../../images/pattern.svg"
 
 import Blog from "./Blog"
 
-const BlogsList = () => {
+const BlogsList = ({ theme }) => {
+  let PatternImage = PatternImageLight
+
+  if (theme === "dark") {
+    PatternImage = PatternImageDark
+  }
   const data = useStaticQuery(graphql`
     {
       allBlogsJson {
