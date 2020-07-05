@@ -4,10 +4,14 @@ export const useDarkMode = () => {
   const [theme, setTheme] = useState("dark")
   const toggleTheme = () => {
     if (theme === "light") {
-      window.localStorage.setItem("theme", "dark")
+      if (window) {
+        window.localStorage.setItem("theme", "dark")
+      }
       setTheme("dark")
     } else {
-      window.localStorage.setItem("theme", "light")
+      if (window) {
+        window.localStorage.setItem("theme", "light")
+      }
       setTheme("light")
     }
   }
