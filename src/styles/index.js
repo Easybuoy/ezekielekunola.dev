@@ -104,19 +104,6 @@ const ProjectDetail = styled.section`
   }
 `
 
-const Footer = styled.footer`
-  background-color: #2118a2;
-  padding: 1rem 0;
-  text-align: center;
-  color: white;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  p {
-    padding: 1rem 0;
-  }
-`
 const Projects = styled.div`
   display: flex;
   justify-content: center;
@@ -380,4 +367,4 @@ const StyledHireMe = styled.section`
   }
 `
 
-export { Footer, ProjectDetail, Success, StyledHireMe, Projects }
+export { ProjectDetail, Success, StyledHireMe, Projects }

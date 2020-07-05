@@ -12,7 +12,7 @@ import SEO from "../components/Seo"
 import ProjectsList from "../components/Projects/ProjectsList"
 
 import Header from "../components/Common/Header/Header"
-import Footer from "../components/Common/Footer"
+import Footer from "../components/Common/Footer/Footer"
 import Contact from "../components/Contact/Contact"
 import SkillsList from "../components/Skills/SkillsList"
 import BlogsList from "../components/Blogs/BlogsList"

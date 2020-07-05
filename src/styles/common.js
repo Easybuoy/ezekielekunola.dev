@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { primaryColor } from "./index"
+
 const Button = styled.button`
   padding: 1rem;
 
