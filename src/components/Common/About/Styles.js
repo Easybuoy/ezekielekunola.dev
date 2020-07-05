@@ -4,13 +4,21 @@ const About = styled.div`
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 2rem 0;
-  min-height: 50vh;
 
   @media (max-width: 750px) {
     flex-direction: column-reverse;
+  }
+
+  .bg {
+    margin: 1rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    min-height: 60vh;
+    padding: 2rem 0;
+    align-items: center;
+    justify-content: space-evenly;
   }
 
   .about-content {
@@ -25,7 +33,7 @@ const About = styled.div`
     h3 {
       font-family: "Concert One", cursive;
       padding: 2rem 0;
-
+      color: white;
       @media (max-width: 750px) {
         width: 100%;
         text-align: center;
@@ -34,7 +42,7 @@ const About = styled.div`
 
     p {
       line-height: 3rem;
-      color: ${props => props.theme.text};
+      color: white;
       font-size: 2rem;
     }
   }

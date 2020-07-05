@@ -77,7 +77,11 @@ const Project = styled.div`
     background-size: cover;
     background-position: center;
     height: 250px;
+    filter: grayscale(100%);
+    transition: all 0.3s ease-in-out;
+
     &:hover {
+      filter: grayscale(0%);
       .project-content {
         opacity: 1;
       }
@@ -119,7 +123,7 @@ const ProjectDetail = styled.section`
   min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
-  
+
   .project-detail {
     margin-top: 10rem;
     border-radius: 10px;

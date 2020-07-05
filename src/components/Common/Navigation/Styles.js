@@ -14,7 +14,7 @@ const Navigation = styled.nav`
       : props.theme.tertiaryColor};
   opacity: 1;
   border-bottom: 0.1px solid #8c8c8c;
-  margin-bottom: 10rem;
+  /* margin-bottom: 10rem; */
   padding: 1rem 2rem;
 
   img {

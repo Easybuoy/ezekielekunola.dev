@@ -9,21 +9,21 @@ const Project = ({ project }) => {
 
   return (
     <StyledProject>
-      <Link to={`/${slug}`}>
-        <div
-          className="project-image"
-          style={{
-            backgroundImage: `url(${imageData.src})`,
-          }}
-        >
-          {/* <Link to={`/${slug}`}> */}
+       <Link to={`/${slug}`}>
+      <div
+        className="project-image"
+        style={{
+          backgroundImage: `url(${imageData.src})`,
+        }}
+      >
+        {/* <Link to={`/${slug}`}> */}
           <div className="project-content"></div>
-          {/* </Link> */}
-        </div>
+        {/* </Link> */}
+      </div>
 
-        <div className="project-body">
-          <h3>{title}</h3>
-        </div>
+      <div className="project-body">
+        <h3>{title}</h3>
+      </div>
       </Link>
     </StyledProject>
   )
