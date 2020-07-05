@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
-import { BlogsList as StyledBlogsList } from "../../styles"
+import { BlogsList as StyledBlogsList } from "./Styles"
 import PatternImage from "../../images/pattern2.png"
 
 import Blog from "./Blog"
