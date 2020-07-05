@@ -50,15 +50,30 @@ const About = styled.div`
     }
 
     img {
-      -webkit-box-shadow: 10px 10px 2px 2px #a3a3a3;
-      -moz-box-shadow: 10px 10px 2px 2px #a3a3a3;
-      box-shadow: 10px 10px 2px 2px #a3a3a3;
+      -webkit-box-shadow: 10px 10px 2px 2px
+        ${props =>
+          props.theme.type === "light" ? "#a3a3a3" : props.theme.primaryColor};
+      -moz-box-shadow: 10px 10px 2px 2px
+        ${props =>
+          props.theme.type === "light" ? "#a3a3a3" : props.theme.primaryColor};
+      box-shadow: 10px 10px 2px 2px
+        ${props =>
+          props.theme.type === "light" ? "#a3a3a3" : props.theme.primaryColor};
+      transition: all 0.3s ease-in-out;
+
       width: 400px;
       background-color: white;
       object-fit: cover;
       margin: 0 auto;
       border-radius: 10px;
       height: 400px;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+
+      &:hover {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+      }
 
       @media (max-width: 910px) {
         width: 100%;

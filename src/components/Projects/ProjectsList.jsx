@@ -2,11 +2,18 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import { Link } from "gatsby"
 
-import { ProjectsList as StyledProjectsList } from "../../styles"
+import { ProjectsList as StyledProjectsList } from "./Styles"
 import Project from "./Project"
-import PatternImage from "../../images/pattern.png"
+import PatternImageLight from "../../images/pattern2.svg"
+import PatternImageDark from "../../images/pattern.svg"
 
-const ProjectsList = () => {
+const ProjectsList = ({ theme }) => {
+  let PatternImage = PatternImageLight
+
+  if (theme === "dark") {
+    PatternImage = PatternImageDark
+  }
+
   const data = useStaticQuery(graphql`
     {
       allProjectsJson {

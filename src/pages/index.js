@@ -3,7 +3,7 @@ import { ThemeProvider } from "styled-components"
 
 import { GlobalStyles } from "../components/GlobalStyles"
 import { lightTheme, darkTheme } from "../styles/Theme"
-import { useDarkMode } from "../components/Common/useDarkMode"
+import { useDarkMode } from "../components/useDarkMode"
 
 import "../styles/reset.css"
 import "../styles/global.css"
@@ -38,7 +38,7 @@ const IndexPage = () => {
           <Header theme={theme} />
           <About />
           {/* <HireMe /> */}
-          <ProjectsList />
+          <ProjectsList theme={theme} />
           <BlogsList />
           <SkillsList />
           <Contact />

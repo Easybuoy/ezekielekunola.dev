@@ -9,17 +9,17 @@ import Bounce from "../Bounce"
 import ContactDetail from "../Reuseables/ContactDetail/ContactDetail"
 
 export default function Header({ theme }) {
-  let patterImage = PatternImageLight
+  let PatternImage = PatternImageLight
 
   if (theme === "dark") {
-    patterImage = PatternImageDark
+    PatternImage = PatternImageDark
   }
   return (
     <StyledHeader>
       <div
         className="content"
         style={{
-          backgroundImage: `linear-gradient(to right bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(${patterImage})`,
+          backgroundImage: `linear-gradient(to right bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(${PatternImage})`,
         }}
       >
         <div className="header-content">
