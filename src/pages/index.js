@@ -24,7 +24,7 @@ const IndexPage = () => {
   const [theme, setTheme] = useDarkMode(
     window.localStorage.getItem("theme") || "dark"
   )
-  console.log(theme)
+
   const themeToggler = () => {
     theme === "light" ? setTheme("dark") : setTheme("light")
   }
