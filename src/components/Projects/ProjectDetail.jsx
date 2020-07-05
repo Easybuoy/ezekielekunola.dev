@@ -37,7 +37,7 @@ export const query = graphql`
 
 const ProjectDetail = ({ data }) => {
   const [theme, setTheme] = useDarkMode(
-    window.localStorage.getItem("theme") || "light"
+    (window && window.localStorage.getItem("theme")) || "light"
   )
   const themeToggler = () => {
     theme === "light" ? setTheme("dark") : setTheme("light")

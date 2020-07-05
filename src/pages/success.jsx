@@ -17,7 +17,7 @@ import Navigation from "../components/Common/Navigation/Navigation"
 
 const Success = props => {
   const [theme, setTheme] = useDarkMode(
-    window.localStorage.getItem("theme") || "light"
+    (window && window.localStorage.getItem("theme")) || "light"
   )
   const themeToggler = () => {
     theme === "light" ? setTheme("dark") : setTheme("light")
