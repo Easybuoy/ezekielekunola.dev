@@ -4,16 +4,8 @@ import { Link } from "gatsby"
 
 import { ProjectsList as StyledProjectsList } from "./Styles"
 import Project from "./Project"
-import PatternImageLight from "../../images/pattern2.svg"
-import PatternImageDark from "../../images/pattern.svg"
 
 const ProjectsList = ({ theme }) => {
-  let PatternImage = PatternImageLight
-
-  if (theme === "dark") {
-    PatternImage = PatternImageDark
-  }
-
   const data = useStaticQuery(graphql`
     {
       allProjectsJson {
@@ -44,12 +36,7 @@ const ProjectsList = ({ theme }) => {
 
   return (
     <StyledProjectsList id="projects">
-      <div
-        className="projects-list"
-        style={{
-          backgroundImage: `linear-gradient(to right bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(${PatternImage})`,
-        }}
-      >
+      <div className="projects-list">
         <h3>Projects</h3>
         {projects.slice(0, 8).map(({ node: project }) => (
           <Project key={project.id} project={project} />

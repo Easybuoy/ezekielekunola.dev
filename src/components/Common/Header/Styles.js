@@ -5,14 +5,12 @@ const Header = styled.header`
   width: 100%;
   min-height: 100vh;
   justify-content: space-around;
-  padding: 2rem 0;
+  padding-bottom: 2rem;
 
   .content {
     display: flex;
     align-items: center;
     text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 6px 0px;
-    margin: 1rem;
     justify-content: center;
     width: 100%;
     border-radius: 10px;

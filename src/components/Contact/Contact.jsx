@@ -3,14 +3,11 @@ import { graphql, useStaticQuery } from "gatsby"
 
 import StyledContact from "./Styles"
 import { Input, Button, Form, TextArea } from "../../styles/common"
-import PatternImageLight from "../../images/pattern2.svg"
 import PatternImageDark from "../../images/pattern.svg"
 
 export default function Contact({ theme }) {
-  let PatternImage = PatternImageLight
   let style = {}
   if (theme === "light") {
-    PatternImage = PatternImageDark
     style = {
       backgroundImage: `linear-gradient(to right bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(${PatternImageDark})`,
     }
