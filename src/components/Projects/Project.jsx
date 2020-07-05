@@ -16,9 +16,9 @@ const Project = ({ project }) => {
           backgroundImage: `url(${imageData.src})`,
         }}
       >
-        {/* <Link to={`/${slug}`}> */}
+
           <div className="project-content"></div>
-        {/* </Link> */}
+
       </div>
 
       <div className="project-body">

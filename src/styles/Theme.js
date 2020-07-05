@@ -7,6 +7,8 @@ export const lightTheme = {
   primaryColor: "#2118a2",
   secondaryColor: "#031a6b",
   tertiaryColor: "#031a6b",
+  primaryFont: "Concert One",
+  secondaryFont: "Meera Inimai",
 }
 export const darkTheme = {
   type: "dark",
@@ -17,4 +19,6 @@ export const darkTheme = {
   primaryColor: "#190aef",
   secondaryColor: "#031a6b",
   tertiaryColor: "#000",
+  primaryFont: "Concert One",
+  secondaryFont: "Meera Inimai",
 }

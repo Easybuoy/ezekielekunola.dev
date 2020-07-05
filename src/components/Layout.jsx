@@ -16,14 +16,6 @@ const Layout = ({ children, theme }) => {
     <>
       <Helmet>
         <link
-          href="https://fonts.googleapis.com/css?family=Alegreya+Sans&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css?family=Jaldi&display=swap"
-          rel="stylesheet"
-        ></link>
-        <link
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
           rel="stylesheet"
         />

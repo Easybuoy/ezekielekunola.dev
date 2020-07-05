@@ -21,7 +21,7 @@ const SkillsList = styled.section`
       padding-bottom: 2rem;
 
       h3 {
-        font-family: "Concert One", cursive;
+        font-family: ${props => props.theme.primaryFont};
       }
     }
 
@@ -59,7 +59,7 @@ const SkillsList = styled.section`
           }
           h3 {
             margin: 1 2rem;
-            font-family: "Concert One", cursive;
+            font-family: ${props => props.theme.primaryFont};
             color: ${props => props.theme.text};
           }
         }
@@ -80,7 +80,7 @@ const SkillsList = styled.section`
             font-size: 2.5rem;
             margin-bottom: 2rem;
             line-height: 3rem;
-            font-family: "Jaldi", sans-serif;
+            font-family: ${props => props.theme.secondaryFont};
           }
         }
       }
@@ -120,7 +120,7 @@ const Skill = styled.div`
     }
 
     h4 {
-      font-family: "Concert One", cursive;
+      font-family: ${props => props.theme.primaryFont};
       font-size: 2.5rem;
 
       @media (max-width: 400px) {

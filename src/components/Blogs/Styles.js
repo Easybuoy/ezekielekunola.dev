@@ -22,7 +22,7 @@ const BlogsList = styled.section`
       padding-bottom: 2rem;
       color: ${props => props.theme.text};
       h3 {
-        font-family: "Concert One", cursive;
+        font-family: ${props => props.theme.primaryFont};
         color: white;
       }
     }
@@ -61,6 +61,7 @@ const Blog = styled.div`
       background-color: ${props => props.theme.primaryColor};
       border: 2px solid white;
       color: white;
+
       p {
         color: white;
       }
@@ -88,6 +89,9 @@ const Blog = styled.div`
 
     h3 {
       padding-bottom: 1rem;
+      font-size: 2rem;
+      font-weight: 900;
+      font-family: ${props => props.theme.secondaryFont};
     }
 
     p {
