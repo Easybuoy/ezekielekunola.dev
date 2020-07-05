@@ -1,6 +1,10 @@
 import styled from "styled-components"
 
 const Navigation = styled.nav`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   background-color: ${props =>
     props.theme.type === "light"
       ? props.theme.primaryColor
@@ -8,12 +12,11 @@ const Navigation = styled.nav`
   opacity: 1;
   border-bottom: 0.1px solid #8c8c8c;
   margin: 0;
-  padding: 1rem 0;
+  padding: 1rem 2rem;
 
   img {
     width: 100px;
     height: auto;
-    margin-left: 3rem;
     cursor: pointer;
   }
 `

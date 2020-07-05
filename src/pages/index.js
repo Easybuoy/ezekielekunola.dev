@@ -1,8 +1,10 @@
-import React, { useState } from "react"
+import React from "react"
 import { ThemeProvider } from "styled-components"
 
 import { GlobalStyles } from "../components/GlobalStyles"
 import { lightTheme, darkTheme } from "../styles/Theme"
+import { useDarkMode } from "../components/Common/useDarkMode"
+
 import "../styles/reset.css"
 import "../styles/global.css"
 import Layout from "../components/Layout"
@@ -19,7 +21,9 @@ import Navigation from "../components/Common/Navigation/Navigation"
 import About from "../components/Common/About/About"
 
 const IndexPage = () => {
-  const [theme, setTheme] = useState("light")
+  const [theme, setTheme] = useDarkMode(
+    window.localStorage.getItem("theme") || "light"
+  )
   const themeToggler = () => {
     theme === "light" ? setTheme("dark") : setTheme("light")
   }
@@ -30,7 +34,7 @@ const IndexPage = () => {
         <GlobalStyles />
         <Layout>
           <SEO title="Home" />
-          <Navigation onClick={themeToggler} />
+          <Navigation theme={theme} toggleTheme={themeToggler} />
           <Header theme={theme} />
           <About />
           {/* <HireMe /> */}
