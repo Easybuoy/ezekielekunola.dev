@@ -3,11 +3,11 @@ import { Link } from "gatsby"
 
 import { Navigation as StyledNavigation } from "../../styles"
 import logo from "../../images/logo.svg"
-const Navigation = () => {
+const Navigation = ({ onClick }) => {
   return (
     <StyledNavigation>
       <Link to="/">
-        <img src={logo} alt="logo" />
+        <img src={logo} alt="logo" onClick={onClick} />
       </Link>
     </StyledNavigation>
   )

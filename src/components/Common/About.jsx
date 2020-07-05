@@ -3,7 +3,8 @@ import { graphql, useStaticQuery } from "gatsby"
 
 import { About as StyledAbout } from "../../styles"
 
-export default function About() {
+export default function About(props) {
+  console.log(props)
   const data = useStaticQuery(graphql`
     query {
       aboutImage: file(relativePath: { eq: "profile4.jpg" }) {

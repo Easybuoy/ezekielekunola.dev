@@ -3,7 +3,7 @@ import Typist from "react-typist"
 import "react-typist/dist/Typist.css"
 
 import { Header as StyledHeader } from "../../styles"
-import PatternImage from "../../images/pattern.png"
+import PatternImage from "../../images/pattern.svg"
 import Bounce from "../Common/Bounce"
 import ContactDetail from "../Common/Reuseables/ContactDetail"
 

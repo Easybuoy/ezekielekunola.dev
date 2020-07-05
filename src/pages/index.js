@@ -1,5 +1,8 @@
-import React from "react"
+import React, { useState } from "react"
+import { ThemeProvider } from "styled-components"
 
+import { GlobalStyles } from "../components/GlobalStyles"
+import { lightTheme, darkTheme } from "../styles/Theme"
 import "../styles/reset.css"
 import "../styles/global.css"
 import Layout from "../components/Layout"
@@ -15,19 +18,31 @@ import BlogsList from "../components/Blogs/BlogsList"
 import Navigation from "../components/Common/Navigation"
 import About from "../components/Common/About"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <Navigation />
-    <Header />
-    <About />
-    {/* <HireMe /> */}
-    <ProjectsList />
-    <BlogsList />
-    <SkillsList />
-    <Contact />
-    <Footer />
-  </Layout>
-)
+const IndexPage = () => {
+  const [theme, setTheme] = useState("light")
+  const themeToggler = () => {
+    theme === "light" ? setTheme("dark") : setTheme("light")
+  }
+
+  return (
+    <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+      <>
+        <GlobalStyles />
+        <Layout>
+          <SEO title="Home" />
+          <Navigation onClick={themeToggler} />
+          <Header />
+          <About />
+          {/* <HireMe /> */}
+          <ProjectsList />
+          <BlogsList />
+          <SkillsList />
+          <Contact />
+          <Footer />
+        </Layout>
+      </>
+    </ThemeProvider>
+  )
+}
 
 export default IndexPage
