@@ -22,7 +22,7 @@ import About from "../components/Common/About/About"
 
 const IndexPage = () => {
   const [theme, setTheme] = useDarkMode(
-    (window && window.localStorage.getItem("theme")) || "dark"
+    (typeof window !== "undefined" && window.localStorage.getItem("theme")) || "dark"
   )
 
   const themeToggler = () => {

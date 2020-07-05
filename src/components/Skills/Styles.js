@@ -147,6 +147,7 @@ const Skill = styled.div`
       text-align: center;
       display: flex;
       align-items: center;
+      line-height: 0;
     }
   }
 `
