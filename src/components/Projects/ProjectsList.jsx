@@ -2,11 +2,10 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import { Link } from "gatsby"
 
-import { ProjectsList as StyledProjectsList } from "../../styles"
+import { ProjectsList as StyledProjectsList } from "./Styles"
 import Project from "./Project"
-import PatternImage from "../../images/pattern.png"
 
-const ProjectsList = () => {
+const ProjectsList = ({ theme }) => {
   const data = useStaticQuery(graphql`
     {
       allProjectsJson {
@@ -37,12 +36,7 @@ const ProjectsList = () => {
 
   return (
     <StyledProjectsList id="projects">
-      <div
-        className="projects-list"
-        style={{
-          backgroundImage: `linear-gradient(to right bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(${PatternImage})`,
-        }}
-      >
+      <div className="projects-list">
         <h3>Projects</h3>
         {projects.slice(0, 8).map(({ node: project }) => (
           <Project key={project.id} project={project} />
