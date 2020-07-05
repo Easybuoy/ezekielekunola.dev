@@ -283,6 +283,7 @@ const Success = styled.div`
 
         h2 {
           font-size: 3rem;
+
           @media (max-width: 380px) {
             font-size: 2.5rem;
           }
@@ -292,7 +293,7 @@ const Success = styled.div`
           text-align: center;
           padding: 2rem 0;
           text-decoration: none;
-          color: #2118a2;
+          color: ${props => props.theme.primaryColor};
           @media (max-width: 300px) {
             font-size: 2rem;
           }
