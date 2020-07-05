@@ -127,7 +127,10 @@ const Projects = styled.div`
     .home {
       width: 100%;
       text-align: center;
-      color: white;
+      color: ${props =>
+        props.theme.type === "light"
+          ? props.theme.primaryColor
+          : props.theme.text};
       font-size: 2rem;
       margin: 3rem 0;
     }
