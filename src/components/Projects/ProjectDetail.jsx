@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import Image from "gatsby-image"
 
 import Layout from "../Layout"
-import Navigation from "../Common/Navigation"
+import Navigation from "../Common/Navigation/Navigation"
 import { ProjectDetail as StyledProjectDetail } from "../../styles"
 import PatternImage from "../../images/pattern.png"
 

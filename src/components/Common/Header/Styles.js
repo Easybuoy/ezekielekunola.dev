@@ -1,9 +1,5 @@
 import styled from "styled-components"
 
-export const primaryColor = "#2118a2"
-export const secondaryColor = "#031a6b"
-export const tertiaryColor = "#031a6b"
-
 const Header = styled.header`
   display: flex;
   width: 100%;
@@ -44,7 +40,7 @@ const Header = styled.header`
           font-size: 7rem;
 
           .name {
-            color: ${primaryColor};
+            color: ${props => props.theme.primaryColor};
           }
 
           @media (max-width: 500px) {

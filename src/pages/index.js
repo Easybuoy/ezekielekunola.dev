@@ -15,7 +15,7 @@ import Contact from "../components/Contact/Contact"
 import SkillsList from "../components/Skills/SkillsList"
 import BlogsList from "../components/Blogs/BlogsList"
 // import HireMe from "../components/Common/HireMe"
-import Navigation from "../components/Common/Navigation"
+import Navigation from "../components/Common/Navigation/Navigation"
 import About from "../components/Common/About"
 
 const IndexPage = () => {

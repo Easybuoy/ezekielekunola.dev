@@ -5,7 +5,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import Layout from "../components/Layout"
 import { Projects as StyledProjects } from "../styles"
 import PatternImage from "../images/pattern2.png"
-import Navigation from "../components/Common/Navigation"
+import Navigation from "../components/Common/Navigation/Navigation"
 
 const Projects = props => {
   const data = useStaticQuery(graphql`
@@ -91,7 +91,9 @@ const Projects = props => {
               </div>
             ))}
           </div>
-          <Link className="home" to="/#projects">&larr; Back Home</Link>
+          <Link className="home" to="/#projects">
+            &larr; Back Home
+          </Link>
         </div>
       </StyledProjects>
     </Layout>

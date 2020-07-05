@@ -5,7 +5,7 @@ import Layout from "../components/Layout"
 import successImage from "../images/mail.svg"
 import { Success as StyledSuccess } from "../styles"
 import PatternImage from "../images/pattern.png"
-import Navigation from "../components/Common/Navigation"
+import Navigation from "../components/Common/Navigation/Navigation"
 
 const Success = props => (
   <Layout>

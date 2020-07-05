@@ -3,20 +3,7 @@ export const primaryColor = "#2118a2"
 export const secondaryColor = "#031a6b"
 export const tertiaryColor = "#031a6b"
 
-const Navigation = styled.nav`
-  background-color: ${primaryColor};
-  opacity: 1;
-  border-bottom: 0.1px solid #8c8c8c;
-  margin: 0;
-  padding: 1rem 0;
 
-  img {
-    width: 100px;
-    height: auto;
-    margin-left: 3rem;
-    cursor: pointer;
-  }
-`
 
 
 
@@ -909,7 +896,6 @@ const StyledHireMe = styled.section`
 `
 
 export {
-  Navigation,
   ProjectsList,
   Project,
   SkillsList,
