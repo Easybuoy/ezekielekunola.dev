@@ -31,6 +31,10 @@ const Layout = ({ children, theme }) => {
           href="https://fonts.googleapis.com/css?family=Concert+One&display=swap"
           rel="stylesheet"
         />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Meera+Inimai&display=swap"
+          rel="stylesheet"
+        />
       </Helmet>
 
       <main

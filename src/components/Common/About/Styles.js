@@ -7,11 +7,13 @@ const About = styled.div`
 
   @media (max-width: 750px) {
     flex-direction: column-reverse;
+    /* margin: 1rem auto;
+    width: 95%; */
   }
 
   .bg {
     margin: 1rem;
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     flex-wrap: wrap;
     border-radius: 10px;
@@ -19,6 +21,8 @@ const About = styled.div`
     padding: 2rem 0;
     align-items: center;
     justify-content: space-evenly;
+
+
   }
 
   .about-content {
@@ -44,6 +48,7 @@ const About = styled.div`
       line-height: 3rem;
       color: white;
       font-size: 2rem;
+      font-family: "Meera Inimai", sans-serif;
     }
   }
   .about-image {
@@ -52,7 +57,7 @@ const About = styled.div`
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-
+    margin: 2rem 0;
     @media (max-width: 750px) {
       width: 90%;
     }

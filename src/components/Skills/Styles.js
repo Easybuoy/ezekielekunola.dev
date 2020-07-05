@@ -139,7 +139,7 @@ const Skill = styled.div`
     }
 
     p {
-      padding: 0.7rem;
+      padding: 1.3rem 1rem;
       background-color: ${props => props.theme.primaryColor};
       color: white;
       margin: 1rem;

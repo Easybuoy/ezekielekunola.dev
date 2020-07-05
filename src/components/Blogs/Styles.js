@@ -23,6 +23,7 @@ const BlogsList = styled.section`
       color: ${props => props.theme.text};
       h3 {
         font-family: "Concert One", cursive;
+        color: white;
       }
     }
   }

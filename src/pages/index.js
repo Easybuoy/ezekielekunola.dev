@@ -22,7 +22,8 @@ import About from "../components/Common/About/About"
 
 const IndexPage = () => {
   const [theme, setTheme] = useDarkMode(
-    (typeof window !== "undefined" && window.localStorage.getItem("theme")) || "dark"
+    (typeof window !== "undefined" && window.localStorage.getItem("theme")) ||
+      "dark"
   )
 
   const themeToggler = () => {
@@ -37,7 +38,7 @@ const IndexPage = () => {
           <SEO title="Home" />
           <Navigation theme={theme} toggleTheme={themeToggler} />
           <Header theme={theme} />
-          <About />
+          <About theme={theme} />
           {/* <HireMe /> */}
           <ProjectsList theme={theme} />
           <BlogsList theme={theme} />

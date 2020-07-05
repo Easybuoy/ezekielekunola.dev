@@ -4,7 +4,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import StyledAbout from "./Styles"
 import PatternImageDark from "../../../images/pattern-bg-dark.svg"
 
-export default function About(props) {
+export default function About({ theme }) {
   const data = useStaticQuery(graphql`
     query {
       aboutImage: file(relativePath: { eq: "profile5.jpg" }) {
@@ -23,7 +23,9 @@ export default function About(props) {
       <div
         className="bg"
         style={{
-          backgroundImage: `linear-gradient(to right bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(${PatternImageDark})`,
+          backgroundImage:
+            theme === "light" &&
+            `linear-gradient(to right bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(${PatternImageDark})`,
         }}
       >
         <div className="about-content">
