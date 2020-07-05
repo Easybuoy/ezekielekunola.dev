@@ -1,0 +1,88 @@
+import styled from "styled-components"
+
+export const primaryColor = "#2118a2"
+export const secondaryColor = "#031a6b"
+export const tertiaryColor = "#031a6b"
+
+const Header = styled.header`
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  justify-content: space-around;
+  padding: 2rem 0;
+
+  .content {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 6px 0px;
+    margin: 1rem;
+    justify-content: center;
+    width: 100%;
+    border-radius: 10px;
+
+    .header-content {
+      width: 50%;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      @media (max-width: 800px) {
+        width: 100%;
+      }
+
+      .header-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 3rem;
+
+        h1 {
+          margin: 1rem 0;
+          font-family: "Concert One", cursive;
+          font-size: 7rem;
+
+          .name {
+            color: ${primaryColor};
+          }
+
+          @media (max-width: 500px) {
+            padding: 0 1rem;
+            font-size: 4.5rem;
+          }
+
+          @media (max-width: 350px) {
+            padding: 0 1rem;
+            font-size: 4rem;
+          }
+        }
+
+        .Typist {
+          font-size: 4rem;
+
+          @media (max-width: 450px) {
+            font-size: 3rem;
+          }
+
+          @media (max-width: 350px) {
+            font-size: 2rem;
+          }
+          .Cursor {
+            padding: 0 0.1rem;
+          }
+        }
+        .header-actions {
+          display: flex;
+          justify-content: center;
+          margin-top: 2rem;
+          button {
+            margin: 0 1rem;
+          }
+        }
+      }
+    }
+  }
+`
+
+export default Header

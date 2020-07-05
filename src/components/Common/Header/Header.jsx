@@ -2,18 +2,24 @@ import React from "react"
 import Typist from "react-typist"
 import "react-typist/dist/Typist.css"
 
-import { Header as StyledHeader } from "../../styles"
-import PatternImage from "../../images/pattern.svg"
-import Bounce from "../Common/Bounce"
-import ContactDetail from "../Common/Reuseables/ContactDetail"
+import StyledHeader from "./Styles"
+import PatternImageLight from "../../../images/pattern2.svg"
+import PatternImageDark from "../../../images/pattern.svg"
+import Bounce from "../Bounce"
+import ContactDetail from "../Reuseables/ContactDetail"
 
-export default function Header() {
+export default function Header({ theme }) {
+  let patterImage = PatternImageLight
+
+  if (theme === "dark") {
+    patterImage = PatternImageDark
+  }
   return (
     <StyledHeader>
       <div
         className="content"
         style={{
-          backgroundImage: `linear-gradient(to right bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(${PatternImage})`,
+          backgroundImage: `linear-gradient(to right bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(${patterImage})`,
         }}
       >
         <div className="header-content">

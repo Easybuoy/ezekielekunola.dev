@@ -9,7 +9,7 @@ import Layout from "../components/Layout"
 import SEO from "../components/Seo"
 import ProjectsList from "../components/Projects/ProjectsList"
 
-import Header from "../components/Common/Header"
+import Header from "../components/Common/Header/Header"
 import Footer from "../components/Common/Footer"
 import Contact from "../components/Contact/Contact"
 import SkillsList from "../components/Skills/SkillsList"
@@ -31,7 +31,7 @@ const IndexPage = () => {
         <Layout>
           <SEO title="Home" />
           <Navigation onClick={themeToggler} />
-          <Header />
+          <Header theme={theme} />
           <About />
           {/* <HireMe /> */}
           <ProjectsList />
