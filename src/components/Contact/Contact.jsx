@@ -1,11 +1,21 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
-import { Contact as StyledContact } from "../../styles"
+import StyledContact from "./Styles"
 import { Input, Button, Form, TextArea } from "../../styles/common"
-import PatternImage from "../../images/pattern2.png"
+import PatternImageLight from "../../images/pattern2.svg"
+import PatternImageDark from "../../images/pattern.svg"
 
-export default function Contact() {
+export default function Contact({ theme }) {
+  let PatternImage = PatternImageLight
+  let style = {}
+  if (theme === "light") {
+    PatternImage = PatternImageDark
+    style = {
+      backgroundImage: `linear-gradient(to right bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(${PatternImageDark})`,
+    }
+  }
+
   const data = useStaticQuery(graphql`
     query {
       contactImage: file(relativePath: { eq: "avatar.png" }) {
@@ -20,12 +30,7 @@ export default function Contact() {
 
   return (
     <StyledContact>
-      <div
-        className="contact"
-        style={{
-          backgroundImage: `linear-gradient(to right bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(${PatternImage})`,
-        }}
-      >
+      <div className="contact" style={style}>
         <h3>Contact Me</h3>
 
         <div className="contact-form">

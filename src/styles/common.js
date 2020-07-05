@@ -8,9 +8,10 @@ const Button = styled.button`
   font-size: 1.5rem;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  font-family: "Concert One", cursive;
 
   &:hover {
-    background-color: ${primaryColor};
+    background-color: ${props => props.theme.primaryColor};
     color: white;
     transform: scale(1.03);
   }
@@ -23,6 +24,8 @@ const Input = styled.input`
   border: none;
   outline: none;
   font-size: 1.5rem;
+  font-family: "Concert One", cursive;
+
 `
 
 const TextArea = styled.textarea`
@@ -33,6 +36,8 @@ const TextArea = styled.textarea`
   border: none;
   outline: none;
   margin: 1rem 0;
+  font-family: "Concert One", cursive;
+
 `
 
 const Form = styled.form`
