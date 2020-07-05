@@ -1,6 +1,6 @@
 import React from "react"
 
-import { Skill as StyledSkill } from "../../styles"
+import { Skill as StyledSkill } from "./Styles"
 
 export default function Skill({ skill }) {
   const { title, skillset } = skill

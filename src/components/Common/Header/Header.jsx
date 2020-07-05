@@ -2,12 +2,18 @@ import React from "react"
 import Typist from "react-typist"
 import "react-typist/dist/Typist.css"
 
-import { Header as StyledHeader } from "../../styles"
-import PatternImage from "../../images/pattern.png"
-import Bounce from "../Common/Bounce"
-import ContactDetail from "../Common/Reuseables/ContactDetail"
+import StyledHeader from "./Styles"
+import PatternImageLight from "../../../images/pattern2.svg"
+import PatternImageDark from "../../../images/pattern.svg"
+import Bounce from "../Bounce"
+import ContactDetail from "../Reuseables/ContactDetail/ContactDetail"
 
-export default function Header() {
+export default function Header({ theme }) {
+  let PatternImage = PatternImageLight
+
+  if (theme === "dark") {
+    PatternImage = PatternImageDark
+  }
   return (
     <StyledHeader>
       <div

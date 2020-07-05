@@ -1,6 +1,6 @@
 import React from "react"
 
-import { Blog as SyledBlog } from "../../styles"
+import { Blog as SyledBlog } from "./Styles"
 const Blog = ({ blog }) => {
   const { title, publisher, blogLink, created } = blog
 

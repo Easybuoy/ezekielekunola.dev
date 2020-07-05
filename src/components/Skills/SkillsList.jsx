@@ -1,11 +1,10 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
-import PatternImage from "../../images/pattern.png"
-import { SkillsList as StyledSkillsList } from "../../styles"
+import { SkillsList as StyledSkillsList } from "./Styles"
 import Skill from "./Skill"
 
-const SkillsList = () => {
+const SkillsList = ({ theme }) => {
   const data = useStaticQuery(graphql`
     {
       allSkillsJson {
@@ -25,12 +24,7 @@ const SkillsList = () => {
 
   return (
     <StyledSkillsList>
-      <div
-        className="skills"
-        style={{
-          backgroundImage: `linear-gradient(to right bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(${PatternImage})`,
-        }}
-      >
+      <div className="skills">
         <div className="skills-header">
           <h3>Skills</h3>
         </div>

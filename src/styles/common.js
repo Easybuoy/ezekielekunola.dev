@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { primaryColor } from "./index"
+
 const Button = styled.button`
   padding: 1rem;
 
@@ -8,40 +8,12 @@ const Button = styled.button`
   font-size: 1.5rem;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  font-family: "Concert One", cursive;
 
   &:hover {
-    background-color: ${primaryColor};
+    background-color: ${props => props.theme.primaryColor};
     color: white;
     transform: scale(1.03);
-  }
-`
-const ContactDetail = styled.div`
-  margin: 0 auto;
-
-  a {
-    padding: 0 1rem;
-    color: ${props => props.color || `${primaryColor}`};
-
-    i {
-      transition: all 0.3s ease-in-out;
-
-      @media (max-width: 800px) {
-        margin: 1rem 0;
-        font-size: 4.5rem;
-      }
-
-      @media (max-width: 500px) {
-        font-size: 4rem;
-      }
-
-      @media (max-width: 365px) {
-        font-size: 3.5rem;
-      }
-      &:hover {
-        transform: scale(1.1);
-        color: black;
-      }
-    }
   }
 `
 
@@ -52,6 +24,8 @@ const Input = styled.input`
   border: none;
   outline: none;
   font-size: 1.5rem;
+  font-family: "Concert One", cursive;
+
 `
 
 const TextArea = styled.textarea`
@@ -62,6 +36,8 @@ const TextArea = styled.textarea`
   border: none;
   outline: none;
   margin: 1rem 0;
+  font-family: "Concert One", cursive;
+
 `
 
 const Form = styled.form`
@@ -151,4 +127,4 @@ const DownArrow = styled.div`
   }
 `
 
-export { Button, Input, Form, TextArea, DownArrow, ContactDetail }
+export { Button, Input, Form, TextArea, DownArrow }
