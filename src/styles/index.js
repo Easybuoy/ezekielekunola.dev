@@ -183,6 +183,7 @@ const Success = styled.div`
 
         h2 {
           font-size: 3rem;
+          font-family: ${props => props.theme.secondaryFont};
 
           @media (max-width: 380px) {
             font-size: 2.5rem;
@@ -193,6 +194,7 @@ const Success = styled.div`
           text-align: center;
           padding: 2rem 0;
           text-decoration: none;
+          font-family: ${props => props.theme.secondaryFont};
           color: ${props => props.theme.primaryColor};
           @media (max-width: 300px) {
             font-size: 2rem;

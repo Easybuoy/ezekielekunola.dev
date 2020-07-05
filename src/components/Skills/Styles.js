@@ -140,6 +140,7 @@ const Skill = styled.div`
 
     p {
       padding: 1.3rem 1rem;
+      font-family: ${props => props.theme.secondaryFont};
       background-color: ${props => props.theme.primaryColor};
       color: white;
       margin: 1rem;
@@ -147,7 +148,7 @@ const Skill = styled.div`
       text-align: center;
       display: flex;
       align-items: center;
-      line-height: 0;
+      line-height: 0.5;
     }
   }
 `

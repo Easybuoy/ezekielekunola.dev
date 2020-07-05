@@ -149,6 +149,8 @@ const ProjectDetail = styled.section`
     }
 
     .project-content {
+      font-family: ${props => props.theme.secondaryFont};
+
       .contribution-text {
         color: ${props => props.theme.text};
         padding: 1rem 0;
@@ -162,12 +164,15 @@ const ProjectDetail = styled.section`
 
         span {
           background-color: ${props => props.theme.primaryColor};
-          padding: 1rem;
+          padding: 1.3rem 1rem;
           margin: 1rem;
+          display: flex;
+          line-height: 0.5;
           font-size: 2rem;
           border-radius: 0.2rem;
           color: white;
-
+          border-radius: 5px;
+          font-family: ${props => props.theme.secondaryFont};
           @media (max-width: 650px) {
             font-size: 1.5rem;
           }

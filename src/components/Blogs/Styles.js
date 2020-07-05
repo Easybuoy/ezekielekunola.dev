@@ -97,6 +97,7 @@ const Blog = styled.div`
     p {
       padding: 0.5rem 0;
       color: #8c8c8c;
+      font-family: ${props => props.theme.primaryFont};
     }
   }
 `
