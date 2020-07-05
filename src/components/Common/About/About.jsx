@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
-import { About as StyledAbout } from "../../styles"
+import StyledAbout from "./Styles"
 
 export default function About(props) {
   console.log(props)
