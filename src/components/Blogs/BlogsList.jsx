@@ -3,17 +3,9 @@ import { graphql, useStaticQuery } from "gatsby"
 
 import { BlogsList as StyledBlogsList } from "./Styles"
 
-import PatternImageLight from "../../images/pattern2.svg"
-import PatternImageDark from "../../images/pattern.svg"
-
 import Blog from "./Blog"
 
 const BlogsList = ({ theme }) => {
-  let PatternImage = PatternImageLight
-
-  if (theme === "dark") {
-    PatternImage = PatternImageDark
-  }
   const data = useStaticQuery(graphql`
     {
       allBlogsJson {
@@ -34,12 +26,7 @@ const BlogsList = ({ theme }) => {
 
   return (
     <StyledBlogsList>
-      <div
-        className="blog"
-        style={{
-          backgroundImage: `linear-gradient(to right bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(${PatternImage})`,
-        }}
-      >
+      <div className="blog">
         <div className="blog-header">
           <h3>Blog Posts</h3>
         </div>

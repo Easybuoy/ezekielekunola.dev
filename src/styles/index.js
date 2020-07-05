@@ -1,7 +1,4 @@
 import styled from "styled-components"
-export const primaryColor = "#2118a2"
-export const secondaryColor = "#031a6b"
-export const tertiaryColor = "#031a6b"
 
 const Projects = styled.div`
   display: flex;
@@ -63,13 +60,14 @@ const Projects = styled.div`
         h3 {
           width: 100%;
           text-align: center;
-          color: ${primaryColor};
+          color: ${props => props.theme.primaryColor};
           font-family: "Concert One", cursive;
         }
 
         p {
           font-size: 1.6rem;
           margin: 2rem 0;
+          color: black;
         }
 
         .project-technologies {
@@ -80,7 +78,7 @@ const Projects = styled.div`
           margin: 1rem auto;
 
           span {
-            background-color: ${secondaryColor};
+            background-color: ${props => props.theme.secondaryColor};
             padding: 1rem;
             margin: 1rem;
             font-size: 1.3rem;
@@ -102,7 +100,7 @@ const Projects = styled.div`
           justify-content: center;
 
           a {
-            color: ${secondaryColor};
+            color: ${props => props.theme.secondaryColor};
             transition: all 0.3s ease-in-out;
 
             &:hover {

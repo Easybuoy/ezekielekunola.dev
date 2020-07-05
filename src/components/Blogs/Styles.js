@@ -8,12 +8,10 @@ const BlogsList = styled.section`
   justify-content: center;
 
   .blog {
-    background-color: #170a1c;
     margin: 1rem;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 6px 0px;
     border-radius: 10px;
     min-height: 50vh;
     padding: 2rem 0;
