@@ -1,22 +1,6 @@
 import styled from "styled-components"
 
 const ProjectsList = styled.div`
-  /* background-color: white;
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 10rem;
-  padding-bottom: 2rem;
-  width: 100%;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  background-size: cover;
-  background-position: center;
-  clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 100%);
-
-  @media (max-width: 550px) {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-    padding-top: 1rem;
-  } */
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -131,13 +115,13 @@ const Project = styled.div`
 
 const ProjectDetail = styled.section`
   width: 100%;
-  margin: 1rem 0;
+
   min-height: 100vh;
   display: flex;
-
+  flex-wrap: wrap;
+  
   .project-detail {
-    margin: 2rem;
-
+    margin-top: 10rem;
     border-radius: 10px;
     width: 100%;
 

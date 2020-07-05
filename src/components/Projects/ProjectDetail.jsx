@@ -10,8 +10,6 @@ import { useDarkMode } from "../useDarkMode"
 import Layout from "../Layout"
 import Navigation from "../Common/Navigation/Navigation"
 import { ProjectDetail as StyledProjectDetail } from "./Styles"
-import PatternImageLight from "../../images/pattern-bg-light.svg"
-import PatternImageDark from "../../images/pattern-bg-dark.svg"
 import Footer from "../Common/Footer/Footer"
 
 export const query = graphql`
@@ -44,12 +42,6 @@ const ProjectDetail = ({ data }) => {
     theme === "light" ? setTheme("dark") : setTheme("light")
   }
 
-  let PatternImage = PatternImageLight
-
-  if (theme === "dark") {
-    PatternImage = PatternImageDark
-  }
-
   const project = data.projectsJson
 
   const {
@@ -71,12 +63,7 @@ const ProjectDetail = ({ data }) => {
           <Navigation theme={theme} toggleTheme={themeToggler} />
 
           <StyledProjectDetail>
-            <div
-              className="project-detail"
-              style={{
-                backgroundImage: `linear-gradient(to right bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(${PatternImage})`,
-              }}
-            >
+            <div className="project-detail">
               <div className="project-image">
                 <Image fluid={imageData} alt={title} />
               </div>
