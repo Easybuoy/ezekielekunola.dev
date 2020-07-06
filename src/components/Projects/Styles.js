@@ -39,7 +39,7 @@ const ProjectsList = styled.div`
 
       &:hover {
         transform: scale(1.02);
-        color: ${props => props.theme.tertiaryColor};
+        color: ${props => props.theme.text};
       }
     }
   }
