@@ -8,7 +8,7 @@
     "image": "../images/projects/dotpay.png",
     "youtubeUrl": "",
     "imageDetails": "../images/projects/dotpay-details.png",
-    "gif": "",
+    "gif": "../images/projects/dotpay.gif",
     "technologies": [
       "react",
       "GraphQL",

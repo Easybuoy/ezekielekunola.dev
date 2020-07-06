@@ -38,7 +38,6 @@ const Projects = props => {
             title
             url
             githubUrl
-            gif
             technologies
             description
             image {
