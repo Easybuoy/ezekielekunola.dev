@@ -88,7 +88,7 @@ const Project = styled.div`
     .project-content {
       opacity: 0;
       transition: 0.8s;
-      background: rgba(0, 0, 0, 0.5);
+      /* background: rgba(0, 0, 0, 0.5); */
       height: 100%;
       width: 100%;
       color: #ffffff;
