@@ -10,14 +10,12 @@ const ProjectsList = styled.div`
 
   .projects-list {
     width: 100%;
-    /* margin: 2rem; */
     padding: 2rem 0;
     border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    /* box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 6px 0px; */
     min-height: 70vh;
 
     h3 {
