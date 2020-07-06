@@ -1,6 +1,31 @@
 [
   {
     "id": "1",
+    "title": "DotPay",
+    "slug": "dotpay",
+    "url": "https://dotpay-dev.netlify.app/",
+    "githubUrl": "https://github.com/dotpay-io",
+    "image": "../images/projects/dotpay.png",
+    "youtubeUrl": "",
+    "imageDetails": "../images/projects/dotpay-details.png",
+    "gif": "../images/projects/dotpay.gif",
+    "technologies": [
+      "react",
+      "GraphQL",
+      "chakra-ui",
+      "styled-components",
+      "apollo-client",
+      "html",
+      "css",
+      "less",
+      "MongoDB",
+      "apollo-server"
+    ],
+    "description": "Dotpay is a web application that allows you create business account, generate payment links, and receive payments from customers using those generated links.",
+    "contribution": "Contributed in designing/implementing frontend design of the application."
+  },
+  {
+    "id": "2",
     "title": "Trackdrills",
     "slug": "trackdrills",
     "url": "http://trackdrills.com",
@@ -26,7 +51,7 @@
     "contribution": "Contributed in supervising and overseeing project execution, I also worked on building out interfaces of the frontend of Trackdrills application."
   },
   {
-    "id": "2",
+    "id": "3",
     "title": "Use My Tech Stuff",
     "slug": "use-my-tech-stuff",
     "url": "https://ls-umts.netlify.com",
@@ -45,7 +70,7 @@
     "contribution": "Built the frontend of the project using React, Redux, Styled-Components, and Material Design Bootstrap."
   },
   {
-    "id": "3",
+    "id": "4",
     "title": "Anonymous Team Feedback",
     "slug": "atf",
     "url": "https://anonymous-feedback-fe.herokuapp.com/",
@@ -67,7 +92,7 @@
     "contribution": "Contributed in developing both frontend, backend and design of Anonymous Team Feedback using React, GraphQL, Apollo, Styled-Components Material Design Bootstrap, Node, Postgres and Jest"
   },
   {
-    "id": "4",
+    "id": "5",
     "title": "Store Manager",
     "slug": "store-manager",
     "url": "https://storemanagerreact.herokuapp.com",
@@ -80,7 +105,7 @@
     "contribution": "Developed both the frontend and backend of the Store Manager using React, Redux, CSS, and Node, Express and Postgres, Mocha and Chai."
   },
   {
-    "id": "5",
+    "id": "6",
     "title": "Mount Doom",
     "slug": "mount-doom",
     "url": "https://mud-mount-doom.herokuapp.com/",
@@ -102,7 +127,7 @@
     "contribution": "Contributed in developing the frontend and design of the Multi-User Dimension(MUD) Game using React, Styled-Component, React-Vis and Pusher"
   },
   {
-    "id": "6",
+    "id": "7",
     "title": "School In The Cloud",
     "slug": "school-in-the-cloud",
     "url": "https://distracted-stonebraker-f30c76.netlify.com/",
@@ -115,7 +140,7 @@
     "contribution": "Contributed to the design and implementation of School in the cloud using Html, CSS and Javascript."
   },
   {
-    "id": "7",
+    "id": "8",
     "title": "Marvel Comics",
     "slug": "marvel-comics",
     "url": "https://marvel-comic-characters.netlify.com/",
@@ -133,7 +158,7 @@
     "contribution": "Applied the knowledge of React, Styled-Components, and Material-Design to the design and implementation of Marvel Comics."
   },
   {
-    "id": "8",
+    "id": "9",
     "title": "Movie Listing",
     "slug": "movie-listing",
     "url": "https://reactmovieapptmdb.herokuapp.com/",
@@ -146,7 +171,7 @@
     "contribution": "Contributed in the desgin and implementation of Movie Listing using React and Material Design Bootstrap."
   },
   {
-    "id": "9",
+    "id": "10",
     "title": "AngularRank",
     "slug": "angularank",
     "url": "https://angular-rank.netlify.app/",
@@ -159,7 +184,7 @@
     "contribution": "Contributed in the desgin and implementation of Angularank using Vue, Vuetify and Github API."
   },
   {
-    "id": "10",
+    "id": "11",
     "title": "Movie Info",
     "slug": "vue-movie-info",
     "url": "https://vuemovieapp.netlify.com",
@@ -172,7 +197,7 @@
     "contribution": "Contributed in the desgin and implementation of Movie Listing application using Vue, Vuetify and TMDB API."
   },
   {
-    "id": "11",
+    "id": "12",
     "title": "Vue Calendar",
     "slug": "vue-calendar",
     "url": "https://my-vue-calendar.netlify.app",
@@ -185,7 +210,7 @@
     "contribution": ""
   },
   {
-    "id": "12",
+    "id": "13",
     "title": "Weather App",
     "slug": "weather-app",
     "url": "https://weather-fore-cast.netlify.app",
@@ -198,7 +223,7 @@
     "contribution": ""
   },
   {
-    "id": "13",
+    "id": "14",
     "title": "Headline News",
     "slug": "headline-news",
     "url": "https://headline-pwa.herokuapp.com",
@@ -211,7 +236,7 @@
     "contribution": ""
   },
   {
-    "id": "14",
+    "id": "15",
     "title": "Laravel Blog",
     "slug": "lara-blog",
     "url": "https://lara-blog.herokuapp.com",
@@ -224,7 +249,7 @@
     "contribution": ""
   },
   {
-    "id": "15",
+    "id": "16",
     "title": "Face Detection",
     "slug": "face-detection",
     "url": "https://facedetectionapp.herokuapp.com",
@@ -237,7 +262,7 @@
     "contribution": ""
   },
   {
-    "id": "16",
+    "id": "17",
     "title": "Robofriends",
     "slug": "robo-friends",
     "url": "https://robofriends1.herokuapp.com",

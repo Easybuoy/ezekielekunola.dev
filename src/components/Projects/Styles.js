@@ -10,14 +10,12 @@ const ProjectsList = styled.div`
 
   .projects-list {
     width: 100%;
-    /* margin: 2rem; */
     padding: 2rem 0;
     border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    /* box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 6px 0px; */
     min-height: 70vh;
 
     h3 {
@@ -90,7 +88,7 @@ const Project = styled.div`
     .project-content {
       opacity: 0;
       transition: 0.8s;
-      background: rgba(0, 0, 0, 0.5);
+      /* background: rgba(0, 0, 0, 0.5); */
       height: 100%;
       width: 100%;
       color: #ffffff;

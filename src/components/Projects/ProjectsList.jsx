@@ -16,7 +16,9 @@ const ProjectsList = ({ theme }) => {
             title
             url
             githubUrl
-            gif
+            gif {
+              publicURL
+            }
             technologies
             description
             image {
