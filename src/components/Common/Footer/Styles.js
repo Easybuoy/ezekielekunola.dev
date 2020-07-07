@@ -16,6 +16,7 @@ const Footer = styled.footer`
 
   p {
     padding: 1rem 0;
+    font-family: ${props => props.theme.primaryFont};
   }
 `
 
