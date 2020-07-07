@@ -11,6 +11,10 @@ import React from "react"
 
 const Layout = require("./src/components/Layout")
 
-export const wrapRootElement = ({ element, props }) => (
-  <Layout {...props}>{element}</Layout>
-)
+// export const wrapRootElement = ({ element, props }) => (
+//   <Layout {...props}>{element}</Layout>
+// )
+
+exports.onPrefetchPathname = () => {
+    console.log("onPrefetchPathname")
+  }
