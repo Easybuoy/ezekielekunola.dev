@@ -72,10 +72,10 @@ function SEO({ description, lang, meta, title, img }) {
           property: `og:type`,
           content: `website`,
         },
-        {
-          name: `og:image`,
-          content: `${origin}${image}`,
-        },
+        // {
+        //   name: `og:image`,
+        //   content: `${origin}${image}`,
+        // },
         {
           name: `twitter:card`,
           content: `summary`,
@@ -92,23 +92,23 @@ function SEO({ description, lang, meta, title, img }) {
           name: `twitter:description`,
           content: metaDescription,
         },
-        {
-          name: `og:image`,
-          content: `${origin}${image}`,
-        },
+        // {
+        //   name: `og:image`,
+        //   content: `${origin}${image}`,
+        // },
       ].concat([
         {
           property: "og:image",
           content: `${origin}${image}`,
         },
-        {
-          property: "og:image:width",
-          content: 400,
-        },
-        {
-          property: "og:image:height",
-          content:400,
-        },
+        // {
+        //   property: "og:image:width",
+        //   content: 400,
+        // },
+        // {
+        //   property: "og:image:height",
+        //   content:400,
+        // },
         {
           name: "twitter:card",
           content: "summary_large_image",
