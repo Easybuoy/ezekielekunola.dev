@@ -15,6 +15,6 @@ const Layout = require("./src/components/Layout")
 //   <Layout {...props}>{element}</Layout>
 // )
 
-export const onPrefetchPathname = () => {
-    console.log("onPrefetchPathname")
-  }
+// exports.onPrefetchPathname = () => {
+//     console.log("onPrefetchPathname")
+//   }
