@@ -9,6 +9,7 @@ const Button = styled.button`
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   font-family: "Concert One", cursive;
+  border-radius: 10px;
 
   &:hover {
     background-color: ${props => props.theme.primaryColor};
