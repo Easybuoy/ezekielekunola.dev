@@ -7,6 +7,6 @@
 // You can delete this file if you're not using it
 
 // export { wrapRootElement, onPrefetchPathname } from "./gatsby-browser"
-exports.onPrefetchPathname = () => {
-  console.log("onPrefetchPathname")
-}
+// exports.onPrefetchPathname = () => {
+//   console.log("onPrefetchPathname")
+// }

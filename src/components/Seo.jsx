@@ -96,7 +96,25 @@ function SEO({ description, lang, meta, title, img }) {
           name: `og:image`,
           content: `${origin}${image}`,
         },
-      ].concat(meta)}
+      ].concat([
+        {
+          property: "og:image",
+          content: `${origin}${image}`,
+        },
+        {
+          property: "og:image:width",
+          content: 400,
+        },
+        {
+          property: "og:image:height",
+          content:400,
+        },
+        {
+          name: "twitter:card",
+          content: "summary_large_image",
+        },
+      ]
+    ).concat(meta)}
     />
   )
 }
