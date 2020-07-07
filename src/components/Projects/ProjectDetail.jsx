@@ -9,6 +9,7 @@ import { useDarkMode } from "../useDarkMode"
 
 import Layout from "../Layout"
 import Navigation from "../Common/Navigation/Navigation"
+import SEO from "../Seo"
 import { ProjectDetail as StyledProjectDetail } from "./Styles"
 import Footer from "../Common/Footer/Footer"
 
@@ -61,7 +62,7 @@ const ProjectDetail = ({ data }) => {
         <GlobalStyles />
         <Layout theme={theme}>
           <Navigation theme={theme} toggleTheme={themeToggler} />
-
+          <SEO title={title} description={description} img={imageData} />
           <StyledProjectDetail>
             <div className="project-detail">
               <div className="project-image">

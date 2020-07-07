@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ description, lang, meta, title, img }) {
   const { site, aboutImage } = useStaticQuery(
     graphql`
       query {
@@ -34,10 +34,17 @@ function SEO({ description, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-
+  let image
   const isBrowser = typeof window !== `undefined`
 
   let origin = ""
+
+  if (img) {
+    console.log(img)
+    image = img.src
+  } else {
+    image = aboutImage.childImageSharp.fluid.src
+  }
   if (isBrowser) {
     origin = window.location.origin
   }
@@ -68,7 +75,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `og:image`,
-          content: `${origin}${aboutImage.childImageSharp.fluid.src}`,
+          content: `${origin}${image}`,
         },
         {
           name: `twitter:card`,
@@ -88,7 +95,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `og:image`,
-          content: `${origin}${aboutImage.childImageSharp.fluid.src}`,
+          content: `${origin}${image}`,
         },
       ].concat(meta)}
     />
