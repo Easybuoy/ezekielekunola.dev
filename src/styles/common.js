@@ -25,7 +25,6 @@ const Input = styled.input`
   outline: none;
   font-size: 1.5rem;
   font-family: "Concert One", cursive;
-
 `
 
 const TextArea = styled.textarea`
@@ -37,7 +36,6 @@ const TextArea = styled.textarea`
   outline: none;
   margin: 1rem 0;
   font-family: "Concert One", cursive;
-
 `
 
 const Form = styled.form`
@@ -59,6 +57,7 @@ const DownArrow = styled.div`
     bottom: 0%;
     left: 50%;
     cursor: pointer;
+    display: ${props => (props.theme.type === "light" ? "flex" : "none")};
   }
   .bounce {
     -moz-animation: bounce 2s infinite;

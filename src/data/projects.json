@@ -33,7 +33,7 @@
     "image": "../images/projects/trackdrills.png",
     "youtubeUrl": "https://www.youtube.com/watch?v=SfKx1s_eONA",
     "imageDetails": "../images/projects/trackdrills-details.png",
-    "gif": "",
+    "gif": "../images/projects/trackdrills.gif",
     "technologies": [
       "react",
       "GraphQL",
@@ -134,7 +134,7 @@
     "githubUrl": "https://github.com/Easybuoy/school-in-the-cloud",
     "image": "../images/projects/school-in-the-cloud.png",
     "imageDetails": "../images/projects/school-in-the-cloud-details.png",
-    "gif": "",
+    "gif": "../images/projects/school-in-the-cloud.gif",
     "technologies": ["html", "css", "javascript", "aos"],
     "description": "School in the Cloud is a platform that trains senior volunteers to teach students in a group or individual setting. This helps kids in communities with high student to teacher ratios. It also provides retired volunteers a sense of purpose and meaning in their day to day life when they find themselves with more free time. The platform also connects volunteers with the students.",
     "contribution": "Contributed to the design and implementation of School in the cloud using Html, CSS and Javascript."
@@ -147,7 +147,7 @@
     "githubUrl": "https://github.com/Easybuoy/marvel-comics",
     "image": "../images/projects/marvel-comics.png",
     "imageDetails": "../images/projects/marvel-comics-details.png",
-    "gif": "",
+    "gif": "../images/projects/marvel-comics.gif",
     "technologies": [
       "react",
       "styled-components",
