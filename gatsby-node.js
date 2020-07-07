@@ -5,7 +5,6 @@
  */
 
 // You can delete this file if you're not using it
-// const { createOpenGraphImage } = require("gatsby-plugin-open-graph-images")
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const result = await graphql(
@@ -42,13 +41,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       context: {
         slug,
         image,
-        // ogImage: createOpenGraphImage(actions.createPage, {
-        //   path: `./src/data/projects/${id}.png`,
-        //   component: require.resolve(
-        //     `./src/components/Projects/ProjectDetail.jsx`
-        //   ),
-        //   context: { id },
-        // }),
       },
     })
   })
