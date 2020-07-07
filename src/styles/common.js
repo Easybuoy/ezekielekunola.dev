@@ -9,6 +9,7 @@ const Button = styled.button`
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   font-family: "Concert One", cursive;
+  border-radius: 10px;
 
   &:hover {
     background-color: ${props => props.theme.primaryColor};
@@ -19,7 +20,7 @@ const Button = styled.button`
 
 const Input = styled.input`
   padding: 1rem;
-  margin: 1rem 0;
+  margin: 1rem 0 2rem 0;
   width: 100%;
   border: none;
   outline: none;
@@ -43,6 +44,9 @@ const Form = styled.form`
   color: white;
   font-size: 2rem;
 
+  label {
+    font-family: ${props => props.theme.secondaryFont};
+  }
   button {
     margin: 1rem auto;
     display: flex;

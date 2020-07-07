@@ -5,7 +5,9 @@
     "icon": "fab fa-react",
     "skillset": [
       "React",
+      "React-Native",
       "Vue",
+      "Vuex",
       "Redux",
       "Styled-Components",
       "HTML",
@@ -26,6 +28,7 @@
       "PHP",
       "YII",
       "GraphQL",
+      "MYSQL",
       "Postgres",
       "MongoDB",
       "SQL",
