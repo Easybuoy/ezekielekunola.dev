@@ -39,6 +39,7 @@ const Contact = styled.section`
       @media (max-width: 750px) {
         width: 90%;
       }
+
     }
 
     .contact-form-image {

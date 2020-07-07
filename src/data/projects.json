@@ -77,7 +77,7 @@
     "githubUrl": "https://github.com/labseu2-anonymous-team-feedback",
     "image": "../images/projects/atf.png",
     "imageDetails": "../images/projects/atf-details.png",
-    "gif": "",
+    "gif": "../images/projects/atf.gif",
     "technologies": [
       "node",
       "express",
