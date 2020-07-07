@@ -40,7 +40,6 @@ function SEO({ description, lang, meta, title, img }) {
   let origin = ""
 
   if (img) {
-    console.log(img)
     image = img.src
   } else {
     image = aboutImage.childImageSharp.fluid.src
@@ -51,53 +50,53 @@ function SEO({ description, lang, meta, title, img }) {
 
   return (
     <Helmet
-    htmlAttributes={{
-      lang,
-    }}
-    title={title}
-    titleTemplate={`%s | ${site.siteMetadata.title}`}
-    meta={[
-      {
-        name: `description`,
-        content: metaDescription,
-      },
-      {
-        property: `og:title`,
-        content: title,
-      },
-      {
-        property: `og:description`,
-        content: metaDescription,
-      },
-      {
-        property: `og:type`,
-        content: `website`,
-      },
-      {
-        name: `og:image`,
-        content: `${origin}${image}`,
-      },
-      {
-        name: `twitter:card`,
-        content: `summary`,
-      },
-      {
-        name: `twitter:creator`,
-        content: site.siteMetadata.author,
-      },
-      {
-        name: `twitter:title`,
-        content: title,
-      },
-      {
-        name: `twitter:description`,
-        content: metaDescription,
-      },
-      {
-        name: `og:image`,
-        content: `${origin}${image}`,
-      },
-    ].concat(meta)}
+      htmlAttributes={{
+        lang,
+      }}
+      title={title}
+      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      meta={[
+        {
+          name: `description`,
+          content: metaDescription,
+        },
+        {
+          property: `og:title`,
+          content: title,
+        },
+        {
+          property: `og:description`,
+          content: metaDescription,
+        },
+        {
+          property: `og:type`,
+          content: `website`,
+        },
+        {
+          name: `og:image`,
+          content: `${origin}${image}`,
+        },
+        {
+          name: `twitter:card`,
+          content: `summary`,
+        },
+        {
+          name: `twitter:creator`,
+          content: site.siteMetadata.author,
+        },
+        {
+          name: `twitter:title`,
+          content: title,
+        },
+        {
+          name: `twitter:description`,
+          content: metaDescription,
+        },
+        {
+          name: `og:image`,
+          content: `${origin}${image}`,
+        },
+      ].concat(meta)}
     />
   )
 }
