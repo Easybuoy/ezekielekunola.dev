@@ -99,6 +99,16 @@ function SEO({ description, lang, meta, title, img }) {
     //   },
     // ].concat(meta)}
     >
+       <meta property="og:url" content={'url'} />
+      <meta property="og:type" content="article" />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={metaDescription} />
+      {image && <meta property="og:image" content={`${origin}${image}`} />}
+      
+      <meta name="twitter:card" content="summary_large_image" />
+      {/* <meta name="twitter:creator" content={post.author.twitter} /> */}
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={metaDescription} />
       <meta name="twitter:image" content={`${origin}${image}`} />
     </Helmet>
   )
