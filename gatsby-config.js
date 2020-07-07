@@ -56,6 +56,7 @@ module.exports = {
         head: true,
       },
     },
+    "gatsby-plugin-open-graph-images",
     "gatsby-transformer-json",
     "gatsby-plugin-styled-components",
     // this (optional) plugin enables Progressive Web App + Offline functionality

@@ -34,7 +34,9 @@ export const query = graphql`
   }
 `
 
-const ProjectDetail = ({ data }) => {
+const ProjectDetail = ({ data, pageContext }) => {
+  console.log(pageContext)
+  console.log(data, 'data')
   const [theme, setTheme] = useDarkMode(
     (typeof window !== "undefined" && window.localStorage.getItem("theme")) ||
       "light"
@@ -62,7 +64,8 @@ const ProjectDetail = ({ data }) => {
         <GlobalStyles />
         <Layout theme={theme}>
           <Navigation theme={theme} toggleTheme={themeToggler} />
-          <SEO title={title} description={description} img={imageData} />
+          <SEO title={title} description={description} img={pageContext.image} />
+
           <StyledProjectDetail>
             <div className="project-detail">
               <div className="project-image">
