@@ -5,16 +5,3 @@
  */
 
 // You can delete this file if you're not using it
-
-import React from "react"
-// import { SettingsProvider } from './src/context/settings';
-
-const Layout = require("./src/components/Layout")
-
-// export const wrapRootElement = ({ element, props }) => (
-//   <Layout {...props}>{element}</Layout>
-// )
-
-// exports.onPrefetchPathname = () => {
-//     console.log("onPrefetchPathname")
-//   }

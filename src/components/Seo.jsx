@@ -50,88 +50,73 @@ function SEO({ description, lang, meta, title, img }) {
 
   return (
     <Helmet
-    //   htmlAttributes={{
-    //     lang,
-    //   }}
-    //   title={title}
-    //   titleTemplate={`%s | ${site.siteMetadata.title}`}
-    //   meta={[
-    //     {
-    //       name: `description`,
-    //       content: metaDescription,
-    //     },
-    //     {
-    //       property: `og:title`,
-    //       content: title,
-    //     },
-    //     {
-    //       property: `og:description`,
-    //       content: metaDescription,
-    //     },
-    //     {
-    //       property: `og:type`,
-    //       content: `website`,
-    //     },
-    //     // {
-    //     //   name: `og:image`,
-    //     //   content: `${origin}${image}`,
-    //     // },
-    //     {
-    //       name: `twitter:card`,
-    //       content: `summary`,
-    //     },
-    //     {
-    //       name: `twitter:creator`,
-    //       content: site.siteMetadata.author,
-    //     },
-    //     {
-    //       name: `twitter:title`,
-    //       content: title,
-    //     },
-    //     {
-    //       name: `twitter:description`,
-    //       content: metaDescription,
-    //     },
-    //     // {
-    //     //   name: `og:image`,
-    //     //   content: `${origin}${image}`,
-    //     // },
-    //   ].concat([
-    //     {
-    //       property: "og:image",
-    //       content: `${origin}${image}`,
-    //     },
-    //     // {
-    //     //   property: "og:image:width",
-    //     //   content: 400,
-    //     // },
-    //     // {
-    //     //   property: "og:image:height",
-    //     //   content:400,
-    //     // },
-    //     {
-    //       name: "twitter:card",
-    //       content: "summary_large_image",
-    //     },
-    //   ]
-    // ).concat(meta)}
-    >
-      <title>Trackdrills | Ezekiel Ekunola</title>
-      <meta name="title" content={title} />
-      <meta name="description" content={description} />
-
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content={origin} />
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
-      <meta property="og:image" content={`${origin}${image}`} />
-
-      <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content={origin} />
-      <meta property="twitter:title" content={title} />
-      <meta property="twitter:description" content={description} />
-      <meta property="twitter:image" content={`${origin}${image}`}></meta>
-    </Helmet>
+      htmlAttributes={{
+        lang,
+      }}
+      title={title}
+      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      meta={[
+        {
+          name: `description`,
+          content: metaDescription,
+        },
+        {
+          property: `og:title`,
+          content: title,
+        },
+        {
+          property: `og:description`,
+          content: metaDescription,
+        },
+        {
+          property: `og:type`,
+          content: `website`,
+        },
+        // {
+        //   name: `og:image`,
+        //   content: `${origin}${image}`,
+        // },
+        {
+          name: `twitter:card`,
+          content: `summary`,
+        },
+        {
+          name: `twitter:creator`,
+          content: site.siteMetadata.author,
+        },
+        {
+          name: `twitter:title`,
+          content: title,
+        },
+        {
+          name: `twitter:description`,
+          content: metaDescription,
+        },
+        // {
+        //   name: `og:image`,
+        //   content: `${origin}${image}`,
+        // },
+      ]
+        .concat([
+          {
+            property: "og:image",
+            content: `${origin}${image}`,
+          },
+          // {
+          //   property: "og:image:width",
+          //   content: 400,
+          // },
+          // {
+          //   property: "og:image:height",
+          //   content:400,
+          // },
+          {
+            name: "twitter:card",
+            content: "summary_large_image",
+          },
+        ])
+        .concat(meta)}
+    />
   )
 }
 
