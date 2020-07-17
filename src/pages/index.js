@@ -35,7 +35,10 @@ const IndexPage = () => {
       <>
         <GlobalStyles />
         <Layout theme={theme}>
-          <SEO title="Home" />
+          <SEO
+            title="Ezekiel Ekunola's Website"
+            description="Ezekiel is an experienced Software Engineer with a demonstrated history of working in the information technology industry."
+          />
           <Navigation theme={theme} toggleTheme={themeToggler} />
           <Header theme={theme} />
           <About theme={theme} />

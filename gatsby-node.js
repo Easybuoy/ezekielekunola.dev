@@ -14,6 +14,10 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           edges {
             node {
               slug
+              id
+              image {
+                publicURL
+              }
             }
           }
         }
@@ -29,12 +33,15 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const projects = result.data.allProjectsJson.edges
 
   projects.forEach(({ node: project }) => {
-    const { slug } = project
+    const { slug, id, image } = project
 
     actions.createPage({
       path: `/${slug}`,
       component: require.resolve("./src/components/Projects/ProjectDetail.jsx"),
-      context: { slug },
+      context: {
+        slug,
+        image,
+      },
     })
   })
 }
