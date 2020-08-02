@@ -144,6 +144,9 @@ const ProjectDetail = styled.section`
 
     .project-image {
       padding: 1rem;
+      width: 50%;
+      justify-content: center;
+      margin: 0 auto;
     }
 
     .project-content {

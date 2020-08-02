@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ description, lang, meta, title, img }) {
   const { site, aboutImage } = useStaticQuery(
     graphql`
       query {
@@ -34,10 +34,16 @@ function SEO({ description, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-
+  let image
   const isBrowser = typeof window !== `undefined`
 
   let origin = ""
+
+  if (img) {
+    image = img.src
+  } else {
+    image = aboutImage.childImageSharp.fluid.src
+  }
   if (isBrowser) {
     origin = window.location.origin
   }
@@ -66,10 +72,10 @@ function SEO({ description, lang, meta, title }) {
           property: `og:type`,
           content: `website`,
         },
-        {
-          name: `og:image`,
-          content: `${origin}${aboutImage.childImageSharp.fluid.src}`,
-        },
+        // {
+        //   name: `og:image`,
+        //   content: `${origin}${image}`,
+        // },
         {
           name: `twitter:card`,
           content: `summary`,
@@ -86,11 +92,30 @@ function SEO({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
-        {
-          name: `og:image`,
-          content: `${origin}${aboutImage.childImageSharp.fluid.src}`,
-        },
-      ].concat(meta)}
+        // {
+        //   name: `og:image`,
+        //   content: `${origin}${image}`,
+        // },
+      ]
+        .concat([
+          {
+            property: "og:image",
+            content: `${origin}${image}`,
+          },
+          // {
+          //   property: "og:image:width",
+          //   content: 400,
+          // },
+          // {
+          //   property: "og:image:height",
+          //   content:400,
+          // },
+          {
+            name: "twitter:card",
+            content: "summary_large_image",
+          },
+        ])
+        .concat(meta)}
     />
   )
 }

@@ -22,7 +22,7 @@ const Contact = styled.section`
     h3 {
       width: 100%;
       text-align: center;
-      color:white;
+      color: white;
       font-family: "Concert One", cursive;
     }
 
@@ -39,7 +39,6 @@ const Contact = styled.section`
       @media (max-width: 750px) {
         width: 90%;
       }
-
     }
 
     .contact-form-image {
@@ -55,7 +54,12 @@ const Contact = styled.section`
       img {
         width: 300px;
         height: 300px;
+        filter: ${props =>
+          props.theme.type === "dark" ? "grayscale(100%)" : ""};
 
+        &:hover {
+          filter: grayscale(0);
+        }
         @media (max-width: 900px) {
           width: 200px;
           height: 200px;
