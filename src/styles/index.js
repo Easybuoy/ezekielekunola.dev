@@ -5,6 +5,10 @@ const Projects = styled.div`
   justify-content: center;
   align-items: center;
 
+  a {
+    font-family: ${props => props.theme.secondaryFont};
+  }
+
   .projects {
     display: flex;
     width: 100%;
