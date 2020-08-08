@@ -19,6 +19,7 @@ const Projects = styled.div`
     border-radius: 10px;
     padding: 0 5rem;
     overflow: scroll;
+    margin-top: 70px;
 
     .home {
       width: 100%;
@@ -68,6 +69,8 @@ const Projects = styled.div`
           font-size: 1.6rem;
           margin: 2rem 0;
           color: black;
+          font-family: ${props => props.theme.secondaryFont};
+          padding: 0 1rem;
         }
 
         .project-technologies {
@@ -82,8 +85,9 @@ const Projects = styled.div`
             padding: 1rem;
             margin: 1rem;
             font-size: 1.3rem;
-            border-radius: 0.2rem;
+            border-radius: 5px;
             color: white;
+            font-family: ${props => props.theme.secondaryFont};
 
             @media (max-width: 650px) {
               font-size: 1.5rem;
