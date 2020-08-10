@@ -127,26 +127,26 @@
   },
   {
     "id": "7",
-    "title": "Mount Doom",
-    "slug": "mount-doom",
-    "url": "https://mud-mount-doom.herokuapp.com/",
-    "githubUrl": "https://github.com/lambda-mud-poe",
-    "image": "../images/projects/mud-game.png",
-    "imageDetails": "../images/projects/mud-game-details.png",
+    "title": "Easybuoy HQ",
+    "slug": "easybuoy-hq",
+    "url": "https://vue-easybuoy-dashboard.netlify.app",
+    "githubUrl": "https://github.com/Easybuoy/vue-admin-dashboard",
+    "image": "../images/projects/easybuoy-hq-details.png",
+    "imageDetails": "../images/projects/easybuoy-hq-details.png",
     "gif": "",
     "technologies": [
-      "react",
-      "react-vis",
-      "material-design-bootstrap",
-      "styled-components",
-      "pusher",
-      "django",
-      "python",
-      "postgres"
+      "vue",
+      "vuex",
+      "slack API",
+      "firebase",
+      "animate",
+      "scss",
+      "lambda-functions"
     ],
-    "description": "Mount Doom is a Multi-User Dimension web application game that has chat functionality.",
-    "contribution": "Contributed in developing the frontend and design of the Multi-User Dimension(MUD) Game using React, Styled-Component, React-Vis and Pusher"
+    "description": "A web application dashboard that shows analytic graph of users",
+    "contribution": "Contributed in developing the application using Vue, Vuex, Firebase,SCSS and Lambda-Functions."
   },
+
   {
     "id": "8",
     "title": "School In The Cloud",
@@ -245,6 +245,28 @@
   },
   {
     "id": "15",
+    "title": "Mount Doom",
+    "slug": "mount-doom",
+    "url": "https://mud-mount-doom.herokuapp.com/",
+    "githubUrl": "https://github.com/lambda-mud-poe",
+    "image": "../images/projects/mud-game.png",
+    "imageDetails": "../images/projects/mud-game-details.png",
+    "gif": "",
+    "technologies": [
+      "react",
+      "react-vis",
+      "material-design-bootstrap",
+      "styled-components",
+      "pusher",
+      "django",
+      "python",
+      "postgres"
+    ],
+    "description": "Mount Doom is a Multi-User Dimension web application game that has chat functionality.",
+    "contribution": "Contributed in developing the frontend and design of the Multi-User Dimension(MUD) Game using React, Styled-Component, React-Vis and Pusher"
+  },
+  {
+    "id": "16",
     "title": "Headline News",
     "slug": "headline-news",
     "url": "https://headline-pwa.herokuapp.com",
@@ -257,7 +279,7 @@
     "contribution": ""
   },
   {
-    "id": "16",
+    "id": "17",
     "title": "Laravel Blog",
     "slug": "lara-blog",
     "url": "https://lara-blog.herokuapp.com",
@@ -270,7 +292,7 @@
     "contribution": ""
   },
   {
-    "id": "17",
+    "id": "18",
     "title": "Face Detection",
     "slug": "face-detection",
     "url": "https://facedetectionapp.herokuapp.com",
@@ -283,7 +305,7 @@
     "contribution": ""
   },
   {
-    "id": "18",
+    "id": "19",
     "title": "Robofriends",
     "slug": "robo-friends",
     "url": "https://robofriends1.herokuapp.com",
