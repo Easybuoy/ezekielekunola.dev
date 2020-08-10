@@ -216,6 +216,7 @@ const ProjectDetail = styled.section`
           }
           a {
             color: ${props => props.theme.text};
+            font-family: ${props => props.theme.secondaryFont};
           }
         }
       }
