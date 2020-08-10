@@ -1,48 +1,55 @@
 [
   {
     "id": "1",
+    "title": "Setting up Chakra UI Vue with Nuxt",
+    "publisher": "Ezekiel",
+    "blogLink": "https://dev.to/easybuoy/setting-up-chakra-ui-vue-with-nuxt-268m",
+    "created": "10 AUGUST, 2020"
+  },
+  {
+    "id": "2",
     "title": "Combining Stack, Tab & Drawer Navigations in React Native With React Navigation 5",
     "publisher": "Ezekiel",
     "blogLink": "https://dev.to/easybuoy/combining-stack-tab-drawer-navigations-in-react-native-with-react-navigation-5-da",
     "created": "22 June, 2020"
   },
   {
-    "id": "2",
+    "id": "3",
     "title": "Deploying Vue App from Github to Netlify",
     "publisher": "Ezekiel",
     "blogLink": "https://dev.to/easybuoy/deploying-vue-app-from-github-to-netlify-519g",
     "created": "25 Febuary, 2020"
   },
   {
-    "id": "3",
+    "id": "4",
     "title": "Understanding the package.json file",
     "publisher": "Ezekiel",
     "blogLink": "https://dev.to/easybuoy/understanding-the-package-json-file-3fdg",
     "created": "24 Febuary, 2020"
   },
   {
-    "id": "4",
+    "id": "5",
     "title": "My 2019 Year In Review",
     "publisher": "Ezekiel",
     "blogLink": "https://dev.to/easybuoy/my-2019-year-in-review-4n44",
     "created": "31 December, 2019"
   },
   {
-    "id": "5",
+    "id": "6",
     "title": "Getting started with React & Apollo Client",
     "publisher": "Ezekiel",
     "blogLink": "https://dev.to/easybuoy/getting-started-with-react-apollo-client-49il",
     "created": "30 September, 2019"
   },
   {
-    "id": "6",
+    "id": "7",
     "title": "Integrating Continous Integration tools to Node API",
     "publisher": "Ezekiel",
     "blogLink": "https://dev.to/easybuoy/integrating-continous-integration-tools-to-node-api-3cc5",
     "created": "27 August, 2019"
   },
   {
-    "id": "7",
+    "id": "8",
     "title": "Testing Node API with Mocha & Chai",
     "publisher": "Ezekiel",
     "blogLink": "https://dev.to/easybuoy/testing-node-api-with-mocha-chai-248b",
