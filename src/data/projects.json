@@ -133,7 +133,7 @@
     "githubUrl": "https://github.com/Easybuoy/vue-admin-dashboard",
     "image": "../images/projects/easybuoy-hq-details.png",
     "imageDetails": "../images/projects/easybuoy-hq-details.png",
-    "gif": "",
+    "gif": "../images/projects/easybuoy-hq.gif",
     "technologies": [
       "vue",
       "vuex",
