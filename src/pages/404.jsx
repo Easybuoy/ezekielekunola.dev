@@ -16,7 +16,8 @@ import Navigation from "../components/Common/Navigation/Navigation"
 
 const Success = props => {
   const [theme, setTheme] = useDarkMode(
-    (typeof window !== "undefined" && window.localStorage.getItem("theme")) || "light"
+    (typeof window !== "undefined" && window.localStorage.getItem("theme")) ||
+      "light"
   )
   const themeToggler = () => {
     theme === "light" ? setTheme("dark") : setTheme("light")
@@ -53,7 +54,7 @@ const Success = props => {
               </div>
             </div>
           </StyledSuccess>
-          <Footer />
+          <Footer theme={theme} />
         </Layout>
       </>
     </ThemeProvider>

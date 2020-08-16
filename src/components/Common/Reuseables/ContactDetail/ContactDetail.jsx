@@ -2,7 +2,7 @@ import React from "react"
 
 import ContactDetailStyle from "./Styles"
 
-export default function ContactDetail({ size, color }) {
+export default function ContactDetail({ size, color, theme }) {
   let mailClassName = `fas fa-envelope fa-${size}`
   let githubClassName = `fab fa-github fa-${size}`
   let linkedInClassName = `fab fa-linkedin fa-${size}`
@@ -12,7 +12,10 @@ export default function ContactDetail({ size, color }) {
 
   return (
     <ContactDetailStyle color={color}>
-      <a href="mailto:ekunolaeasybuoy@gmail.com">
+      <a
+        className={theme == "dark" ? "dark" : ""}
+        href="mailto:ekunolaeasybuoy@gmail.com"
+      >
         <i className={mailClassName}></i>
       </a>
 
