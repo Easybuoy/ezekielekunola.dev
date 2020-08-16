@@ -113,7 +113,7 @@ const ProjectDetail = ({ data }) => {
               </div>
             </div>
           </StyledProjectDetail>
-          <Footer />
+          <Footer theme={theme} />
         </Layout>
       </>
     </ThemeProvider>

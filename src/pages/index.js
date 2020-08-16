@@ -47,7 +47,7 @@ const IndexPage = () => {
           <BlogsList theme={theme} />
           <SkillsList theme={theme} />
           <Contact theme={theme} />
-          <Footer />
+          <Footer theme={theme} />
         </Layout>
       </>
     </ThemeProvider>

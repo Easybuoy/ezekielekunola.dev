@@ -118,7 +118,7 @@ const Projects = props => {
               </Link>
             </div>
           </StyledProjects>
-          <Footer />
+          <Footer theme={theme} />
         </Layout>
       </>
     </ThemeProvider>
