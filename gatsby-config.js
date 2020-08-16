@@ -37,6 +37,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-mailgo`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

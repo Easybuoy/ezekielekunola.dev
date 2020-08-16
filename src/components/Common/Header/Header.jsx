@@ -23,7 +23,7 @@ export default function Header({ theme }) {
         }}
       >
         <div className="header-content">
-          <ContactDetail size="5x" />
+          <ContactDetail size="5x" theme={theme} />
           <div className="header-text">
             <h1>
               Hello{" "}

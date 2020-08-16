@@ -3,10 +3,10 @@ import React from "react"
 import ContactDetail from "../Reuseables/ContactDetail/ContactDetail"
 import StyledFooter from "./Styles"
 
-const Footer = () => {
+const Footer = ({ theme }) => {
   return (
     <StyledFooter>
-      <ContactDetail size="3x" color="white" />
+      <ContactDetail size="3x" color="white" theme={theme} />
       <p>
         Designed by easybuoy{" "}
         <span role="img" aria-label="Developer">
