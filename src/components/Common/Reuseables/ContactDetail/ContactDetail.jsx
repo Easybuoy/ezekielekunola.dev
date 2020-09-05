@@ -13,7 +13,7 @@ export default function ContactDetail({ size, color, theme }) {
   return (
     <ContactDetailStyle color={color}>
       <a
-        className={theme == "dark" ? "dark" : ""}
+        className={theme === "dark" ? "dark" : ""}
         href="mailto:ekunolaeasybuoy@gmail.com"
       >
         <i className={mailClassName}></i>
