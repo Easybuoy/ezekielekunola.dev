@@ -33,7 +33,7 @@ export default function About({ theme }) {
           <p>
             Experienced Software Engineer with a demonstrated history of working
             in the information technology and services industry. Skilled in
-            Node, React, Redux, GraphQL, PHP, Javascript, Python, MongoDB,
+            Node, React, React-Native, Redux, GraphQL, PHP, Javascript, MongoDB,
             Postgres. I have a strong engineering background from Aptech
             Computer Education and Lambda School.
           </p>
