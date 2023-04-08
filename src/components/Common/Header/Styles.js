@@ -54,7 +54,8 @@ const Header = styled.header`
 
         .Typist {
           font-size: 4rem;
-          font-family: "Meera Inimai", sans-serif;
+          font-family: 'Telex', sans-serif;
+
           @media (max-width: 450px) {
             font-size: 3rem;
           }

@@ -3,6 +3,8 @@ import { graphql, useStaticQuery } from "gatsby"
 import { Link } from "gatsby"
 
 import { ProjectsList as StyledProjectsList } from "./Styles"
+import { Input, Button, Form, TextArea } from "../../styles/common"
+
 import Project from "./Project"
 
 const ProjectsList = ({ theme }) => {
@@ -16,9 +18,6 @@ const ProjectsList = ({ theme }) => {
             title
             url
             githubUrl
-            gif {
-              publicURL
-            }
             technologies
             description
             image {
@@ -44,7 +43,7 @@ const ProjectsList = ({ theme }) => {
           <Project key={project.id} project={project} />
         ))}
 
-        <Link to="/projects">View More Projects</Link>
+        <Link className="view-more-projects" to="/projects">View More Projects</Link>
       </div>
     </StyledProjectsList>
   )

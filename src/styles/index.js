@@ -55,7 +55,7 @@ const Projects = styled.div`
       }
 
       .project {
-        background-color: white;
+        background-color: ${props => props.theme.secondaryText};;
         margin: 2rem 0;
         padding: 2rem 0;
         min-height: 200px;

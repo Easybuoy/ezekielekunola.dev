@@ -19,7 +19,7 @@ const BlogsList = styled.section`
     .blog-header {
       text-align: center;
       width: 100%;
-      padding-bottom: 2rem;
+      margin-bottom: 2rem;
       color: ${props => props.theme.text};
       h3 {
         font-family: ${props => props.theme.primaryFont};
@@ -32,39 +32,25 @@ const BlogsList = styled.section`
 const Blog = styled.div`
   width: 30%;
   margin: 1rem auto;
-  padding: 2rem;
   margin: 0 auto;
   transition: all 0.3s ease-in-out;
   border: none;
   display: flex;
   justify-content: center;
   align-items: center;
+  
 
   a {
     width: 100%;
   }
   &:hover {
-    background-color: ${props => props.theme.primaryColor};
     transform: scale(1.01);
 
-    @media (max-width: 570px) {
-      transform: scale(1);
-      background-color: inherit;
-
-      .blog-content {
-        background-color: inherit;
-        color: inherit;
-      }
-    }
-
     .blog-content {
-      background-color: ${props => props.theme.primaryColor};
-      border: 2px solid white;
-      color: white;
-
       p {
         color: white;
       }
+     
     }
   }
 
@@ -86,7 +72,15 @@ const Blog = styled.div`
     padding: 2rem;
     background-color: white;
     color: black;
+    border-radius: 5px;
+    height: 180px ;
+    transition: all 0.3s ease-in-out;
+    
 
+    &:hover {
+      background-color: ${props => props.theme.primaryColor};
+      transform: scale(1.03);
+    }
     h3 {
       padding-bottom: 1rem;
       font-size: 2rem;
