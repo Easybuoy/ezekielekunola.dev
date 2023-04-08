@@ -17,9 +17,10 @@ const ProjectsList = styled.div`
     justify-content: space-around;
     align-items: center;
     min-height: 70vh;
+    margin: 1rem;
 
     h3 {
-      margin-bottom: 5rem;
+      margin-bottom: 2rem;
       width: 100%;
       text-align: center;
       font-family: "Concert One", cursive;
@@ -38,6 +39,18 @@ const ProjectsList = styled.div`
       &:hover {
         transform: scale(1.02);
         color: ${props => props.theme.text};
+      }
+    }
+
+    .view-more-projects {
+      padding: 10px;
+      color: ${props => props.theme.secondaryText};
+      background-color: ${props => props.theme.primaryColor};
+      border-radius: 5px;
+      width: auto;
+
+      &:hover {
+        color: ${props => props.theme.secondaryText};
       }
     }
   }
@@ -75,6 +88,8 @@ const Project = styled.div`
     background-size: cover;
     background-position: center;
     height: 250px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     filter: grayscale(100%);
     transition: all 0.3s ease-in-out;
 
@@ -88,7 +103,6 @@ const Project = styled.div`
     .project-content {
       opacity: 0;
       transition: 0.8s;
-      /* background: rgba(0, 0, 0, 0.5); */
       height: 100%;
       width: 100%;
       color: #ffffff;
@@ -99,15 +113,17 @@ const Project = styled.div`
 
   .project-body {
     background-color: ${props =>
-      props.theme.type === "light" ? "white" : props.theme.tertiaryColor};
+     props.theme.primaryColor};
     text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
       0 2px 10px 0 rgba(0, 0, 0, 0.12);
 
     padding-bottom: 1rem;
 
     h3 {
-      color: ${props => props.theme.text};
+      color: ${props => props.theme.secondaryText};
       padding: 1rem 0;
       margin: 0;
       font-size: 2rem;

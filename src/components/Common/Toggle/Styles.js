@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 const ToggleContainer = styled.button`
   background: ${({ theme }) =>
-    theme.type === "light" ? theme.primaryColor : theme.tertiaryColor};
+    theme.primaryColor};
   border: none;
   /* border-radius:  30px; */
   cursor: pointer;
@@ -16,11 +16,11 @@ const ToggleContainer = styled.button`
   width: 8rem;
   height: 4rem;
   outline-color: ${({ theme }) =>
-    theme.type === "light" ? theme.primaryColor : theme.tertiaryColor};
+    theme.primaryColor};
 
   &:focus {
     outline-color: ${({ theme }) =>
-      theme.type === "light" ? theme.primaryColor : theme.tertiaryColor};
+     theme.primaryColor};
   }
 
   i {

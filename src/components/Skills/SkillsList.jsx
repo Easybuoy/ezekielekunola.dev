@@ -46,11 +46,11 @@ const SkillsList = ({ theme }) => {
               <h4>
                 This also means I strive to follow best practices and use
                 industry-standard tools, including git-flow, Test Driven
-                Development(<span>Jest, Mocha, Chai</span>), Continous
+                Development(<span>Jest, React-testing-library, Cypress, Mocha, Chai</span>), Continous
                 Integration (
                 <span>Travis-CI, Coveralls, Codeclimate, Hound</span>), linting
                 (<span>ESLint, Prettier</span>), package management (
-                <span>Yarn, NPM, and Pipenv</span>), and modern build tools (
+                <span>Yarn and NPM</span>), and modern build tools (
                 <span>Webpack, Babel</span>).
               </h4>
 
@@ -58,7 +58,7 @@ const SkillsList = ({ theme }) => {
                 Although I've a wide range of experience, the technology I
                 prefer and/or am most familiar with includes{" "}
                 <span>
-                  React, Redux, Node, Postgres, JavaScript ES6,
+                  React, Redux, Vue, Vuex, Node, JavaScript ES6,
                   Sass/CSS/PostCSS, HTML.
                 </span>
               </h4>

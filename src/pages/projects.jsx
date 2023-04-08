@@ -10,8 +10,6 @@ import { useDarkMode } from "../components/useDarkMode"
 import Layout from "../components/Layout"
 import Footer from "../components/Common/Footer/Footer"
 import { Projects as StyledProjects } from "../styles"
-import PatternImageLight from "../images/pattern-bg-light.svg"
-import PatternImageDark from "../images/pattern-bg-dark.svg"
 import Navigation from "../components/Common/Navigation/Navigation"
 
 const Projects = props => {
@@ -20,12 +18,6 @@ const Projects = props => {
   )
   const themeToggler = () => {
     theme === "light" ? setTheme("dark") : setTheme("light")
-  }
-
-  let PatternImage = PatternImageLight
-
-  if (theme === "dark") {
-    PatternImage = PatternImageDark
   }
 
   const data = useStaticQuery(graphql`
@@ -64,9 +56,6 @@ const Projects = props => {
           <StyledProjects>
             <div
               className="projects"
-              style={{
-                backgroundImage: `linear-gradient(to right bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(${PatternImage})`,
-              }}
             >
               <div className="projects-list">
                 {projects.map(({ node: project }) => (

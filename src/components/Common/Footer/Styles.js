@@ -2,9 +2,7 @@ import styled from "styled-components"
 
 const Footer = styled.footer`
   background-color: ${props =>
-    props.theme.type === "light"
-      ? props.theme.primaryColor
-      : props.theme.tertiaryColor};
+    props.theme.primaryColor};
   padding: 1rem 0;
   text-align: center;
   color: white;

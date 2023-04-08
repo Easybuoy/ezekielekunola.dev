@@ -9,12 +9,9 @@ const Navigation = styled.nav`
   width: 100%;
   z-index: 50;
   background-color: ${props =>
-    props.theme.type === "light"
-      ? props.theme.primaryColor
-      : props.theme.tertiaryColor};
+    props.theme.primaryColor};
   opacity: 1;
   border-bottom: 0.1px solid #8c8c8c;
-  /* margin-bottom: 10rem; */
   padding: 1rem 2rem;
 
   img {

@@ -8,7 +8,7 @@ import { useDarkMode } from "../components/useDarkMode"
 import "../styles/reset.css"
 import "../styles/global.css"
 import Layout from "../components/Layout"
-import SEO from "../components/Seo"
+import Seo from "../components/Seo"
 import ProjectsList from "../components/Projects/ProjectsList"
 
 import Header from "../components/Common/Header/Header"
@@ -35,7 +35,7 @@ const IndexPage = () => {
       <>
         <GlobalStyles />
         <Layout theme={theme}>
-          <SEO
+          <Seo
             title="Ezekiel Ekunola's Website"
             description="Ezekiel is an experienced Software Engineer with a demonstrated history of working in the information technology industry."
           />

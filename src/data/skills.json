@@ -9,45 +9,38 @@
       "Vue",
       "Vuex",
       "Redux",
+      "TypeScript",
       "Nextjs",
       "Nuxtjs",
       "Styled-Components",
       "HTML",
+      "SCSS",
       "CSS",
       "JavaScript",
       "LESS",
       "Jest",
+      "AWS",
       "Netlify"
     ]
   },
   {
     "id": "2",
-    "title": "Backend Development",
-    "icon": "fab fa-node-js",
+    "title": "Testing",
+    "icon": "fas fa-vials",
     "skillset": [
-      "Node",
-      "Python",
-      "PHP",
-      "YII",
-      "GraphQL",
-      "MYSQL",
-      "Postgres",
-      "MongoDB",
-      "SQL",
-      "REST",
-      "TDD",
-      "Mocha",
-      "Chai",
-      "Travis-CI",
-      "Serverless",
-      "Continous-Integration",
-      "Heroku"
+      "React-testing-library",
+      "Jest",
+      "Cypress"
     ]
   },
   {
     "id": "3",
     "title": "Version Control",
     "icon": "fas fa-code-branch",
-    "skillset": ["Github", "Gitlab", "Bitbucket"]
+    "skillset": [
+      "Github",
+      "Gitlab",
+      "Bitbucket"
+    ]
   }
 ]

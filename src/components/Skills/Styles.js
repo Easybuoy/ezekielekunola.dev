@@ -38,8 +38,6 @@ const SkillsList = styled.section`
       }
 
       .skills-body-content {
-        display: flex;
-        flex-wrap: wrap;
         width: 45%;
 
         @media (max-width: 850px) {
@@ -86,8 +84,6 @@ const SkillsList = styled.section`
       }
 
       .skills-body-items {
-        display: flex;
-        flex-wrap: wrap;
         width: 45%;
 
         @media (max-width: 850px) {
@@ -142,7 +138,7 @@ const Skill = styled.div`
       padding: 1.3rem 1rem;
       font-family: ${props => props.theme.secondaryFont};
       background-color: ${props => props.theme.primaryColor};
-      color: white;
+      color: ${props => props.theme.secondaryText};
       margin: 1rem;
       border-radius: 5px;
       text-align: center;

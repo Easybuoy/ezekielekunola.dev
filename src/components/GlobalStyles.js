@@ -4,7 +4,7 @@ export const GlobalStyles = createGlobalStyle`
   body {
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
-    font-family: "Meera Inimai", sans-serif;
+    font-family: 'Telex', sans-serif;
     transition: all 0.50s linear;
   }
   `
