@@ -11,8 +11,6 @@ import Footer from "../components/Common/Footer/Footer"
 import successImage from "../images/mail.svg"
 import { Success as StyledSuccess } from "../styles"
 
-import PatternImageLight from "../images/pattern-bg-light.svg"
-import PatternImageDark from "../images/pattern-bg-dark.svg"
 import Navigation from "../components/Common/Navigation/Navigation"
 
 const Success = props => {
@@ -24,12 +22,6 @@ const Success = props => {
     theme === "light" ? setTheme("dark") : setTheme("light")
   }
 
-  let PatternImage = PatternImageLight
-
-  if (theme === "dark") {
-    PatternImage = PatternImageDark
-  }
-
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <>
@@ -39,9 +31,6 @@ const Success = props => {
           <StyledSuccess>
             <div
               className="success"
-              style={{
-                backgroundImage: `linear-gradient(to right bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(${PatternImage})`,
-              }}
             >
               <div className="success-image">
                 <img src={successImage} alt="" />

@@ -30,7 +30,9 @@
     "skillset": [
       "React-testing-library",
       "Jest",
-      "Cypress"
+      "Cypress",
+      "Mocha",
+      "Chai"
     ]
   },
   {

@@ -24,6 +24,7 @@ const Input = styled.input`
   width: 100%;
   border: none;
   outline: none;
+  border-radius: 5px;
   font-size: 1.5rem;
   font-family: "Concert One", cursive;
 `
@@ -37,6 +38,7 @@ const TextArea = styled.textarea`
   outline: none;
   margin: 1rem 0;
   font-family: "Concert One", cursive;
+  border-radius: 5px;
 `
 
 const Form = styled.form`

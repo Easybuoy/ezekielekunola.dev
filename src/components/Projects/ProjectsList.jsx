@@ -3,7 +3,6 @@ import { graphql, useStaticQuery } from "gatsby"
 import { Link } from "gatsby"
 
 import { ProjectsList as StyledProjectsList } from "./Styles"
-import { Input, Button, Form, TextArea } from "../../styles/common"
 
 import Project from "./Project"
 

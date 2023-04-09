@@ -21,7 +21,7 @@ function SEO({ description, lang, meta, title, img }) {
             author
           }
         }
-        aboutImage: file(relativePath: { eq: "profile4.jpg" }) {
+        aboutImage: file(relativePath: { eq: "profile.JPG" }) {
           childImageSharp {
             fluid(maxWidth: 500, quality: 100) {
               aspectRatio
