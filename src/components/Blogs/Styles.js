@@ -71,13 +71,14 @@ const Blog = styled.div`
     margin: 2rem 0;
     padding: 2rem;
     background-color: white;
-    color: black;
+    color:  ${props => props.theme.primaryColor};
     border-radius: 5px;
     height: 180px ;
     transition: all 0.3s ease-in-out;
     
 
     &:hover {
+      color: ${props => props.theme.secondaryText};
       background-color: ${props => props.theme.primaryColor};
       transform: scale(1.03);
     }

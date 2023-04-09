@@ -7,7 +7,7 @@ import PatternImageDark from "../../../images/pattern-bg-dark.svg"
 export default function About({ theme }) {
   const data = useStaticQuery(graphql`
     query {
-      aboutImage: file(relativePath: { eq: "profile5.jpg" }) {
+      aboutImage: file(relativePath: { eq: "profile.JPG" }) {
         childImageSharp {
           fluid(maxWidth: 500, quality: 100) {
             aspectRatio

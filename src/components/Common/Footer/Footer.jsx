@@ -8,7 +8,7 @@ const Footer = ({ theme }) => {
     <StyledFooter>
       <ContactDetail size="3x" color="white" theme={theme} />
       <p>
-        Designed by easybuoy{" "}
+        Designed by Izzy{" "}
         <span role="img" aria-label="Developer">
           {" "}
           👨🏾‍💻

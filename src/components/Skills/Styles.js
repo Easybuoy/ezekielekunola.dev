@@ -18,7 +18,6 @@ const SkillsList = styled.section`
     .skills-header {
       text-align: center;
       width: 100%;
-      padding-bottom: 2rem;
 
       h3 {
         font-family: ${props => props.theme.primaryFont};
