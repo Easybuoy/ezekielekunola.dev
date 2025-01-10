@@ -31,7 +31,7 @@ export default function Header({ theme }) {
               }}
               startDelay={1000}
             >
-              <span>I am a Frontend Developer</span>
+              <span>I am a Senior Frontend Developer</span>
               <Typist.Backspace count={9} delay={2000} />
               <span>Engineer</span>
             </Typist>

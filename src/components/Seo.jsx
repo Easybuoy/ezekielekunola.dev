@@ -72,14 +72,6 @@ function SEO({ description, lang, meta, title, img }) {
           property: `og:type`,
           content: `website`,
         },
-        // {
-        //   name: `og:image`,
-        //   content: `${origin}${image}`,
-        // },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
         {
           name: `twitter:creator`,
           content: site.siteMetadata.author,
@@ -92,10 +84,6 @@ function SEO({ description, lang, meta, title, img }) {
           name: `twitter:description`,
           content: metaDescription,
         },
-        // {
-        //   name: `og:image`,
-        //   content: `${origin}${image}`,
-        // },
       ]
         .concat([
           {
