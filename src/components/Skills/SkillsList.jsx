@@ -38,7 +38,7 @@ const SkillsList = ({ theme }) => {
 
             <div className="skills-body-content-details">
               <h4>
-                I am a Full-Stack Web Application developer with a passion for
+                I am a Senior Frontend Web Application developer with a passion for
                 web technologies. I write robust, clean, re-usable and
                 maintainable code.
               </h4>

@@ -31,21 +31,21 @@ export default function About({ theme }) {
         <div className="about-content">
           <h3>About Me</h3>
           <p>
-            Experienced Software Engineer with a demonstrated history of working
-            in the information technology and services industry. Skilled in
-            Node, React, React-Native, Redux, GraphQL, PHP, Javascript, MongoDB,
-            Postgres. I have a strong engineering background from Middlesex University, Aptech
-            Computer Education and Lambda School.
+            I am a skilled Senior Software Engineer with a proven track record
+            in the information technology and services industry. My expertise
+            includes Node.js, React, React Native, Redux, GraphQL, TypeScript,
+            JavaScript, Vue, and Nextjs. I hold a strong engineering foundation,
+            built through my education at Middlesex University, Aptech Computer
+            Education, and Lambda School.
           </p>
 
           <br />
           <br />
 
           <p>
-            When not working on a project or thinking about programming, I'm
-            most likely watching TV series on Netflix, playing tennis,
-            sight-seeing, watching Manchester City play football, or spending
-            time with family and friends.
+            Outside of work, you’ll often find me watching TV series on Netflix,
+            playing tennis, exploring new places, cheering for Manchester City,
+            or enjoying quality time with family and friends.
           </p>
         </div>
         <div className="about-image">

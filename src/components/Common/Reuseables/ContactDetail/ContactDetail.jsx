@@ -8,7 +8,6 @@ export default function ContactDetail({ size, color, theme }) {
   let linkedInClassName = `fab fa-linkedin fa-${size}`
   let blogClassName = `far fa-newspaper fa-${size}`
   let devClassName = `fab fa-dev fa-${size}`
-  let twitterClassName = `fab fa-twitter fa-${size}`
 
   return (
     <ContactDetailStyle color={color}>
@@ -33,10 +32,6 @@ export default function ContactDetail({ size, color, theme }) {
 
       <a href="https://dev.to/easybuoy">
         <i className={devClassName}></i>
-      </a>
-
-      <a href="https://twitter.com/easybuoy">
-        <i className={twitterClassName}></i>
       </a>
     </ContactDetailStyle>
   )
