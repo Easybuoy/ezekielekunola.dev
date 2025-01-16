@@ -61,6 +61,13 @@ module.exports = {
         head: true,
       },
     },
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: process.env.ANALYTICS_ID,
+        includeInDevelopment: true,
+      },
+    },
     "gatsby-transformer-json",
     "gatsby-plugin-styled-components",
     // this (optional) plugin enables Progressive Web App + Offline functionality
